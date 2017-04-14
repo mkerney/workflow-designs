@@ -1,4 +1,5 @@
 .project-authoring-wrapper{
+    position: relative;
     .total-users-wrapper{
         padding: 15px;
         background-color: $totaluser_bg;
@@ -21,24 +22,23 @@
             }
         }
     }
-    .timeline-header-wrapper{
+    .authoring-header-wrapper{
         padding: 15px 15px 0;
-        .timeline-header-content{
+        .authoring-header-content{
             padding-bottom: 9px;
             border-bottom: 1px solid $timeline-border;
             > a{
                 display: inline-block;
                 position: relative;
                 padding: 0 15px 0 24px;
+                color: $blue_5;
                 > i{
-                    color: $blue_5;
                     font-size: 22px;
                     position: absolute;
                     top: 0px;
                     left: 0;
                 }
                 > span{
-                    color: $blue_5;
                     font-size: 18px;
                     font-weight: bold;
                 }
@@ -51,7 +51,7 @@
                     line-height: 14px;
                 }
             }
-            > .timeline-tabs{
+            > .authoring-tabs{
                 display: inline-block;
                 .management-header{
                     ul{
@@ -70,7 +70,7 @@
                     }
                 }
             }
-            > .timeline-search-wrapper{
+            > .authoring-search-wrapper{
                 display: inline-block;
                 float: right;
                 .timeline-search{
@@ -124,63 +124,56 @@
         }
     }
     .user-selectionlist-wrapper{
-        padding: 10px 15px;
-        border-bottom: 1px solid $grey_1;
-    }
-    .timeline-body-wrapper{
-        padding: 0 15px;
-        > .timeline-body-row{
-            > div {
-                &.recent-assets-column{
-                    .recent-assets-wrapper{
-                        .recent-assets-header{
-                            position: relative;
-                            padding-right: 30px;
-                            border-bottom: 1px solid $timeline-border;
-                            h5{
-                                font-size: 14px;
-                                font-weight: bold;
-                                margin: 0;
-                                padding: 12px 0;
-                            }
-                            a{
-                                position: absolute;
-                                right: 10px;
-                                top: 5px;
-                                color: $arrow-alt;
-                                font-size: 21px;
-                                &:hover,&:focus{
-                                    text-decoration: none;
-                                }
-                            }
+        padding: 0px 15px;
+        .user-selection{
+            border-bottom: 1px solid $grey_1;
+            padding: 10px 0;
+            .selection-list{
+                margin: 0;
+                display: inline-block;
+                > li{
+                    padding: 0 15px 0 0;
+                    > a{
+                        position: relative;
+                        color: $grey_7;
+                        font-size: 12px;
+                        font-weight: bold;
+                        display: block;
+                        padding-right: 20px;
+                        i{
+                            color: $angle-fa;
+                            position: absolute;
+                            font-size: 18px;
+                            top: 2px;
+                            line-height: 14px;
+                            right: 3px
                         }
-                        .recent-assets-body{
-                            .recent-event{
-                                margin-top: 30px;
-                                h6{
-                                    margin: 0;
-                                    padding: 10px 0;
-                                    font-size: 13px;
-                                    color: $slate_10;
-                                    font-weight: bold;
-                                }
-                                p{
-                                    margin: 0;
-                                    padding: 5px 5px 5px 0;
-                                    font-size: 11px;
-                                    color: $slate_10;
-                                    font-weight: bold;
+                        + ul{
+                            top: 28px;
+                            border-radius: 0;
+                            margin: 0;
+                            border: 0;
+                            padding: 0;
+                            background-color: $modal-bg-color;
+                            > li{
+                                > a{
+                                    color: $grey_7;
                                 }
                             }
                         }
                     }
                 }
-                &.latest-changes-column{
-                    border-left: 1px solid $timeline-border;
-                    .latest-changes-wrapper{
-                        .latest-changes-header{
+            }
+        }
+    }
+    .authoring-body-wrapper{
+        padding: 0 15px;
+        > .authoring-body-row{
+            > div {
+                &.project-explorer-column{
+                    .project-explorer-wrapper{
+                        .project-explorer-header{
                             position: relative;
-                            padding: 0 60px 0 40px;
                             border-bottom: 1px solid $timeline-border;
                             h5{
                                 font-size: 14px;
@@ -188,60 +181,344 @@
                                 margin: 0;
                                 padding: 12px 0;
                             }
-                            a{
+                            > ul{
                                 position: absolute;
-                                color: $arrow-alt;
-                                top: 5px;
-                                font-size: 21px;
-                                &.header-close{  
-                                    right: 40px;
-                                }
-                                &.header-extend{  
-                                    right: 10px;
-                                }
-                                &:hover,&:focus{
-                                    text-decoration: none;
+                                right: 10px;
+                                top: 7px;
+                                margin-bottom: 0;
+                                > li{
+                                    > a{
+                                        color: $arrow-alt;
+                                        font-size: 18px;
+                                        &:hover,&:focus{
+                                            text-decoration: none;
+                                        }
+                                    }
                                 }
                             }
                         }
-                        .latest-changes-body{
-                            padding: 30px 40px;
-                            .latest-updates-wrapper{
-                                > form {
+                        .project-explorer-body{
+                            .explorer-breadcrumb{
+                                padding: 10px 0;
+                                display: inline-block;
+                                border-bottom: 1px dashed $blue_5;
+                                > a{
+                                    color: $blue_5;
                                     display: inline-block;
-                                    > select{
-                                        height: 22px;
-                                        border: 0;
-                                        padding: 1px 2px;
-                                        font-size: 14px;
-                                        box-shadow: none;
-                                        line-height: 14px;
-                                        color: $grey_text;
-                                        margin-left: 20px;
-                                        border-bottom: 1px solid $subheader_bg;
-                                        background-color: transparent !important;
-                                        @include border-radius(0);
+                                    font-weight: bold;
+                                    font-size: 12px;
+                                    &:hover,&:focus{
+                                        text-decoration: none;
                                     }
                                 }
                             }
-                            .latest-content{
-                                .latest-event{
-                                    margin-top: 30px;
-                                    h6{
-                                        margin: 0;
-                                        padding: 10px 0;
-                                        font-size: 13px;
-                                        color: $slate_10;
-                                        font-weight: bold;
+                            .explorer-breadcrumb-default{
+                                padding: 10px 0;
+                                > a{
+                                    color: $angle-fa;
+                                    display: inline-block;
+                                    font-weight: bold;
+                                    font-size: 11px;
+                                    &:hover,&:focus{
+                                        text-decoration: none;
                                     }
-                                    p{
-                                        margin: 0;
-                                        padding: 5px 5px 5px 0;
-                                        font-size: 11px;
-                                        color: $slate_10;
-                                        font-weight: bold;
+                                    &:last-child{
+                                        color: $blue_5;
+                                        padding-right: 10px;
                                     }
                                 }
+                            }
+                            .explorer-work-accordian{
+                                .sidebar-menu{
+                                    > li{
+                                        margin-bottom: 15px;
+                                        &.active{
+                                            > .toggle{
+                                                > .right-icon{
+                                                    i{
+                                                        &:before{
+                                                            content: "\f068";
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        > .toggle{
+                                            display: block;
+                                            padding: 7px 10px 7px 15px;
+                                            background-color: $toggle-bg;
+                                            font-size: 13px;
+                                            color: $blue_5;
+                                            font-weight: bold;
+                                            position: relative;
+                                            > .right-icon{
+                                                position: absolute;
+                                                right: 10px;
+                                                top: 7px;
+                                                i{
+                                                    font-size: 20px;
+                                                    color: $angle-fa;
+                                                }
+                                            }
+                                            + ul{
+                                                display: none;
+                                                border-radius: 0;
+                                                margin: 0;
+                                                border: 0;
+                                                padding: 0;
+                                                background-color: #344d5A;
+                                                > li{
+                                                    > a{
+                                                        color: $angle-fa;
+                                                        vertical-align: middle;
+                                                        font-size: 12px;
+                                                        display: block;
+                                                        font-weight: bold;
+                                                        padding: 8px 10px;
+                                                        @include transition(all 0.3s ease-in-out);
+                                                        i{
+                                                            margin: 0px 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }  
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.decision-table-column{
+                    border-left: 1px solid $timeline-border;
+                    .decision-table-wrapper{
+                        > .decision-table-xls{
+                            .decision-table-header{
+                                padding: 0 0 0 15px;
+                                border-bottom: 1px solid $timeline-border;
+                                position: relative;
+                                > *{
+                                    display: inline-block;
+                                }
+                                .decision-table-header-tag{
+                                    h5{
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        margin: 0;
+                                        padding: 12px 0;
+                                        display: block;
+                                        position: relative;
+                                        padding-right: 20px;
+                                        i{
+                                            color: $angle-fa;
+                                            position: absolute;
+                                            font-size: 18px;
+                                            top: 13px;
+                                            line-height: 14px;
+                                            right: 3px
+                                        }
+                                        + ul{
+                                            border-radius: 0;
+                                            margin: 0;
+                                            border: 0;
+                                            padding: 0;
+                                            background-color: $modal-bg-color;
+                                            > li{
+                                                > a{
+                                                    color: $grey_7;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                                .decision-table-header-label{
+                                    position: absolute;
+                                    right: 100px;
+                                    top: 10px;
+                                    > ul{
+                                        margin: 0;
+                                        >li{
+                                            a{
+                                                background-color: $label-bg;
+                                                padding: 1px 10px;
+                                                font-size: 10px;
+                                                border-radius: 15px;
+                                                vertical-align: middle;
+                                                display: block;
+                                                color: $label-clr;
+                                                font-weight: bold;
+                                                &:focus, &:hover{
+                                                    text-decoration: none;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .decision-table-header-icons{
+                                    position: absolute;
+                                    top: 5px;
+                                    right: 20px;
+                                    > ul{
+                                        margin: 0;
+                                        > li{
+                                            a{
+                                                color: $arrow-alt;
+                                                font-size: 21px;
+                                                &:hover,&:focus{
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .decision-table-body{
+                                height: 270px;
+                            }
+                        }
+                        > .message-table-wrapper{
+                            .message-table-header{
+                                padding: 0 0 0 15px;
+                                border-top: 1px solid $timeline-border;
+                                border-bottom: 1px solid $timeline-border;
+                                position: relative;
+                                > *{
+                                    display: inline-block;
+                                }
+                                .message-table-header-tag{
+                                    h5{
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        margin: 0;
+                                        padding: 12px 0;
+                                        display: block;
+                                        padding-right: 20px;
+                                    }
+                                }
+                                .message-table-header-label{
+                                    position: absolute;
+                                    right: 120px;
+                                    top: 10px;
+                                    > ul{
+                                        margin: 0;
+                                        >li{
+                                            a{
+                                                background-color: $label-bg;
+                                                padding: 1px 10px;
+                                                font-size: 10px;
+                                                border-radius: 15px;
+                                                vertical-align: middle;
+                                                display: block;
+                                                color: $label-clr;
+                                                font-weight: bold;
+                                                &:focus, &:hover{
+                                                    text-decoration: none;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .message-table-header-icons{
+                                    position: absolute;
+                                    top: 5px;
+                                    right: 20px;
+                                    > ul{
+                                        margin: 0;
+                                        > li{
+                                            a{
+                                                color: $arrow-alt;
+                                                font-size: 21px;
+                                                &:hover,&:focus{
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .message-table-body{
+                                height: 270px;
+                                .message-body-content{
+                                    margin: 15px;
+                                    border: 1px solid $timeline-border;
+                                    font-size: 11px;
+                                    font-weight: bold;
+                                    .table-column{
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    .table-header{
+                                        background-color: $label-bg;
+                                        padding: 7px 0;
+                                    }
+                                    .table-body{
+                                        padding: 15px 0px;
+                                        i{
+                                            font-size: 20px;
+                                            color: $label-bg;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightsidebar{
+        position: fixed;
+        background-color: $rightsidebar;
+        position: fixed;
+        margin-right: -265px;
+        top: 250px;
+        right: 0;
+        width: 300px;
+        height: 400px;
+        @include transition(all 0.5s ease);
+        &.rightsidebar-open{
+            margin-right: 0;
+            .sidebar-content{
+                .sidebar-header{
+                    a{
+                        i{
+                            transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-content{
+            .sidebar-header{
+                height: 39px;
+                background-color: $sidebar-header;
+                a{
+                    display: inline-block;
+                    padding: 7px 12px;
+                    i{
+                        color: $header-icon;
+                        font-size: 24px;
+                        @include transition(all 0.5s ease);
+                    }
+                }
+            }
+            .sidebar-body{
+                > ul{
+                    margin: 0;
+                    > li{
+                        > a{
+                            padding: 15px 8px;
+                            display: inline-block;
+                            i{
+                                color: $blue_5;
+                                font-size: 20px;
                             }
                         }
                     }
