@@ -1,0 +1,280 @@
+/*--  Content Style  --*/
+.main-wrapper{
+    background-color: $grey_bg;
+}
+.content-wrapper{
+    border-right: 1px solid $grey_1;
+    .profile-details{
+        padding: 15px;
+        .media-left{
+            padding-right: 15px;
+            img{
+                margin: 0 auto 20px;
+                max-width: 200px;
+            }
+        }
+        .media-heading{
+            h3{
+                color: $light_blue;
+                margin: 0;
+                display: inline-block;
+                font-size: 30px;
+                font-family: $roboto_medium;
+                text-transform: uppercase;
+            }
+            ul{
+                float: right;
+            }
+        }
+        .media-body{
+            p{
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+    }
+    .domain-wrapper{
+        color: $grey_text;
+        margin: 15px 0;
+        font-size: 11px;
+        font-family: $roboto_medium;
+        text-transform: uppercase;
+        > ul{
+            margin: 0;
+            display: inline-block;
+            > li{
+                border-right: 1px solid $grey_text;
+                padding-right: 10px;
+                &:first-child{
+                    padding-left: 0;
+                }
+                &:last-child, &:first-child{
+                    border-right: 0;
+                    padding-right: 0;
+                }
+                a{
+                    color: $grey_text;
+                    text-decoration: none;
+                }
+            }
+        }
+        .rating{
+            margin-left: 50px;
+        }
+    }
+    > .row{
+        margin: 0;
+        &:not(:last-of-type){
+            border-bottom: 1px solid $grey_1;
+        }
+        > .col-sm-6{
+            border-collapse: collapse;
+            &:first-of-type{
+                border-right: 1px solid $grey_1;
+            }
+            &:last-of-type{
+                border-left: 1px solid $grey_1;
+                margin-left: -1px;
+            }
+        }
+    }
+    .info-panel{
+        padding: 20px 0;
+        .info-panel-title{
+            margin: 0 0 20px;
+            font-size: 16px;
+            font-family: $roboto_medium;
+            text-transform: uppercase;
+        }
+        .info-panel-footer{
+            margin-top: 20px;
+            text-align: right;
+        }
+    }
+    .leader{
+        margin: 8px 0;
+        padding: 15px 0 15px 70px;
+        position: relative;
+        font-family: $roboto_medium;
+        text-transform: uppercase;
+        h4{
+            margin: 0 0 5px 0;
+            font-size: 12px;
+        }
+        p{
+            margin: 0;
+            font-size: 10px;
+        }
+        img{
+            top: 50%;
+            left: 0;
+            border: 3px solid $grey;
+            position: absolute;
+            @include circle(60px);
+            @include translate(0, -50%);
+        }
+    }
+
+    .gereral-info{
+        h4{
+            color: $light_grey_text;
+            margin: 0 0 10px;
+            font-size: 14px;
+            line-height: 18px;
+            font-family: $roboto_medium;
+            text-transform: uppercase;
+            span{
+                color: $light_blue;
+            }
+        }
+        .icon-list{
+            float: right;
+            margin: 20px 0 15px;
+            li{
+                padding: 0 2px;
+                a{
+                    font-size: 22px;
+                    @include circle(35px);
+                }
+            }
+        }
+    }
+    .tags{
+        a{
+            color: $tags_color;
+            padding: 0 2px;
+            display: inline-block;
+            font-family: $roboto_medium;
+            text-transform: uppercase;
+            vertical-align: middle;
+            text-decoration: none;
+            &.rank-1{
+                font-size: 18px;
+            }
+            &.rank-2{
+                font-size: 14px;
+            }
+            &.rank-3{
+                font-size: 11px;
+            }
+        }
+    }
+    .news{
+        p{
+            font-size: 12px;
+            &:not(:last-of-type){
+                border-bottom: 1px dashed $grey_1;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+            }
+            a{
+                color: $light_blue;
+                &:hover{
+                    color: $light_blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*--  Media Styles  --*/
+@media(min-width: 992px) and (max-width: 1199px){
+    .content-wrapper{
+        .profile-details{
+            .domain-wrapper{
+                .rating{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .content-wrapper{
+        .profile-details{
+            .media-left{
+                width: 100%;
+                display: block;
+                img{
+                    margin: 0 auto;
+                    max-width: 200px;
+                }
+            }
+            .media-body{
+                width: 100%;
+                display: block;
+            }
+            .domain-wrapper{
+                .rating{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .gereral-info{
+            .icon-list{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px){
+    .content-wrapper{
+        .profile-details{
+            .media-left{
+                width: 100%;
+                display: block;
+            }
+            .media-body{
+                width: 100%;
+                display: block;
+                .media-heading{
+                    h3{
+                        font-size: 24px;
+                    }
+                }
+            }
+            .domain-wrapper{
+                .rating{
+                    margin-left: 10px;
+                }
+            }
+        }
+        > .row{
+            > .col-sm-6{
+                border-collapse: collapse;
+                &:first-of-type{
+                    border-right: 0;
+                    border-bottom: 1px solid $grey_1;
+                }
+                &:last-of-type{
+                    border-left: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    .content-wrapper{
+        .profile-details{
+            .media-heading{
+                .icon-list{
+                    float: left;
+                    margin: 10px 0;
+                    display: block;
+                    text-align: center;
+                } 
+            }
+            .rating{
+                float: left;
+                margin: 10px 0;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+

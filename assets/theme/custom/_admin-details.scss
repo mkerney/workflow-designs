@@ -1,0 +1,121 @@
+.admin-details-wrapper{
+    .total-users-wrapper{
+        padding: 15px;
+        background-color: $totaluser_bg;
+        border-bottom: 1px solid $grey_1;
+        > ul{
+            li{
+                &:not(:last-child){
+                    padding-right: 25px;
+                }
+                > div{
+                    p{
+                        font-weight: bold;
+                    }
+                    span{
+                        font-size: 35px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .usermanagement-data{
+        padding: 30px 15px;
+        .management-header{
+            >.content-wrapper-pills{
+                border-bottom: 1px solid $grey_1;
+                > li{
+                    padding: 4px 20px;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &.active{
+                        a{
+                            &:after{
+
+                            }
+                        }
+                    }
+                    a{
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 10px 0;
+                        padding-left: 25px;
+                        display: block;
+                        &:after{
+                            position: absolute;
+                            left: 0;
+                            bottom: -7px;
+                        }
+                        i{
+                            position: absolute;
+                            left: 0;
+                            font-size: 20px;
+                            top: 12px;
+                        }
+                        .span{
+
+                        }
+                    }
+                }
+            }
+        }
+        .management-body{
+            .data-table-wrapper{
+                #managementData{
+                    margin-top: 50px;
+                    position: relative;
+                    .data-table-accessories{
+                        > div{
+                            display: inline-block;
+                            &.organisation{
+                                position: absolute;
+                                top: -30px;
+                                left: 0;
+                                font-size: 12px;
+                                font-weight: bold;
+                                .organisation-data{
+                                    margin-right: 40px;
+                                }
+                                .key-text{
+                                    color: #5a676d;
+                                }
+                                .value-text{
+                                    color: #4676a0;
+                                }
+                            }
+                            &.new-user-content{
+                                position: absolute;
+                                top: -40px;
+                                right: 0;
+                                > a{
+                                    color: white;
+                                    font-size: 12px;
+                                    background-color: #325c80;
+                                    padding: 6px 12px;
+                                    display: inline-block;
+                                    &:not(:last-child){
+                                        margin-right: 20px;
+                                    }
+                                    &:hover,&:focus{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            > div{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    #DataTables_Table_0_filter{
+                        position: absolute;
+                        right: 300px;
+                        top: -40px;
+                    }
+                }
+            }
+        }
+    }
+}

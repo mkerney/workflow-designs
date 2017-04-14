@@ -1,0 +1,27 @@
+/*--  Include Boostrap  --*/
+@import "../bootstrap-scss/_bootstrap.scss";
+@import "../fontawesome/font-awesome.scss";
+
+/*--  Include Custom Styles  --*/
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_fonts.scss";
+@import "_common.scss";
+@import "_header.scss";   
+@import "_admin-landing.scss";
+@import "_admin-details.scss";
+@import "_datasource.scss";
+@import "_drools-landing.scss";
+@import "_drools-content.scss";
+@import "_project-authoring.scss";
+@import "_drag-drop.scss";
+@import "_sidebar.scss";
+@import "_dashboard.scss";
+@import "_company.scss";
+@import "_entity.scss";
+
+@import "modal/_modal.scss";
+@import "modal/_properties.scss";
+@import "modal/_adduser.scss";
+@import "modal/_createdb.scss";
+@import "modal/_details.scss";

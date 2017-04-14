@@ -1,0 +1,89 @@
+body {
+  background-color: #283C45 ;   
+}
+
+
+.axis .bs_line {
+  fill: none;
+  stroke: #687C85;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.bs_line {
+  fill: none;
+  stroke: #4294D9;
+  stroke-width: 2px;
+}
+
+.bs_overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus .bs_circle {
+  fill: #29B0B3;
+  stroke: #E8EEEF;
+  stroke-width: 2px;
+}
+  
+  .bs_tooltip{
+    position: absolute;
+    border-style: solid;
+    stroke: #CED0DA;
+  }
+/*
+.domain
+{
+  stroke: #687C85;
+}
+*/
+
+.bs_axisX .tick
+{
+    stroke:  #8B9FA8;
+     font-size:xx-small;
+}
+
+
+.bs_axisY .tick
+{
+    stroke:  #8B9FA8;
+     font-size:xx-small;
+}
+.bs_linegrid .tick line
+{
+  stroke:#30434C;
+  opacity: 1;
+}
+
+.bs_axisX path
+{
+  stroke: #687C85;
+}
+
+.bs_axisY path
+{
+  stroke: #283C45;
+}
+
+.bs_linegrid path
+{
+  stroke: #283C45;
+}
+
+.bs_axisY .tick line
+{
+  stroke:#283C45;
+}
+
+
+.bs_axisX .tick line
+{
+  stroke: #687C85;
+}
+#bs_font
+{
+  position: absolute;
+  font-style:
+}

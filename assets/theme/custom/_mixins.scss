@@ -1,0 +1,52 @@
+/*--  Transition  --*/
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition   : $transition;
+  -o-transition     : $transition;
+  -ms-transition    : $transition;
+  transition        : $transition;
+}
+
+/*--  Border Radius  --*/
+@mixin border-radius($radius) {
+    border-radius        : $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius   : $radius;
+    -ms-border-radius    : $radius;
+    -o-border-radius     : $radius;
+} 
+
+/*--  Background Size  --*/
+@mixin background-size($size){
+    -webkit-background-size: $size;
+    -moz-background-size   : $size;
+    -o-background-size     : $size;
+    background-size        : $size;
+}
+
+/*--  Circle --*/
+@mixin circle($size){
+    width : $size;
+    height: $size;
+    @include border-radius($size);
+}
+
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin center-position() {
+    @include translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@mixin padding($padding) {
+    padding: $padding;
+}
+@mixin margin($margin) {
+    margin: $margin;
+}

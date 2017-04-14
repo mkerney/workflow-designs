@@ -1,0 +1,38 @@
+/*==============================================================================
+************************  Font Style For the Site  *****************************
+===============================================================================*/
+/*--  Font Open Sans  --*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/roboto.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto/roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto/roboto.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/roboto/roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto/roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/*--  Font Open Sans  --*/
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto-light/roboto-light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-light/roboto-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto-light/roboto-light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/roboto-light/roboto-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto-light/roboto-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/*--  Font Open Sans  --*/
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/roboto-medium/roboto-medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto-medium/roboto-medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/roboto-medium/roboto-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto-medium/roboto-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Francois One Regular';
+    src: url('../fonts/francoisone-regular/francoisone-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/francoisone-regular/francoisone-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/francoisone-regular/francoisone-regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/francoisone-regular/francoisone-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/francoisone-regular/francoisone-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

@@ -1,0 +1,217 @@
+[{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "DATA WAREHOUSE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "NOSQL",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "GRAPH",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "RDBMS",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "BIG DATA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "COLUMNAR",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "FILES",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "MEDIA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "OPEN SOURCE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "IN REST",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "DATA WAREHOUSE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "NOSQL",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "GRAPH",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "RDBMS",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "BIG DATA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "COLUMNAR",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "FILES",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "MEDIA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "OPEN SOURCE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "IN REST",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "DATA WAREHOUSE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "NOSQL",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "GRAPH",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "RDBMS",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "BIG DATA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "COLUMNAR",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "FILES",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "MEDIA",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "OPEN SOURCE",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "DB_SCAN 34EST ROLTA",
+	"type": "IN REST",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+},{
+	"firstname": "JFK MORGAN DB_NEW",
+	"type": "IN MOTION",
+	"cdate": "14/09/2016",
+	"ldate": "09/12/2016",
+	"actions": "Select"
+}]

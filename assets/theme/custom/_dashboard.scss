@@ -1,0 +1,93 @@
+.dashboard-subheader-wrapper{
+    background-color: #CEC53C;
+    .dropdown-wrapper{
+        .btn-default {
+            background-color: transparent;
+            border-color: transparent;
+            color: #333;
+            font-family: $roboto_medium;
+            font-size: 21px;
+            padding: 9px 10px;
+            @include box-shadow(none);
+            border-right: 1px solid #aaa225;
+            &:hover,&:focus{
+                background-color: transparent;
+                border-color: transparent;
+                border-right: 1px solid #aaa225;
+            }
+        }
+    }
+
+    p{
+        margin: 10px 0;
+        color: #333;
+        font-family: $roboto_medium;
+        font-size: 18px;
+    }
+
+    .type-list{
+        li{
+            margin: 5px 0;
+            color: #333;
+            font-family: $roboto_medium;
+            font-size: 12px; 
+        }
+    }
+    .remarks-list{
+        li{
+            margin: 5px 0;
+            color: #333;
+            font-family: $roboto_medium;
+            font-size: 12px; 
+        }
+    }
+    .list-inline{
+        margin: 10px 0;
+        li{
+            a{
+                display: inline-block;
+                color: #fff;
+                font-family: $roboto_medium;
+                font-size: 12px;
+                text-transform: uppercase;   
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+        }
+    }
+    .blue-btn-list{
+        li{
+            a{
+                @include border-radius(5px);
+                background-color: #325D80;
+                border: 1px solid #325D80;
+            }
+        }
+    }
+    .green-btn-list{
+        li{
+            a{
+                @include border-radius(2px);
+                background-color: #0CB29A;
+                border: 1px solid #0CB29A;
+            }
+        }
+    }
+}
+
+.dashboard-main-wrapper{
+    padding: 25px 15px 50px;
+    .custom-panel{
+        min-height: 350px;
+        border: 0;
+        @include box-shadow(none);
+        @include border-radius(0);
+        .panel-heading{
+            @include border-radius(0);
+            background-color: #425661;
+            color: #0CB29A;
+            font-family: $roboto_medium;
+            font-size: 21px;
+        }
+    }
+}

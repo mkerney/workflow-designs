@@ -1,0 +1,203 @@
+.adduser-modal-wrapper{
+    .modal-dialog{
+        width: 800px;
+        margin: 50px auto;
+        .modal-content{
+            @include border-radius(0);
+            background-color: $modal-bg-color;
+            box-shadow: none;
+            .modal-header{
+                padding: 30px 30px;
+                border-bottom: 0;
+                position: relative;
+                .add-user-submit{
+                    display: inline-block;
+                    float: right;
+                    .cancel{
+                        color: $slate_7;
+                        opacity: 1;
+                        text-shadow: none;
+                        padding: 6px 12px;
+                        background-color: $grey_6;
+                        border: 0;
+                        font-size: 14px;
+                        margin-right: 10px;
+                        &:hover,&:focus{
+                            outline: none;
+                        }
+                    }
+                    .custom-submit{
+                        color: $slate_7;
+                        opacity: 1;
+                        text-shadow: none;
+                        padding: 6px 16px;
+                        background-color: $blue_4;
+                        border: 0;
+                        font-size: 14px;
+                        @include border-radius(0);
+                        &:hover,&:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .modal-title{
+                    display: inline-block;
+                    position: relative;
+                    padding-left: 40px;
+                    > span{
+                        background-color: $custom-add-icon;
+                        height: 30px;
+                        width: 30px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 40px;
+                        border: 0;
+                        position: absolute;
+                        left: 0;
+                        top: -3px;
+                        @include border-radius(50%);
+                        i{
+                            color: $modal-bg-color;
+                            font-size: 25px;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        display: inline-block;
+                        font-size: 18px;
+                        color: $slate_7;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 0 30px 30px;
+                .adduser-stages{
+                    > ul{
+                        margin : 0;
+                        border-bottom: 1px solid $grey_6;
+                        > li{
+                            float: left;
+                            padding: 0;
+                            > a{
+                                padding: 10px 16px;
+                                color: $slate_7;
+                                border: 0;
+                                font-size: 12px;
+                                display: block;
+                                @include border-radius(0);
+                                position: relative;
+                                &:hover,&:focus{
+                                    color: $slate_7;
+                                    text-decoration: none;
+                                }
+                                &:after{
+                                    position: absolute;
+                                    right: -21px;
+                                    top: -14px;
+                                    content: "\f0da";
+                                    display: inline-block;
+                                    font: normal normal normal 14px/1 FontAwesome;
+                                    font-size: inherit;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                    font-size: 65px;
+                                    z-index: 1;
+                                }
+                                &.personal{
+                                    padding-right: 10px;
+                                    background-color: $blue_4;
+                                    &:after{
+                                        color: $blue_4;
+                                    }
+                                }
+                                &.organisational{
+                                    background-color: $grey_8;
+                                    padding-left: 30px;
+                                    padding-right: 10px;
+                                    &:after{
+                                        color: $grey_8;
+                                    }
+                                }
+                                &.social{
+                                    background-color: $grey_6;
+                                    padding-left: 30px;
+                                    &:after{
+                                        color: $grey_6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .form-stages{
+                    padding-top: 40px;
+                    .form-group{
+                        label{
+                            padding-top: 6px;
+                        }
+                        select, input{
+                            height: 22px;
+                            border: 0;
+                            padding: 1px 2px;
+                            font-size: 14px;
+                            box-shadow: none;
+                            line-height: 14px;
+                            color: $grey_text;
+                            border-bottom: 1px solid $subheader_bg;
+                            background-color: transparent !important;
+                            @include border-radius(0);
+                        }
+                    }
+                    .image-upload-wrapper{
+                        .upload-image{
+                            height: 160px;
+                            width: 160px;
+                            line-height: 210px;
+                            background-color: $grey_9;
+                            margin: 0 auto;
+                            @include border-radius(50%);
+                            > i{
+                                color: $grey_10;
+                                font-size: 100px
+                            }
+                        }
+                        .upload-buttons{
+                            a{
+                                padding: 10px;
+                                display: inline-block;
+                                font-size: 14px;
+                                color: $subheader_bg;
+                                label{
+                                    font-weight: normal;
+                                }
+                                &:hover,&:focus{
+                                    color: $subheader_bg;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:300px) and (max-width: 767px){
+    .details-modal-wrapper{
+        .modal-header{
+            .modal-title{
+
+            }
+        }
+    }
+}
+@media(min-width:300px) and (max-width: 480px){
+    .details-modal-wrapper{
+        .modal-header{
+            .modal-title{
+
+            }
+        }
+    }
+}

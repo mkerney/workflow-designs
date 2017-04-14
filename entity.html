@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Entity Page</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/linechartwith-tooltip/css/linetoolcss.css">
+        <link rel="stylesheet" type="text/css" href="assets/WorldMap/css/Worldmap.css">
+        <link rel="stylesheet" type="text/css" href="assets/Progresspie/css/ProgressPie.css">
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!--      <link href="index.css" rel="stylesheet"> -->
+        <!--load jquery-->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body class="entity-modal">
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);" style="padding: 15px 9px;"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);" style="padding: 15px 9px;"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);" style="padding: 15px 9px;"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="subheader-wrapper">
+            <div class="container-fluid">
+                <a href="javascript:void(0);">Entity</a>
+                <span class="fa fa-angle-right"></span>
+                <a href="javascript:void(0);">Joe Fraser Coleman</a>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper entity-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-9 pad-0">
+                        <!--  Content Wrapper Starts  -->
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="profile-details">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="javascript:void(0);">
+                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="Profile">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    <h3>Joe Fraser Coleman</h3>
+                                                    <ul class="list-inline icon-list">
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-download"></span></a></li>
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-sign-in"></span></a></li>
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-plus-square"></span></a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="domain-wrapper">
+                                                    <ul class="list-inline">
+                                                        <li><a href="javascript:void(0);">Forex Market</a></li>
+                                                        <li><a href="javascript:void(0);">Orgnaisation:HSBC Fintech</a></li>
+                                                        <li><a href="javascript:void(0);">Current Location: California</a></li>
+                                                    </ul>
+                                                </div>
+                                                <p>
+                                                    Coleman is a 2011 graduate from Hopkins High School. 
+                                                    He led the school to three state championships in 2009, 
+                                                    2010, and 2011. In 2011, He was named Captain of the team and had a record of 32-1.
+                                                    He led the school to three state championships in 2009, 
+                                                    2010, and 2011. In 2011, He was named Captain of the team and had a record of 32-1.
+                                                    In 2011, He was named Captain of the team and had a record of 32-1.
+                                                </p>
+
+                                                <div class="domain-wrapper">
+                                                    <ul class="list-inline">
+                                                        <li><a href="javascript:void(0);">Industry:Forex and Equities</a></li>
+                                                        <li><a href="javascript:void(0);">Texas University</a></li>
+                                                    </ul>
+                                                    <div class="rating">
+                                                        <ul class="list-inline">
+                                                            <li class="selected"><span class="fa fa-star"></span></li>
+                                                            <li class="selected"><span class="fa fa-star"></span></li>
+                                                            <li class="selected"><span class="fa fa-star"></span></li>
+                                                            <li class="selected"><span class="fa fa-star"></span></li>
+                                                            <li><span class="fa fa-star"></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="info-panel role-summary">
+                                        <h3 class="info-panel-title">Roles Summary</h3>
+                                        <div class="info-panel-content">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <a href="javascript:void(0);">
+                                                        <img class="img-responsive" src="assets/images/goldman.jpg" alt="Profile">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="media-heading">
+                                                        <h3 class="info-panel-title">Forex Manager</h3>
+                                                    </div>
+                                                    <div class="domain-wrapper">
+                                                        <ul class="list-inline">
+                                                            <li><a href="javascript:void(0);">12 Now 2016 to current</a></li>
+                                                            <li><a href="javascript:void(0);">California</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <p>
+                                                        Coleman is a 2011 graduate from Hopkins High School. 
+                                                        He led the school to three state championships in 2009, 
+                                                        2010, and 2011. In 2011, He was named Captain of the team and had a record of 32-1.
+                                                        He led the school to three state championships in 2009
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-panel-footer">
+                                            <a href="javascript:void(0);"  data-toggle="modal" data-target="#moreRulesModal" class="btn btn-grey">07 More Roles</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="info-panel gereral-info pro-info">
+                                        <h3 class="info-panel-title">Professional Information</h3>
+                                        <div class="info-panel-content">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <h4>Citezenship : USA, Canada</h4>
+                                                    <h5>Native: USA | Current Location: Texas, USA</h5>
+                                                    <h5>Language : English, French</h5>
+                                                    <h5>Interest : Investment Stratgey, Portfolio Management</h5>
+                                                </div>
+                                                <div class="col-sm-4 flags">
+                                                    <a href="javascript:void(0);">
+                                                        <img class="media-object" src="assets/images/flag.png" alt="Flag"/>
+                                                    </a>
+                                                    <a href="javascript:void(0);">
+                                                        <img class="media-object" src="assets/images/flag.png" alt="Flag"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="list-inline icon-list">
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-facebook"></span></a></li>
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-linkedin"></span></a></li>
+                                                        <li><a href="javascript:void(0);"><span class="fa fa-twitter"></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-panel-footer">
+                                            <a href="javascript:void(0);" class="btn btn-grey">Profile Summery</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="info-panel gereral-info pro-info">
+                                        <h3 class="info-panel-title">Education and Certifications</h3>
+                                        <div class="info-panel-content">
+                                            <div class="row mb-20">
+                                                <div class="col-xs-8 col-md-9">
+                                                    <h4>MBA Forex Management</h4>
+                                                    <h5>Texas University | <small>2006-2008</small></h5>
+                                                    <h5>Location: Texas, USA</h5>
+                                                </div>
+                                                <div class="col-xs-4 col-md-3">
+                                                    <img class="img-responsive" src="assets/images/texas.jpg" alt=""/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8 col-md-9">
+                                                    <h4>Certified Forex Trader</h4>
+                                                    <h5>Institute of Forex Management | <small>2006-2008</small></h5>
+                                                    <h5>Location: Qubec, Canada</h5>
+                                                </div>
+                                                <div class="col-xs-4 col-md-3">
+                                                    <img class="img-responsive" src="assets/images/forex.jpg" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info-panel-footer">
+                                            <a href="javascript:void(0);" class="btn btn-grey">08 More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title">Associated Locations</h3>
+                                        <div class="info-panel-content">
+                                            <div class="chart-wrapper">
+                                                <!-- <img class="img-responsive" src="assets/images/industries.png" alt=""/> -->
+                                                <!--  <div id = column_chart_div class="bstheme_open" > -->
+                                                <!-- start of column chart-->
+                                                <div class="bstheme_chartContainer"  align="center">        
+                                                    <div class="bstheme_graphBox">                
+                                                        <div class='bstheme2_headerDiv'></div>
+                                                        <div id="example3" class="bstheme_chartContentDiv"></div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title">Associated Cases</h3>
+                                        <div class="info-panel-content tags">
+                                            <a href="javascript:void(0);" class="rank-2">Finnacle</a>
+                                            <a href="javascript:void(0);" class="rank-3">Amtracks</a>
+                                            <a href="javascript:void(0);" class="rank-2">MSB</a>
+                                            <a href="javascript:void(0);" class="rank-3">ARENA</a>
+                                            <a href="javascript:void(0);" class="rank-1">BAYTECH</a>
+                                            <a href="javascript:void(0);" class="rank-2">Finnacle</a>
+                                            <a href="javascript:void(0);" class="rank-3">Amtracks</a>
+                                            <a href="javascript:void(0);" class="rank-2">MSB</a>
+                                            <a href="javascript:void(0);" class="rank-3">ARENA</a>
+                                            <a href="javascript:void(0);" class="rank-1">BAYTECH</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title">Turnover Trend</h3>
+                                        <div class="info-panel-content">
+                                            <div class="chart-wrapper">
+                                                <div class="chartContainer"  align="center">
+                                                    <div class="WorldgraphBox">                
+                                                        <div class='headerDiv'>
+                                                            <!--<img src="assets/images/Maps-48.png">-->
+                                                        </div>
+
+                                                        <div id="example4" class="chartContentDiv"></div>
+                                                    </div>
+
+                                                </div>
+                                                <!--  <img class="img-responsive" src="assets/images/locations.png" alt=""/> -->
+                                            </div>
+                                        </div>
+                                        <div class="info-panel-footer">
+                                            <a href="javascript:void(0);" class="btn btn-grey">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row border-none">
+                                <div class="col-sm-6">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title">In the News</h3>
+                                        <div class="info-panel-content news">
+                                            <p>
+                                                Coleman is a 2011 graduate from Hopkins High School. 
+                                                He led the school to three state championships in 2009, 
+                                                2010, and 2011.  
+                                                <a href="javascript:void(0);">readmore</a>
+                                            </p>
+                                            <p>
+                                                Coleman is a 2011 graduate from Hopkins High School. 
+                                                He led the school to three state championships in 2009, 
+                                                2010, and 2011.
+                                                <a href="javascript:void(0);">readmore</a>
+                                            </p>
+                                            <p>
+                                                Coleman is a 2011 graduate from Hopkins High School. 
+                                                He led the school to three state championships in 2009, 
+                                                2010, and 2011. 
+                                                <a href="javascript:void(0);">readmore</a>
+                                            </p>
+                                        </div>
+                                        <div class="info-panel-footer">
+                                            <a href="javascript:void(0);" class="btn btn-grey">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title">Associated Entities</h3>
+                                        <div class="info-panel-content tags">
+                                            <a href="javascript:void(0);" class="rank-2">Finnacle</a>
+                                            <a href="javascript:void(0);" class="rank-3">Amtracks</a>
+                                            <a href="javascript:void(0);" class="rank-2">MSB</a>
+                                            <a href="javascript:void(0);" class="rank-3">ARENA</a>
+                                            <a href="javascript:void(0);" class="rank-1">BAYTECH</a>
+                                            <a href="javascript:void(0);" class="rank-2">Finnacle</a>
+                                            <a href="javascript:void(0);" class="rank-3">Amtracks</a>
+                                            <a href="javascript:void(0);" class="rank-2">MSB</a>
+                                            <a href="javascript:void(0);" class="rank-3">ARENA</a>
+                                            <a href="javascript:void(0);" class="rank-1">BAYTECH</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row hidden-xs">
+                                <div class="col-sm-12">
+                                    <div class="info-panel">
+                                        <h3 class="info-panel-title mar-0">Timeline</h3>
+                                        <div class="info-panel-content ">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Content Wrapper Ends  -->
+                    </div>
+                    <div class="col-sm-4 col-lg-3 pad-0">
+                        <!--  Right Sidebar Wrapper Starts  -->
+                        <div class="right-sidebar">
+                            <div class="sidebar-panel risk-score" style="height: 300px">
+                                <h3 class="sidebar-panel-title text-center">Risk Score</h3>
+                                <div class="entitydonut" style="position: relative;margin: auto;width: 100%;" ></div>
+                                <div id="example2" class="bstheme_chartContentDiv"></div>
+                            </div>
+                            <div class="sidebar-panel activity-level">
+                                <h3 class="sidebar-panel-title">Activity Level</h3>
+                                <div class="sidebar-panel-content">
+                                    <h4>Moderate</h4>
+                                    <div class="profile">Profile Searched: 12 Times | Profile Views: 123</div>
+                                    <div class="profile">Associated Cases:13 | Associated Entities:67</div>
+
+                                    <!--       <img class="img-responsive" src="assets/images/trend.png" alt=""/> -->
+                                    <div class="chart-wrapper">
+                                        <div id = "Line_chart_div" >
+                                            <div class="chartContainer"  align="center">
+                                                <div class="graphBox">                
+
+                                                    <div id="example8" class="chartContentDiv"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="sidebar-panel reviews">
+                                    <h3 class="sidebar-panel-title">Rating and Reviews</h3>
+                                    <div class="sidebar-panel-content ">
+                                        <div class="rate">
+                                            Overall Rating: 4.5
+                                            <div class="rating">
+                                                <ul class="list-inline">
+                                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                    <li><span class="fa fa-star"></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="record">
+                                            Criminal Record: No
+                                        </div>
+                                        <p>
+                                            Coleman is a 2011 graduate from Hopkins High School. 
+                                            He led the school to three state championships in 2009, 
+                                            2010, and 2011. - <span>Gartner Research  pvt ltd</span>
+                                        </p>
+                                        <p>
+                                            Coleman is a 2011 graduate from Hopkins High School. 
+                                            He led the school to three state championships in 2009, 
+                                            2010, and 2011. - <span>Gartner Research  pvt ltd</span>
+                                        </p>
+                                        <p>
+                                            Coleman is a 2011 graduate from Hopkins High School. 
+                                            He led the school to three state championships in 2009, 
+                                            2010, and 2011. - <span>Gartner Research  pvt ltd</span>
+                                        </p>
+
+                                        <a href="javascript:void(0);" class="btn btn-grey">09 More Reviews</a>
+                                    </div>
+                                </div>
+                                <div class=" sidebar-panel">
+                                    <h3 class="sidebar-panel-title subtitle">Overall Sentiment : Positive</h3>
+                                    <div class="sidebar-panel-content">
+                                        <!--  <img class="img-responsive" src="assets/images/industries.png" alt=""/> -->
+                                        <div class="img-responsive"  align="center">        
+                                            <div class="bstheme_graphBox">                
+                                                <div class='bstheme2_headerDiv'></div>
+                                                <div id="example5" class="bstheme_chartContentDiv"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Right Sidebar Wrapper Ends  -->
+                        </div>
+                    </div>
+                    <div class="row content-wrapper visible-xs" style="margin: 0;">
+                        <div class="col-sm-12">
+                            <div class="info-panel">
+                                <h3 class="info-panel-title mar-0">Timeline</h3>
+                                <div class="info-panel-content ">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col-sm-12 pad-0">
+                            <img style="width: 100%;" src="assets/images/timeline.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- More Rules Modal Wrapper Starts  -->
+        <div id="moreRulesModal" class="modal fade details-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="modal-title">
+                            <span class="name">JOW FRASER COLEMAN</span>                            
+                        </div>
+                        <div class="domain">
+                            <span>FOREX TRADER</span>
+                            <div class="rating">
+                                <ul class="list-inline">
+                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                    <li class="selected"><span class="fa fa-star"></span></li>
+                                    <li><span class="fa fa-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="risk-score">
+                            <div>24<span>%</span></div>
+                            <span>Risk Score</span>
+                        </div>
+                    </div>
+                    <div class="modal-body">                  
+                        <div class="details-list">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span><i class="fa fa-user"></i></span>
+                                    <div>AGE : 45 | GENDER:MALE | BORN IN : SOUTHERN CALIFORNIA</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-globe"></i></span>
+                                    <div>CITIZENSHIP: USA,CANADA | CURRENT LOCATION: CALGURY,USA</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-users"></i></span>
+                                    <div>MARITAL STATUS: MARRIED | SPOUSE: JANE HOBART | KIDS : 2</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                    <div>EMAIL ADDRESS:<a href="mailto:jow@gmail.com">jow@gmail.com</a> </div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-phone"></i></span>
+                                    <div>Phone: + 871029355728 | +87100925982134</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-desktop"></i></span>
+                                    <div>IP address: 168.121.87.9.09</div>
+                                </li>                               
+                                <li>
+                                    <span>
+                                        <img class="img-responsive img-security" src="assets/images/social-security.png" alt="social-security"/>
+                                    </span>
+                                    <div>Social Security No: AS22781HJS473 | Passport: AB002834681</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                    <div>Address Permanent:</div>
+                                    <div>House No-14, Golf Course Villa, Texas Country -13, USA</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-university"></i></span>
+                                    <div>Official Address:</div>
+                                    <div>Goldman sachs, 3rd avenue, united road, 8th floor,</div>
+                                    <div>Investment AND STRAGEY, TEXAS,USA</div>
+                                </li>                               
+                                <li>
+                                    <span>
+                                        <img class="img-responsive img-designation" src="assets/images/current-designation.png" alt="current-designation"/>
+                                    </span>
+                                    <div>CURRENT DESIGNATION: FOREX MANAGER</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-graduation-cap"></i></span>
+                                    <div>ACADEMIC QUALIFICATIONS:</div>
+                                    <div>MBA FOREX MANAGEMENT | TEXAS UNIVERSITY</div>
+                                    <div>CERTIFIED FOREX TRADER | IFTM TEXAS</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-thumbs-down"></i></span>
+                                    <div>CRIMINAL RECORD : NA</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-bar-chart"></i></span>
+                                    <div>LEVEL OF ACTIVITIES:</div>
+                                    <div>FACEBOOK: 98% | LINKED: 89% | TWITTER: 76% | INSTAGRAM: 98%</div>
+                                </li>                               
+                                <li>
+                                    <span><i class="fa fa-file-text-o"></i></span>
+                                    <div>RECENT NEWS:</div>
+                                    <div>INNOVATION SUMMIT 2017, CALIFORNIA</div>
+                                    <div>FOREX TECHNOLOGY MEETUP, SINGAPORE</div>
+                                </li>                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- More Rules Modal Wrapper Ends  -->
+
+        <!-- jQuery Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <!-- Bootstrap Js -->
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/linechartwith-tooltip/js/script.js"></script>
+        <script src="assets/linechartwith-tooltip/js/linetooljs.js"></script>
+        <script src="assets/WorldMap/js/WorldChart.js"></script>
+        <script src="assets/WorldMap/js/topojson.min.js"></script>
+        <script src="assets/WorldMap/js/script.js"></script>
+        <script src="assets/Progresspie/js/ProgressPie.js"></script>
+        <script src="assets/Progresspie/js/script.js"></script>
+
+        <script src="assets/Progress/js/Progressbar.js"></script>
+        <script src="assets/Progress/js/script.js"></script>
+
+
+
+
+
+
+
+    </body>
+</html>

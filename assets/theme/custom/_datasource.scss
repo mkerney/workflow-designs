@@ -1,0 +1,138 @@
+.datasource-details-wrapper{
+    .total-users-wrapper{
+        padding: 15px;
+        background-color: $totaluser_bg;
+        border-bottom: 1px solid $grey_1;
+        > ul{
+            li{
+                &:not(:last-child){
+                    padding-right: 25px;
+                }
+                > div{
+                    p{
+                        font-weight: bold;
+                    }
+                    span{
+                        font-size: 35px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .usermanagement-data{
+        padding: 30px 15px;
+        .management-header{
+            >.content-wrapper-pills{
+                border-bottom: 1px solid $grey_1;
+                > li{
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &.active{
+                        a{
+                            &:after{
+
+                            }
+                        }
+                    }
+                    a{
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 10px 0;
+                        padding-left: 25px;
+                        display: block;
+                        &:after{
+                            position: absolute;
+                            left: 0;
+                            bottom: -7px;
+                        }
+                        i{
+                            position: absolute;
+                            left: 0;
+                            font-size: 20px;
+                            top: 12px;
+                        }
+                        .span{
+
+                        }
+                    }
+                }
+            }
+        }
+        .management-body{
+            .data-table-wrapper{
+                .management-data{
+                    margin-top: 50px;
+                    position: relative;
+                    .data-table-accessories{
+                        > div{
+                            display: inline-block;
+                            &.organisation{
+                                position: absolute;
+                                top: -30px;
+                                left: 0;
+                                font-size: 12px;
+                                font-weight: bold;
+                                .organisation-data{
+                                    margin-right: 40px;
+                                }
+                                .key-text{
+                                    color: $grey_11;
+                                }
+                                .value-text{
+                                    color: $blue_5;
+                                }
+                            }
+                            &.new-user-content{
+                                position: absolute;
+                                top: -40px;
+                                right: 0;
+                                > a{
+                                    color: white;
+                                    font-size: 12px;
+                                    background-color: #325c80;
+                                    padding: 6px 12px;
+                                    display: inline-block;
+                                    &:not(:last-child){
+                                        margin-right: 20px;
+                                    }
+                                    &:hover,&:focus{
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            > div{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    #DataTables_Table_0_filter{
+                        position: absolute;
+                        right: 300px;
+                        top: -40px;
+                    }
+                    .database-types-wrapper{
+                        .data-base-types{
+                            background-color: $slate_1;
+                            padding: 20px 15px;
+                            margin-bottom: 20px;
+                            h3{
+                                color: $blue_5;
+                                margin: 0 0 10px;
+                                font-size: 21px;
+                                font-family: $francoisone-regular;
+                            }
+                            p{
+                                color: $grey_text;
+                                margin: 0;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

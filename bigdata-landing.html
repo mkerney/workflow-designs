@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Work Flow</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <!--        <link rel="stylesheet" type="text/css" href="assets/Progresspie/css/ProgressPie.css"> 
+                <link rel="stylesheet" type="text/css" href="assets/WorldMap/css/Worldmap.css">
+                <link rel="stylesheet" type="text/css" href="assets/linechartwith-tooltip/css/linetoolcss.css">-->
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="big-data-modal">
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="subheader-wrapper">
+            <div class="container-fluid">
+                <h4>Management Hub</h4>
+                <a href="javascript:void(0);">Workflow</a>
+                <span class="fa fa-angle-right"></span>
+                <a href="javascript:void(0);">Bigdata Process</a>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper">
+            <!--  Content Wrapper Starts  -->
+            <div class="content-wrapper">
+                <div class="toolbar-wrapper">
+                    <div class="toolbar-icons">
+                        <ul class="list-unstyled toolbar-icons-list">
+                            <li>
+                                <a class="" href="javascript:void(0);">
+                                    <i class="fa fa-road"></i>
+                                </a>
+                                <div class="source-list">
+                                    <h5 class="text-uppercase">Data Sources</h5>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0);">
+                                    <i class="fa fa-crop"></i>
+                                </a>
+                                <div class="source-list">
+                                    <h5 class="text-uppercase">Data Sources</h5>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0);">
+                                    <i class="fa fa-th"></i>
+                                </a>
+                                <div class="source-list">
+                                    <h5 class="text-uppercase">Data Sources</h5>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0);">
+                                    <i class="fa fa-futbol-o"></i>
+                                </a>
+                                <div class="source-list">
+                                    <h5 class="text-uppercase">Data Sources</h5>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="javascript:void(0);">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                                <div class="source-list">
+                                    <h5 class="text-uppercase">Data Sources</h5>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-umbrella"></i></span>
+                                                <p class="text-uppercase">HDFS</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-cubes"></i></span>
+                                                <p class="text-uppercase">KAFKA</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <span><i class="fa fa-graduation-cap"></i></span>
+                                                <p class="text-uppercase">CASSANDRA</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="data-flow-wrapper">
+                    <div class="drag-drop-wrapper">
+                        <a href="javascript:void(0);" class="clearfix" data-toggle="modal" data-target="#hdfsProperties">
+                            Click here to get Modal.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  Content Wrapper Ends  -->
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- Details Modal Wrapper Starts  -->
+        <div id="hdfsProperties" class="modal fade properties-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="modal-title">
+                            <h5 class="text-uppercase">Properties</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form id="hdfsDataSource">
+                            <div class="property-type">
+                                <p class="text-uppercase">HDFS SOURCE</p>
+                                <p class="text-uppercase">TYPE: DATA SOURCE</p>
+                                <a class="btn btn-default" href="javascript:void(0);">SAVE</a>
+                            </div>
+                            <div class="user-properties">
+                                <p class="text-uppercase">
+                                    USERS <a href="javascript:void(0);"><i class="fa fa-pencil"></i></a>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile">PROFILE</label>
+                                <select class="form-control" id="profile">
+                                    <option>PLATTEST</option>
+                                    <option>PLATTEST_1</option>
+                                    <option>PLATTEST_2</option>
+                                    <option>PLATTEST_3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="host">HOST</label>
+                                <input type="text" class="form-control" id="host" placeholder="LOCAL HOST">
+                            </div>
+                            <div class="form-group">
+                                <label for="port">PORT</label>
+                                <input type="text" class="form-control" id="port" placeholder="8020">
+                            </div>
+                            <div class="marked-files-wrapper clearfix">
+                                <p class="clearfix">
+                                    NO OF MARKED FILE : 1
+                                    <a href="javascript:void(0);" class="btn btn-default pull-right">BROWSE</a>
+                                </p>
+                                <a href="javascript:void(0);" class="btn btn-default pull-right">DISCOVER DATA</a>
+                            </div>
+                            <div class="form-group">
+                                <label for="splitter">SPLITTER</label>
+                                <select class="form-control" id="splitter">
+                                    <option>TAB/T</option>
+                                    <option>COMMA ,</option>
+                                    <option>FORWARD SLASH /</option>
+                                    <option>SEMI-COLON ;</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>SCHEMA</label>
+                                <div class="checkbox-wrapper">
+                                    <div class="custom-radio">
+                                        <label class="radio-inline">
+                                            <input class="warmup" id="warmup-selector" type="radio" checked  name="checkbox-radio" value=""/>
+                                            <span>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                            USE HEADERLINE
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <label class="radio-inline">
+                                            <input class="podium" id="podiumSelector" type="radio" name="checkbox-radio" value=""/>
+                                            <span>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                            UPLOAD
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Details Modal Wrapper Ends  -->
+
+        <!-- jQuery Js --><script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-3.1.1.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/WorldMap/js/WorldChart.js"></script>
+        <script src="assets/WorldMap/js/topojson.min.js"></script>
+        <script src="assets/WorldMap/js/script.js"></script>
+        <script src="assets/Progresspie/js/ProgressPie.js"></script>
+        <script src="assets/Progresspie/js/script.js"></script>
+        <script src="assets/linechartwith-tooltip/js/script.js"></script>
+        <script src="assets/linechartwith-tooltip/js/linetooljs.js"></script>
+        <script src="assets/Progress/js/Progressbar.js"></script>
+        <script src="assets/Progress/js/script.js"></script>
+        <!--   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        -->
+
+    </body>
+</html>

@@ -1,0 +1,146 @@
+/*--  Company Profile Modal Styles  --*/
+.details-modal-wrapper{
+    .modal-content{
+        background-color: $grey_bg;
+    }
+    .modal-header{
+        border: 0;
+        position: relative;
+        padding-right: 130px;
+        padding-bottom: 0;
+        .close{
+            top: 10px;
+            right: 15px;
+            color: $light_grey;
+            opacity: 1;
+            position: absolute;
+            font-size: 35px;
+            line-height: 35px;
+            text-shadow: none;
+        }
+        .modal-title{
+            .name{
+                display: inline-block;
+                font-size: 25px;
+                font-family: $roboto_medium;
+                text-transform: uppercase;
+            }
+            .rating{
+                float: right;
+                margin-top: 5px;
+                ul{
+                    margin: 0 90px 0 0;
+                }
+            }
+        }
+        .domain{
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .risk-score{
+            top: 20px;
+            right: 40px;
+            position: absolute;
+            div{
+                color: $light_blue;
+                font-size: 36px;
+                line-height: 36px;
+                text-align: right;
+                span{
+                    color: $light_grey;
+                    display: inline-block;
+                    margin: 0;
+                    font-size: 36px;
+                    line-height: 36px;
+                }
+            }
+            span{
+                color: $light_grey;
+                text-transform: uppercase;
+                display: inline-block;
+                margin: 0 30px 0 0;
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+    }
+    .modal-body{
+        .description{
+            font-size: 13px;
+            margin: 0 0 20px;
+        }
+    }
+    .details-list{
+        font-family: $roboto_medium;
+        li{
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            span{
+                top: -5px;
+                left: 0;
+                display: inline-block;
+                position: absolute;
+                text-align: center;
+                background-color: $light_grey;
+                @include circle(35px);
+                i{
+                    font-size: 18px;
+                    line-height: 35px;
+                }
+                .img-building{
+                    margin: 8px auto;
+                    width: 15px;
+                }
+                .img-security{
+                    margin: 10px auto;
+                    width: 20px;
+                }
+                .img-designation{
+                    margin: 8px auto;
+                    width: 18px;
+                }
+                &.recent-news{
+                    i{
+                        line-height: 40px;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color: #8b9fa8;
+                &:hover,&:focus{
+                    color: #8b9fa8;
+                }
+            }
+            div{
+                font-size: 13px;
+                font-family: $roboto_medium;
+            }
+        }
+    }
+}
+
+@media(min-width:300px) and (max-width: 767px){
+    .details-modal-wrapper{
+        .modal-header{
+            .modal-title{
+                .name{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+@media(min-width:300px) and (max-width: 480px){
+.details-modal-wrapper{
+        .modal-header{
+            .modal-title{
+                .name{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

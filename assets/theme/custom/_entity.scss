@@ -1,0 +1,59 @@
+.entity-page{
+    .content-wrapper{
+        .profile-details{
+            .media-left{
+                img{
+                    border: 5px solid $grey;
+                    @include border-radius(50%);
+                }
+            }
+        }
+        .domain-wrapper{
+            > ul{
+                > li{
+                    &:first-child{
+                        border-right: 1px solid $grey_text;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .role-summary{
+            img{
+                width: 100%;
+                margin: 0 auto 15px;
+                max-width: 150px;
+            }
+            .media-heading{
+                .info-panel-title{
+                    margin-bottom: 10px;
+                }
+            }
+            .domain-wrapper{
+                margin: 10px 0;
+            }
+        }
+        .pro-info{
+            h5{
+                color: $light_grey_text;
+                margin: 0 0 10px;
+                font-size: 12px;
+                line-height: 18px;
+                font-family: $roboto_medium;
+                text-transform: uppercase;
+            }
+            .flags{
+                a{
+                    display: inline-block;
+                    max-width: 50px;
+                    &:first-child{
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .icon-list{
+                float: none;
+            }
+        }
+    }
+}

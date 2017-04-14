@@ -1,0 +1,98 @@
+body {
+    /*font-family: "Robota";*/
+    font-size: 12px;
+    background-color: #354851;
+
+}
+.bstheme_g-num {
+    fill:#4294D9;
+}
+
+.bstheme_g-num2 {
+    fill:#596D76;
+}
+
+.bstheme_xaxis line, .bstheme_yaxis line {
+    display: none;
+}
+
+.bstheme_xaxis text {
+    display: none;
+}
+
+.domain {
+    display: none;
+}
+
+.bstheme_yaxis text {
+    position: absolute;
+    font-family: 'Robota', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-anchor: end !important;
+    fill: #CCCCCC;
+}
+
+.bstheme_xaxis text
+{
+    position: absolute;
+    fill: #CCCCCC;
+}
+
+.g-category-group.g-label-group text
+{
+    position: absolute;
+    fill:red;
+}
+.g-label-group 
+{
+    position:absolute;
+    width: 30px;
+
+}
+
+
+.bstheme1_graphBox{
+    margin: auto;
+    /* border:1px solid rgba(158, 158, 158, 0.56);*/
+    /*    background-color: #283C45;*/
+    width: 100%;
+
+    left: -53px;
+    top: -141px;
+    /*overflow: hidden;*/
+    position: relative;
+    height: 100%;
+}
+
+text.g-labels{
+    fill:red;
+}
+
+/*.bstheme1_graphBox
+ {
+     margin: auto;
+   border:1px solid rgba(158, 158, 158, 0.56);
+   background-color: #283C45;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+   overflow: hidden;
+   position: relative;
+   height: 266px;}
+   }*/
+
+
+/*.bstheme_chartContentDiv
+{
+  position: absolute;
+  top: 218PX;
+}
+.bstheme_chartContainer1
+{
+  position: relative;
+}
+#column_chart_div1{
+  position: relative;
+ height: 106px;
+}*/

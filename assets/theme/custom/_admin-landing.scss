@@ -1,0 +1,79 @@
+.content-wrapper{
+    .welcome-hub-wrapper{
+        h2{
+            color: $search_btm; 
+            margin: 60px 0 30px;
+        }
+        .welcome-search{
+            width: 450px;
+            margin: 0 auto 50px;
+            .form-group{
+                position: relative;
+            }
+            .fa{
+                bottom: 6px;
+                color: $blue;
+                position: absolute;
+                &.fa-search{
+                    right: 0; 
+                    font-size: 20px;
+                    color: $slate_3;
+                    @include rotate(90deg);
+                }
+                &.fa-angle-down{ 
+                    right: 0;
+                    font-size: 30px;
+                    line-height: 15px; 
+                }
+            }
+            input{
+                color: #ccc;
+                border: 0;
+                height: 30px;
+                padding: 10px 25px 10px 3px;
+                min-width: 240px;
+                background: transparent;
+                border-bottom: 1px solid $slate_2;
+                @include border-radius(0);
+                @include box-shadow(none);
+                &:focus{
+                    @include box-shadow(none);
+                }
+            }
+            .btn{
+                color: $dark_grey;
+                outline: none;
+                padding: 0;  
+                font-weight: 600;
+                margin-left: 20px;
+                vertical-align: bottom;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+        .hub-list-wrapper{
+            padding: 50px 0;
+            .hub-list{
+                display: inline-block;
+                min-height: 200px;
+                max-width: 225px;
+                i{
+                    color: $blue_3;
+                    font-size: 50px;
+                }
+                h5{
+                    color: $light_blue_2;
+                    margin: 20px 0;
+                    font-weight: bold;
+                }
+                p{
+                    color: $slate_5;
+                    font-weight: bold;
+                }
+                &:hover,&:focus,&:active{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

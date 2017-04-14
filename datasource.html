@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Work Flow | Data Source</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="custom-modal-drop">
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="subheader-wrapper">
+            <div class="container-fluid">
+                <h6>Management Hub</h6>
+                <h4>Data Management</h4>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper">
+            <!--  Content Wrapper Starts  -->
+            <div class="content-wrapper">
+                <div class="datasource-details-wrapper">
+                    <div class="total-users-wrapper">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="total-users text-center">
+                                    <p class="text-uppercase">Sources</p>
+                                    <span>28</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-organisation text-center">
+                                    <p class="text-uppercase">Source Type</p>
+                                    <span>04</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-organisation-ratio text-center">
+                                    <p class="text-uppercase">Data Base Type</p>
+                                    <span>17</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-rolewise-ratio text-center">
+                                    <p class="text-uppercase">Source type ratio</p>
+                                    <img src="assets/images/donut.png" alt="donut"/>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="usermanagement-data">
+                        <div class="management-header">
+                            <ul class="content-wrapper-pills clearfix">
+                                <li class="active">
+                                    <a class="management-tabs" data-toggle="pill" href="#dataSources" >
+                                        <i class="fa fa-pie-chart"></i>
+                                        <span class="text-uppercase">Data Sources</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#databaseTypes">
+                                        <i class="fa fa-database"></i>
+                                        <span class="text-uppercase">Database types</span>
+                                    </a>
+                                </li>
+                                <li>
+                            </ul>
+                        </div>
+                        <div class="management-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="dataSources">
+                                    <div class="data-table-wrapper">
+                                        <div class="management-data" id="managementData">
+                                            <div class="data-table-accessories">
+                                                <div class="organisation">
+                                                    <div class="viewby-data">
+                                                        <span class="key-text text-uppercase">View By :</span>
+                                                        <span class="value-text text-uppercase"> Recently Added</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="new-user-content">
+                                                    <a class="" href="javascript:void(0);" data-toggle="modal" data-target="#createDB">
+                                                        <i class="fa fa-plus"></i>
+                                                        <span>ADD SOURCE</span>
+                                                    </a>
+                                                    <a class="" href="javascript:void(0);">
+                                                        <i class="fa fa-sign-out"></i>
+                                                        <span>EXPORT</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="databaseTypes">
+                                    <div class="data-table-wrapper">
+                                        <div class="management-data">
+                                            <div class="data-table-accessories">
+                                                <div class="organisation">
+                                                    <div class="viewby-data">
+                                                        <span class="key-text text-uppercase">View By :</span>
+                                                        <span class="value-text text-uppercase"> Recently Added</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="new-user-content">
+                                                    <a class="" href="javascript:void(0);">
+                                                        <i class="fa fa-plus"></i>
+                                                        <span>ADD DATABASE</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="database-types-wrapper">
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Data Warehouse</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Nosql</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Graph</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Rdbms</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Big Data</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Columnar</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Files</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Media</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">Open Source</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">In Rest</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="data-base-types">
+                                                            <h3 class="text-uppercase">In Motion</h3>
+                                                            <p>
+                                                                A database management system (DBMS) is a computer software application 
+                                                                that interacts with the user, other applications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Content Wrapper Ends  -->
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- Details Modal Wrapper Starts  -->
+        <div id="createDB" class="modal fade database-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <form id="addNewUser">
+                    <div class="modal-content">
+                        <div class="modal-header clearfix">
+                            <div class="add-user-submit">
+                                <button type="button" class="cancel" data-dismiss="modal" aria-label="Close">
+                                    <span class="text-uppercase">cancel</span>
+                                </button>
+                                <button type="submit" class="custom-submit" >
+                                    <span class="text-uppercase">save</span>
+                                </button>
+                            </div>
+                            <div class="modal-title">
+                                <!--<span><i class="fa fa-plus"></i></span>-->
+                                <p class="text-uppercase">New data source</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="adddb-stages">
+                                <ul class="list-inline clearfix">
+                                    <li>
+                                        <a class="text-uppercase list-arrow select-source" href="javascript:void(0);">
+                                            Select Source
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase list-arrow staging" href="javascript:void(0);">
+                                            Staging
+                                        </a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                            <div class="clearfix form-stages">
+                                <div class="col-sm-7">
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="name">Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="sourceType">Source Type</label>
+                                        <div class="col-sm-8">
+                                            <select  class="form-control text-uppercase" id="sourceType">
+                                                <option class="text-uppercase">select</option>
+                                                <option class="text-uppercase">Data Warehouse</option>
+                                                <option class="text-uppercase">GRAPH</option>
+                                                <option class="text-uppercase">BIG DATA</option>
+                                                <option class="text-uppercase">FILES</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Details Modal Wrapper Ends  -->
+
+        <!-- jQuery Js --><script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-3.1.1.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/datasource.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            table();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+
+
+.pietext{
+  font-family: "Roboto";
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 10rem;
+  fill: #8B9FA8;
+}
+
+.donut {
+    width: 29rem;
+    height: 29rem;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    left: 43px;
+    top: -19px;
+    position: relative;
+}
+path.color0 {
+  fill: #4294D9;
+}
+
+path.color1 {
+  fill: #596D76;
+}

@@ -1,0 +1,38 @@
+ body {
+    font-family: "Robota";
+    font-size: 10px;
+    background-color: #354851;
+  }
+  .bstheme_g-num {
+    fill:#4294D9;
+  }
+
+   .bstheme_g-num2 {
+     fill:#596D76;
+  }
+
+  .bstheme_xaxis line, .bstheme_yaxis line {
+    display: none;
+  }
+
+  .bstheme_xaxis text {
+    display: none;
+  }
+
+  .domain {
+    display: none;
+  }
+
+  .bstheme_yaxis text {
+    position: absolute;
+    font-family: 'Robota', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-anchor: end !important;
+    fill: #CCCCCC;
+  }
+
+  .g-label-group text
+  {
+    position: absolute;
+  }

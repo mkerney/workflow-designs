@@ -1,0 +1,25 @@
+[{
+	"category": "FINANCE",
+	"num": 22,
+	"num2": 100
+}, {
+	"category": "MARKETING",
+	"num": 38,
+	"num2": 100
+}, {
+	"category": "BANKING",
+	"num": 43,
+	"num2": 100
+}, {
+	"category": "EQUITIES",
+	"num": 73,
+	"num2": 100
+}, {
+	"category": "FOREX",
+	"num": 86,
+	"num2": 100
+}, {
+	"category": "FOOD",
+	"num": 86,
+	"num2": 100
+}]

@@ -1,0 +1,124 @@
+/*--  Sidebar Styles  --*/
+.right-sidebar{
+    padding: 25px 20px;
+    background-color: $sidebar_bg;
+    img{
+        margin: 0 auto;
+        display: block;
+    }
+    .sidebar-panel{
+        margin-bottom: 40px;
+        .sidebar-panel-title{
+            color: $light_blue;
+            margin: 0 0 15px;
+            font-size: 18px;
+            font-family: $roboto_medium;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            &.subtitle{
+                font-size: 12px;
+            }
+        }
+    }
+    .trend{
+        font-family: $roboto_medium;
+        text-transform: uppercase;
+        .time{
+            font-size: 14px;
+        }
+        .price{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .usd{
+            font-size: 24px;
+            small{
+                font-size: 14px;
+            }
+            .green{
+                color: $green;
+                margin-left: 20px;
+            }
+            small{
+                &:last-of-type{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .hrs{
+            color: 7c868a;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    }
+    .reviews{
+        .rate{
+            font-size: 14px;
+            font-family: $roboto_medium;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            .rating{
+                margin-left: 10px;
+            }
+        }
+        .record{
+            font-size: 12px;
+            font-family: $roboto_medium;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        p{
+            color: #7c8f98;
+            font-size: 12px;
+            font-style: italic;
+            &:last-of-type{
+                margin-bottom: 20px;
+            }
+            span{
+                font-style: normal;
+                font-family: $roboto_medium;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .trust{
+        .media-left{
+            img{
+                border: 3px solid $grey;
+                @include circle(60px);
+            }
+        }
+    }
+
+    .activity-level{
+        h4{
+            margin: 0 0 10px;
+            font-size: 16px;
+            font-family: "Roboto Medium";
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .profile{
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            &:last-of-type{
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/*--  Media Styles  --*/
+@media(min-width: 768px) and (max-width: 991px){
+    .right-sidebar{
+        .trend{
+            .usd{
+                font-size: 18px;
+                .green{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

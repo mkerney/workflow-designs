@@ -1,0 +1,71 @@
+body{
+    &.big-data-modal{
+        > .modal-backdrop{
+            &.fade{
+                &.in{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    &.custom-modal-drop{
+        > .modal-backdrop{
+            background-color: $custom-modal-bg;
+            &.fade{
+                &.in{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    &.entity-modal{
+        .modal-content{
+            @include border-radius(0);
+        }
+        .modal-header{
+            padding: 15px 25px;
+        }
+        .modal-body{
+            padding: 15px 25px;
+            .info-panel{
+                padding: 0;
+                .info-panel-title{
+                    margin: 0 0 20px;
+                    font-size: 13px;
+                    font-family: $roboto_medium;
+                    text-transform: uppercase;
+                }
+                .info-panel-footer{
+                    margin-top: 20px;
+                    text-align: right;
+                }
+            }
+            .leader{
+                margin: 8px 0;
+                padding: 15px 0 15px 70px;
+                position: relative;
+                font-family: $roboto_medium;
+                text-transform: uppercase;
+                h4{
+                    margin: 0 0 5px 0;
+                    font-size: 12px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 10px;
+                }
+                img{
+                    top: 50%;
+                    left: 0;
+                    border: 3px solid $grey;
+                    position: absolute;
+                    @include circle(60px);
+                    @include translate(0, -50%);
+                }
+            }
+        }
+    }
+    > .world_map_tooltip{
+        display: none;
+    }
+}
