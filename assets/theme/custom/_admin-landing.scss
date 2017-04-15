@@ -1,8 +1,9 @@
 .content-wrapper{
     .welcome-hub-wrapper{
         h2{
-            color: $search_btm; 
+            color: $landing-heading; 
             margin: 60px 0 30px;
+            font-size: 30px;
         }
         .welcome-search{
             width: 450px;
@@ -20,14 +21,9 @@
                     color: $slate_3;
                     @include rotate(90deg);
                 }
-                &.fa-angle-down{ 
-                    right: 0;
-                    font-size: 30px;
-                    line-height: 15px; 
-                }
             }
             input{
-                color: #ccc;
+                color: $landing-search-placeholder;
                 border: 0;
                 height: 30px;
                 padding: 10px 25px 10px 3px;
@@ -64,11 +60,11 @@
                 h5{
                     color: $light_blue_2;
                     margin: 20px 0;
-                    font-weight: bold;
+                    font-size: 14px;
                 }
                 p{
-                    color: $slate_5;
-                    font-weight: bold;
+                    color: $landing-para-text;
+                    font-size: 11px;
                 }
                 &:hover,&:focus,&:active{
                     text-decoration: none;

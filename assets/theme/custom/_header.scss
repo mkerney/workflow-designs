@@ -4,7 +4,8 @@
     min-height: inital;
     background-color: $header_bg ;
     .navbar-brand{
-        padding: 10px 15px;
+        height: 60px;
+        padding: 16px 15px;
         max-width: 150px;
     }
     .navbar-toggle{
@@ -18,21 +19,23 @@
         }
     }   
     .navbar-form{
+        margin-top: 10px;
+        margin-bottom: 10px;
         .form-group{
             position: relative;
         }
         .fa{
             bottom: 6px;
-            color: $blue;
+            color: $advanced-search-icons;
             position: absolute;
             &.fa-search{
                 left: 0; 
                 font-size: 20px;
                 @include rotate(90deg);
             }
-            &.fa-angle-down{ 
+            &.fa-chevron-down{ 
                 right: 0;
-                font-size: 30px;
+                font-size: 20px;
                 line-height: 15px; 
             }
         }
@@ -43,7 +46,7 @@
             padding: 5px 25px;
             min-width: 240px;
             background: transparent;
-            border-bottom: 1px solid $search_btm;
+            border-bottom: 1px solid $advanced-search-border;
             @include border-radius(0);
             @include box-shadow(none);
             &:focus{
@@ -51,10 +54,11 @@
             }
         }
         .btn{
-            color: $dark_grey;
+            color: $advanced-search;
+            font-size: 11px;
             outline: none;
             padding: 0;  
-            font-weight: 600;
+            font-weight: 400;
             margin-left: 20px;
             vertical-align: bottom;
             text-transform: uppercase;
@@ -64,25 +68,28 @@
     .navbar-nav{
         >li{
             >a{
-                color: #fff;
-                padding: 15px 10px;
-                font-weight: 600;
+                color: $navbar-text;
+                padding: 20px 20px 20px 22px;
+                font-weight: 400;
+                font-size: 12px;
                 text-transform: uppercase;
                 background-color: transparent;
+                position: relative;
                 @include transition(0.3s all ease-in-out);
                 &:hover{
-                    color: #315c7f;
+                    color: $navbar-icons;
                 }
                 &:focus{
-                    color: #fff;
+                    color: $navbar-text;
                 }
                 .fa{
-                    color: #315c7f;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    color: $navbar-icons;
                     font-size: 18px;
                     display: inline-block;
                     margin-right: 5px;
-                    vertical-align: middle;
-
                 }
             }
             &.active{
@@ -92,27 +99,28 @@
             }
             &.profile{
                 a{
-                    padding: 12px 55px 12px 15px;
+                    padding: 16px 62px 16px 16px;
                     position: relative;
                 }
                 span{
                     display: block;
                     font-weight: 600;
-                    line-height: 13px;
+                    line-height: 14px;
                     &:first-of-type{
                         color: $blue;
                         text-align: right;
                     }
                     &:last-of-type{
                         color: $slate_3;
-                        font-size: 10px;
+                        font-size: 11px;
+                        text-transform: none;
                     }
                 }
                 img{
                     position: absolute;
-                    max-width: 40px;
+                    max-width: 46px;
                     right: 10px;
-                    top: 6px;
+                    top: 8px;
                 }
             }
         }
@@ -123,17 +131,20 @@
     color: $white;
     padding: 15px 0;
     font-weight: 600;
-    background-color: $subheader_bg;
+    background-color: $subhead-bg;
     h4{
         text-transform: uppercase;
         margin: 0;
-        font-family: $roboto_medium;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 20px;
     }
     h6{
         text-transform: uppercase;
         margin: 0;
-        font-family: $roboto_medium;
+        font-size: 14px;
         color: $subheader-h6;
+        line-height: 16px;
     }
     a{
         color: $white;

@@ -4,7 +4,7 @@
         margin: 50px auto;
         .modal-content{
             @include border-radius(0);
-            background-color: $modal-bg-color;
+            background-color: $rightsidebar;
             box-shadow: none;
             .modal-header{
                 padding: 30px 30px;
@@ -14,26 +14,26 @@
                     display: inline-block;
                     float: right;
                     .cancel{
-                        color: $slate_7;
+                        color: $modal-title-text;
                         opacity: 1;
                         text-shadow: none;
-                        padding: 6px 12px;
-                        background-color: $grey_6;
+                        padding: 8px 12px;
+                        background-color: $modal-cancel-bg;
                         border: 0;
-                        font-size: 14px;
+                        font-size: 12px;
                         margin-right: 10px;
                         &:hover,&:focus{
                             outline: none;
                         }
                     }
                     .custom-submit{
-                        color: $slate_7;
+                        color: $modal-title-text;
                         opacity: 1;
                         text-shadow: none;
-                        padding: 6px 16px;
-                        background-color: $blue_4;
+                        padding: 8px 16px;
+                        background-color: $blue_5;
                         border: 0;
-                        font-size: 14px;
+                        font-size: 12px;
                         @include border-radius(0);
                         &:hover,&:focus{
                             outline: none;
@@ -58,14 +58,15 @@
                         @include border-radius(50%);
                         i{
                             color: $modal-bg-color;
-                            font-size: 25px;
+                            font-size: 22px;
                         }
                     }
                     p{
                         margin: 0;
                         display: inline-block;
                         font-size: 18px;
-                        color: $slate_7;
+                        color: $modal-title-text;
+                        font-family: $roboto_regular;
                     }
                 }
             }
@@ -76,31 +77,36 @@
                         margin : 0;
                         border-bottom: 1px solid $grey_6;
                         > li{
+                            &.active{
+                                a{
+                                    color: $modal-title-text;
+                                }
+                            }
                             float: left;
                             padding: 0;
                             > a{
                                 padding: 10px 16px;
-                                color: $slate_7;
+                                color: $arrow-text-color;
                                 border: 0;
                                 font-size: 12px;
                                 display: block;
                                 @include border-radius(0);
                                 position: relative;
                                 &:hover,&:focus{
-                                    color: $slate_7;
+                                    color: $modal-title-text;
                                     text-decoration: none;
                                 }
                                 &:after{
                                     position: absolute;
-                                    right: -21px;
-                                    top: -14px;
+                                    right: -20px;
+                                    top: -13px;
                                     content: "\f0da";
                                     display: inline-block;
                                     font: normal normal normal 14px/1 FontAwesome;
                                     font-size: inherit;
                                     -webkit-font-smoothing: antialiased;
                                     -moz-osx-font-smoothing: grayscale;
-                                    font-size: 65px;
+                                    font-size: 61px;
                                     z-index: 1;
                                 }
                                 &.personal{
@@ -134,6 +140,9 @@
                     .form-group{
                         label{
                             padding-top: 6px;
+                            font-size: 12px;
+                            color: $arrow-text-color;
+                            
                         }
                         select, input{
                             height: 22px;
@@ -143,9 +152,12 @@
                             box-shadow: none;
                             line-height: 14px;
                             color: $grey_text;
-                            border-bottom: 1px solid $subheader_bg;
+                            border-bottom: 1px solid $advanced-search-border;
                             background-color: transparent !important;
                             @include border-radius(0);
+                            > option{
+                                background-color: $screen_bg;
+                            }
                         }
                     }
                     .image-upload-wrapper{
@@ -166,7 +178,7 @@
                                 padding: 10px;
                                 display: inline-block;
                                 font-size: 14px;
-                                color: $subheader_bg;
+                                color: $advanced-search-border;
                                 label{
                                     font-weight: normal;
                                 }

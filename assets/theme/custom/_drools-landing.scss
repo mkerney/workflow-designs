@@ -1,21 +1,22 @@
 .droolswb-details-wrapper{
     .total-users-wrapper{
         padding: 15px;
-        background-color: $totaluser_bg;
-        border-bottom: 1px solid $grey_1;
+        background-color: $total-users-bg;
+        border-bottom: 1px solid $total-users-border;
         > ul{
-            margin-bottom: 0;
+            margin: 0;
             li{
                 &:not(:last-child){
-                    padding-right: 50px;
+                    padding-right: 25px;
                 }
                 > div{
+                    color: $total-users-text;
                     p{
-                        font-weight: bold;
+                        font-size: 14px;
                     }
                     span{
-                        font-size: 35px;
-                        line-height: 14px;
+                        font-size: 36px;
+                        line-height: 36px;
                     }
                 }
             }
@@ -30,17 +31,15 @@
             min-height: 140px;
             display: block;
             h3{
-                color: $blue_5;
+                color: $datatype-head;
                 margin: 0 0 30px;
-                font-size: 20px;
-                font-weight: bold;
-                /*font-family: $francoisone-regular;*/
+                font-size: 18px;
             }
             p{
-                color: $grey_text;
+                color: $datatype-color;
                 margin: 0;
                 font-size: 11px;
-                font-weight: bold;
+                /*font-weight: bold;*/
             }
         }
     }

@@ -45,7 +45,7 @@
                         p{
                             color: $blue_2;
                             margin: 0;
-                            font-weight: bold;
+                            /*font-weight: bold;*/
                         }
                         > a{
                             position: absolute;
@@ -125,7 +125,7 @@
                             .radio-inline{
                                 font-size: 10px;
                                 color    : $custom-radio-text;
-                                font-weight: bold;
+                                /*font-weight: bold;*/
                                 input[type="radio"]{
                                     &:checked {
                                         +  span{

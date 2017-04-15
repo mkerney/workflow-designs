@@ -1,8 +1,46 @@
 /*--  Font Veriables  --*/
 $roboto                     :   "Roboto";
 $roboto_light               :   "Roboto Light";
+$roboto_regular             :   "Roboto Regular";
 $roboto_medium              :   "Roboto Medium";
 $francoisone-regular        :   "Francois One Regular";
+
+
+/*HEADER COLORS*/
+$advanced-search            :   #576c73;
+$advanced-search-icons      :   #2d3f49;
+$advanced-search-border     :   #257870;
+$navbar-text                :   #cecece;
+$navbar-icons               :   #325c80;
+
+/*SUB-HEADER COLORS*/
+$subhead-bg                 :   #158679;
+$subheader-h6               :   #52d1c2;
+
+/*TOTAL USER COLORS*/
+$total-users-bg             :   #2d444f;
+$total-users-text           :   #8e999e;
+$total-users-border         :   #364b55;
+
+/*TABPILL COLORS*/
+$tab-active-color           :   #4676a0;
+$tab-border-color           :   #394c54;
+$tab-border-after           :   #41565f;
+
+/*TABLE ACCESORIES COLORS*/
+$key-text                   :   #57646b;
+$add-button                 :   #d6e2e7;
+
+$landing-heading            :   #0f9584;
+$landing-search-placeholder :   #525f64;
+$landing-para-text          :   #809ba7;
+
+
+/*MODAL ACCESORIES COLORS*/
+$modal-title-text           :   #efeaea;
+$modal-cancel-bg            :   #566c76;
+$blue_5                     :   #4676a0;
+$arrow-text-color           :   #aeb2b4;
 
 /*--  Color Variables  --*/
 $white                      :   #ffffff;
@@ -11,7 +49,6 @@ $screen_bg                  :   #283C46;
 $header_bg                  :   #1a2734;
 $totaluser_bg               :   #2e434f;
 $subheader_bg               :   #0cb199;
-$subheader-h6               :   #51D0C2;
 $search_btm                 :   #0cb29a;
 $sidebar_bg                 :   #1e2f37;
 $grey_bg                    :   #283c45;
@@ -36,7 +73,6 @@ $blue_1                     :   #121D21;
 $blue_2                     :   #315b80;
 $blue_3                     :   #335B7E;
 $blue_4                     :   #4775a0;
-$blue_5                     :   #4676a0;
 $blue_6                     :   #3e78ae;
 $light_blue                 :   #4294d9; 
 $light_blue_2               :   #598FC0; 
@@ -73,3 +109,5 @@ $label-clr                  :   #90a4ad;
 $rightsidebar               :   #334d59;
 $sidebar-header             :   #377997;
 $header-icon                :   #cec2c2;
+$datatype-color             :   #879398;
+$datatype-head              :   #3d79ad;

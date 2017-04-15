@@ -1,20 +1,25 @@
 .admin-details-wrapper{
     .total-users-wrapper{
         padding: 15px;
-        background-color: $totaluser_bg;
-        border-bottom: 1px solid $grey_1;
+        background-color: $total-users-bg;
+        border-bottom: 1px solid $total-users-border;
         > ul{
+            margin: 0;
             li{
                 &:not(:last-child){
                     padding-right: 25px;
                 }
                 > div{
+                    color: $total-users-text;
                     p{
-                        font-weight: bold;
+                        font-size: 14px;
+                        &.graph{
+                            font-size: 11px;
+                        }
                     }
                     span{
-                        font-size: 35px;
-                        line-height: 14px;
+                        font-size: 36px;
+                        line-height: 36px;
                     }
                 }
             }
@@ -24,39 +29,28 @@
         padding: 30px 15px;
         .management-header{
             >.content-wrapper-pills{
-                border-bottom: 1px solid $grey_1;
+                border-bottom: 1px solid $tab-border-color;
                 > li{
                     padding: 4px 20px;
                     &:first-child{
                         padding-left: 0;
                     }
-                    &.active{
-                        a{
-                            &:after{
-
-                            }
-                        }
-                    }
                     a{
                         position: relative;
                         font-size: 18px;
-                        font-weight: bold;
                         padding: 10px 0;
                         padding-left: 25px;
                         display: block;
                         &:after{
                             position: absolute;
                             left: 0;
-                            bottom: -7px;
+                            bottom: -8px;
                         }
                         i{
                             position: absolute;
                             left: 0;
                             font-size: 20px;
-                            top: 12px;
-                        }
-                        .span{
-
+                            top: 6px;
                         }
                     }
                 }
@@ -65,36 +59,35 @@
         .management-body{
             .data-table-wrapper{
                 #managementData{
-                    margin-top: 50px;
+                    margin-top: 60px;
                     position: relative;
                     .data-table-accessories{
                         > div{
                             display: inline-block;
                             &.organisation{
                                 position: absolute;
-                                top: -30px;
+                                top: -36px;
                                 left: 0;
                                 font-size: 12px;
-                                font-weight: bold;
                                 .organisation-data{
                                     margin-right: 40px;
                                 }
                                 .key-text{
-                                    color: #5a676d;
+                                    color: $key-text;
                                 }
                                 .value-text{
-                                    color: #4676a0;
+                                    color: $tab-active-color;
                                 }
                             }
                             &.new-user-content{
                                 position: absolute;
-                                top: -40px;
+                                top: -45px;
                                 right: 0;
                                 > a{
-                                    color: white;
+                                    color: $add-button;
                                     font-size: 12px;
-                                    background-color: #325c80;
-                                    padding: 6px 12px;
+                                    background-color: $navbar-icons;
+                                    padding: 8px 12px;
                                     display: inline-block;
                                     &:not(:last-child){
                                         margin-right: 20px;
@@ -113,6 +106,25 @@
                         position: absolute;
                         right: 300px;
                         top: -40px;
+                    }
+                    table{
+                        thead{
+                            tr{
+                                th{
+                                    padding: 9px 18px;
+                                    border-bottom: 0;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td{
+                                    padding: 13px 18px;
+                                    border-bottom: 0;
+                                }
+                            }
+                        }
                     }
                 }
             }

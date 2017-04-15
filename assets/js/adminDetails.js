@@ -7,11 +7,11 @@ function table() {
         var randomSubstring = Math.floor(Math.random() * 10000000000);
         var tbl = "<div id ='pieChart_table_" +
                 randomSubstring +
-                "' style='width:100%;background-color:#283C45;color:#fff';><table class='table-striped' class='table table-condensed' style='width:100%;background-color:#283C45;color:#fff;'><thead class='text-uppercase'><tr><th>First Name</th><th>Last Name</th><th>Screen Name</th><th>Title</th><th>Group</th><th>Role</th><th>CREATE DATE</th><th>Actions</th></tr></thead><tbody>";
+                "' style='width:100%;font-weight:normal;background-color:#283c45;color:#c3cfd4';><table class='table-striped' class='table table-condensed' style='width:100%;background-color:#283C45;color:#c3cfd4;'><thead class='text-uppercase'><tr><th>First Name</th><th>Last Name</th><th>Screen Name</th><th>Title</th><th>Group</th><th>Role</th><th>CREATE DATE</th><th>Actions</th></tr></thead><tbody>";
         console.log(data);
         $.each(data, function (i, v) {
             console.log(v);
-            tbl = tbl + ("<tr style='width:100%;padding:5px;background-color:#283C45;color:#8b9fa8'><td>" +
+            tbl = tbl + ("<tr style='width:100%;padding:5px;background-color:#283C45;color:#828d92'><td>" +
                     (v.firstname.toUpperCase()) +
                     "</td><td>" +
                     v.lastname.toUpperCase() +
@@ -38,7 +38,7 @@ function table() {
             "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
                 if (iDisplayIndex % 2 == 1) {
                     //even color
-                    $('td', nRow).css('background-color', '#32464F');
+                    $('td', nRow).css('background-color', '#31464f');
                 } else {
                     $('td', nRow).css('background-color', '#283C45');
                 }

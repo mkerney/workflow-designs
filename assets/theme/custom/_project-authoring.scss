@@ -2,21 +2,22 @@
     position: relative;
     .total-users-wrapper{
         padding: 15px;
-        background-color: $totaluser_bg;
-        border-bottom: 1px solid $grey_1;
+        background-color: $total-users-bg;
+        border-bottom: 1px solid $total-users-border;
         > ul{
-            margin-bottom: 0;
+            margin: 0;
             li{
                 &:not(:last-child){
-                    padding-right: 50px;
+                    padding-right: 25px;
                 }
                 > div{
+                    color: $total-users-text;
                     p{
-                        font-weight: bold;
+                        font-size: 14px;
                     }
                     span{
-                        font-size: 35px;
-                        line-height: 14px;
+                        font-size: 36px;
+                        line-height: 36px;
                     }
                 }
             }
@@ -25,28 +26,29 @@
     .authoring-header-wrapper{
         padding: 15px 15px 0;
         .authoring-header-content{
-            padding-bottom: 9px;
+            padding-bottom: 8px;
             border-bottom: 1px solid $timeline-border;
             > a{
                 display: inline-block;
                 position: relative;
-                padding: 0 15px 0 24px;
+                padding: 0 15px 0 26px;
                 color: $blue_5;
+                line-height: 28px;
                 > i{
-                    font-size: 22px;
+                    font-size: 24px;
                     position: absolute;
-                    top: 0px;
+                    top: -1px;
                     left: 0;
                 }
                 > span{
                     font-size: 18px;
-                    font-weight: bold;
+
                 }
                 > small{
                     color: $grey_12;
                     position: absolute;
                     right: 0;
-                    top: -2px;
+                    top: -1px;
                     font-size: 28px;
                     line-height: 14px;
                 }
@@ -56,10 +58,9 @@
                 .management-header{
                     ul{
                         li{
-                            padding: 4px 10px;
+                            padding: 4px 7px;
                             a{
                                 font-size: 14px;
-                                font-weight: bold;
                                 position: relative;
                                 &:after{
                                     position: absolute;
@@ -137,19 +138,18 @@
                         position: relative;
                         color: $grey_7;
                         font-size: 12px;
-                        font-weight: bold;
                         display: block;
                         padding-right: 20px;
                         i{
                             color: $angle-fa;
                             position: absolute;
                             font-size: 18px;
-                            top: 2px;
+                            top: 0px;
                             line-height: 14px;
                             right: 3px
                         }
                         + ul{
-                            top: 28px;
+                            top: 25px;
                             border-radius: 0;
                             margin: 0;
                             border: 0;
@@ -177,16 +177,17 @@
                             border-bottom: 1px solid $timeline-border;
                             h5{
                                 font-size: 14px;
-                                font-weight: bold;
+                                color: $total-users-text;
                                 margin: 0;
                                 padding: 12px 0;
                             }
                             > ul{
                                 position: absolute;
                                 right: 10px;
-                                top: 7px;
+                                top: 10px;
                                 margin-bottom: 0;
                                 > li{
+                                    padding-right: 0;
                                     > a{
                                         color: $arrow-alt;
                                         font-size: 18px;
@@ -205,7 +206,7 @@
                                 > a{
                                     color: $blue_5;
                                     display: inline-block;
-                                    font-weight: bold;
+
                                     font-size: 12px;
                                     &:hover,&:focus{
                                         text-decoration: none;
@@ -217,7 +218,7 @@
                                 > a{
                                     color: $angle-fa;
                                     display: inline-block;
-                                    font-weight: bold;
+
                                     font-size: 11px;
                                     &:hover,&:focus{
                                         text-decoration: none;
@@ -249,12 +250,12 @@
                                             background-color: $toggle-bg;
                                             font-size: 13px;
                                             color: $blue_5;
-                                            font-weight: bold;
+
                                             position: relative;
                                             > .right-icon{
                                                 position: absolute;
                                                 right: 10px;
-                                                top: 7px;
+                                                top: 5px;
                                                 i{
                                                     font-size: 20px;
                                                     color: $angle-fa;
@@ -273,7 +274,7 @@
                                                         vertical-align: middle;
                                                         font-size: 12px;
                                                         display: block;
-                                                        font-weight: bold;
+
                                                         padding: 8px 10px;
                                                         @include transition(all 0.3s ease-in-out);
                                                         i{
@@ -303,7 +304,7 @@
                                 .decision-table-header-tag{
                                     h5{
                                         font-size: 14px;
-                                        font-weight: bold;
+                                        color: $total-users-text;
                                         margin: 0;
                                         padding: 12px 0;
                                         display: block;
@@ -335,10 +336,11 @@
                                 .decision-table-header-label{
                                     position: absolute;
                                     right: 100px;
-                                    top: 10px;
+                                    top: 11px;
                                     > ul{
                                         margin: 0;
                                         >li{
+                                            padding-right: 0;
                                             a{
                                                 background-color: $label-bg;
                                                 padding: 1px 10px;
@@ -346,10 +348,10 @@
                                                 border-radius: 15px;
                                                 vertical-align: middle;
                                                 display: block;
-                                                color: $label-clr;
-                                                font-weight: bold;
+                                                color: $total-users-text;
                                                 &:focus, &:hover{
                                                     text-decoration: none;
+                                                    color: $total-users-text;
 
                                                 }
                                             }
@@ -358,11 +360,12 @@
                                 }
                                 .decision-table-header-icons{
                                     position: absolute;
-                                    top: 5px;
+                                    top: 9px;
                                     right: 20px;
                                     > ul{
                                         margin: 0;
                                         > li{
+                                            padding-right: 0;
                                             a{
                                                 color: $arrow-alt;
                                                 font-size: 21px;
@@ -390,7 +393,7 @@
                                 .message-table-header-tag{
                                     h5{
                                         font-size: 14px;
-                                        font-weight: bold;
+                                        color: $total-users-text;
                                         margin: 0;
                                         padding: 12px 0;
                                         display: block;
@@ -400,10 +403,11 @@
                                 .message-table-header-label{
                                     position: absolute;
                                     right: 120px;
-                                    top: 10px;
+                                    top: 11px;
                                     > ul{
                                         margin: 0;
                                         >li{
+                                            padding-right: 0;
                                             a{
                                                 background-color: $label-bg;
                                                 padding: 1px 10px;
@@ -411,11 +415,10 @@
                                                 border-radius: 15px;
                                                 vertical-align: middle;
                                                 display: block;
-                                                color: $label-clr;
-                                                font-weight: bold;
+                                                color: $total-users-text;
                                                 &:focus, &:hover{
                                                     text-decoration: none;
-
+                                                    color: $total-users-text;
                                                 }
                                             }
                                         }
@@ -423,11 +426,12 @@
                                 }
                                 .message-table-header-icons{
                                     position: absolute;
-                                    top: 5px;
+                                    top: 9px;
                                     right: 20px;
                                     > ul{
                                         margin: 0;
                                         > li{
+                                            padding-right: 0;
                                             a{
                                                 color: $arrow-alt;
                                                 font-size: 21px;
@@ -445,7 +449,7 @@
                                     margin: 15px;
                                     border: 1px solid $timeline-border;
                                     font-size: 11px;
-                                    font-weight: bold;
+
                                     .table-column{
                                         overflow: hidden;
                                         white-space: nowrap;

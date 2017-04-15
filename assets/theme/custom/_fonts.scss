@@ -21,6 +21,14 @@
 }
 /*--  Font Open Sans  --*/
 @font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/roboto-regular/roboto-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-regular/roboto-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto-regular/roboto-regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/roboto-medium/roboto-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto-regular/roboto-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
     font-family: 'Roboto Medium';
     src: url('../fonts/roboto-medium/roboto-medium.eot'); /* IE9 Compat Modes */
     src: url('../fonts/roboto-medium/roboto-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
