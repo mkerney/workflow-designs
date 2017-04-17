@@ -1,0 +1,530 @@
+.subheader-wrapper{
+    position: relative;
+    > h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        font-size: 18px;
+        line-height: 14px;
+        font-family: $roboto_regular;
+    }
+}
+
+.content-wrapper{
+    /*position: relative;*/
+    min-height: 100vh;
+    > .deep-rule-sidebar{
+        position: absolute;
+        left    : 0;
+        top     : 20%;
+        .toolbar-icons{
+            background-color: $blue_1;
+            position: relative;
+            > .toolbar-icons-list{
+                margin-bottom: 0;
+                > li {
+                    &:not(:last-of-type){
+                        border-bottom: 1px solid $grey_3;
+                    }
+                    position: relative;
+                    > a{
+                        display: block;
+                        padding: 12px 15px;
+                        > i {
+                            font-size: 30px;
+                            color: $activiti-sub-list;
+                        }
+                    }
+                }
+            }
+            > .rule-list-wrapper{
+                &.rule-list-wrapper-open{
+                    left: 58px;
+                }
+                position: absolute;
+                background-color: $blue_1;
+                display: inline-block;
+                width: 200px;
+                height: 100%;
+                left: -200px;
+                top: 0;
+                border-left: 1px solid $activiti-sub-list;
+                z-index: 1050;
+                @include transition(all 0.1s ease-in-out);
+                > ul{
+                    margin: 0 0 0 10px; 
+                    > li{
+                        > a{
+                            display: block;
+                            padding: 21px 15px;
+                            color: $total-users-text;
+                            font-size: 14px;
+                            font-family: $roboto_regular;
+                            &:hover, &:focus{
+                                color: $total-users-text;
+                                text-decoration: none;
+                            }
+                        }
+                        &:last-child{
+                            margin:  8px 12px;
+                            a{
+                                display: inline-block;
+                                padding: 5px 10px;
+                                font-size: 12px; 
+                                @include border-radius(10px);
+                                &.english-lang{
+                                    background-color: $navbar-icons;
+                                    color: $white;
+                                }
+                                &.french-lang{
+                                    background-color: $screen_bg;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    > .deep-rule-content{
+        padding-top: 25px;
+        h4{ 
+            width: 300px;
+            color: $slate_9;
+            border-bottom: 1px solid $blue_2;
+            span{
+                height: 30px;
+                width: 30px;
+                background-color: $grey_8;
+                position: relative;
+                top: -6px;
+                @include border-radius(50%);
+                i{
+                    position: absolute;
+                    font-size: 20px;
+                    top: 5px;
+                    left: 4px;
+                    color: $slate_9;
+                }
+            }
+        }
+        .custom-row-wrapper{
+            > div{
+                display: block;
+                &.band-wrapper, &.musikar-wrapper, &.nirvana-wrapper{
+                    width: 28%;
+                    float: left;
+                    height: 100%;
+                }
+                &.custom-offset-wrapper{
+                    width: 8%;
+                    float: left;
+                    height: 112px;
+                    background-color: transparent;
+                    position: relative;
+                    > span{
+                        top: 100%;
+                        position: absolute;
+                        background-color: $blue_2;
+                        height: 1px;
+                        width: 100%;
+                    }
+                }
+                &.band-wrapper{
+                    .deep-rule{
+                        margin-top: 30px;
+                        border: 1px solid $grey_6;
+                        box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+                        background-color: $rightsidebar;
+                        padding: 12px;
+                        > div{
+                            .deep-rule-header{
+                                position: relative;
+                                > h5{
+                                    font-size: 12px;
+                                    margin: 0;
+                                    > span{
+                                        font-size: 9px;
+                                    }
+                                }
+                                > ul{
+                                    position: absolute;
+                                    margin: 0;
+                                    right: 0;
+                                    top: 0;
+                                    > li{
+                                        padding: 0;
+                                        > a{
+                                            i{
+                                                color: $grey_text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-body{
+                                margin-top: 10px;
+                                background-color: $blue_7;
+                                padding: 6px;
+                                min-height: 90px;
+                                .deep-rule-body-header{
+                                    position: relative;
+                                    > h6{
+                                        padding: 4px 0;
+                                        margin: 0;
+                                        color: $black;
+                                        font-family: $roboto_regular;
+                                        > span{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                    > ul{
+                                        margin: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        > li{ 
+                                            padding: 0;
+                                            > a{
+                                                display: block;
+                                                i{
+                                                    color: #fff;
+                                                    font-size: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .deep-rule-body-content{
+                                    a{
+                                        display: inline-block;
+                                        border-radius: 0;
+                                        border: none;
+                                        color: $modal-title-text;
+                                        background-color: $navbar-icons;
+                                        font-size: 10px;
+                                        padding: 4px 12px;
+                                        font-family: $roboto_regular;
+                                        width: 33.333%;
+                                        float: left;
+                                        text-align: center;
+                                    }
+                                    select{
+                                        display: inline-block;
+                                        height: 22px;
+                                        border: 0;
+                                        padding: 1px 2px;
+                                        font-size: 10px;
+                                        box-shadow: none;
+                                        line-height: 14px;
+                                        color: $modal-title-text;
+                                        border-bottom: 1px solid $rightsidebar;
+                                        background-color: transparent !important;
+                                        @include border-radius(0);
+                                        font-family: $roboto_regular;
+                                        width: 30%;
+                                        margin: 0 4px;
+                                        float: left;
+                                        > option{
+                                            background-color: $screen_bg;
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-footer{
+                                padding: 10px 0 0;
+                                a{
+                                    color: $modal-title-text;
+                                    font-family: $roboto_regular;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.musikar-wrapper{
+                    .deep-rule{
+                        margin-top: 30px;
+                        border: 1px solid $grey_6;
+                        box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+                        background-color: $rightsidebar;
+                        padding: 12px;
+                        > div{
+                            .deep-rule-header{
+                                position: relative;
+                                > h5{
+                                    font-size: 12px;
+                                    margin: 0;
+                                    > span{
+                                        font-size: 9px;
+                                    }
+                                }
+                                > ul{
+                                    position: absolute;
+                                    margin: 0;
+                                    right: 0;
+                                    top: 0;
+                                    > li{
+                                        padding: 0;
+                                        > a{
+                                            i{
+                                                color: $grey_text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-body{
+                                margin-top: 10px;
+                                background-color: $blue_7;
+                                padding: 6px;
+                                min-height: 90px;
+                                .deep-rule-body-header{
+                                    position: relative;
+                                    > h6{
+                                        padding: 4px 0;
+                                        margin: 0;
+                                        color: $black;
+                                        font-family: $roboto_regular;
+                                        > span{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                    > ul{
+                                        margin: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        > li{ 
+                                            padding: 0;
+                                            > a{
+                                                display: block;
+                                                i{
+                                                    color: #fff;
+                                                    font-size: 16px;
+                                                }
+                                                &.custom-eye-slash{
+                                                    i{
+                                                        color: $black;
+                                                        font-size: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .deep-rule-body-content{
+                                    a{
+                                        display: inline-block;
+                                        border-radius: 0;
+                                        border: none;
+                                        color: $modal-title-text;
+                                        background-color: $navbar-icons;
+                                        font-size: 10px;
+                                        padding: 4px 12px;
+                                        font-family: $roboto_regular;
+                                        width: 50%;
+                                        float: left;
+                                    }
+                                    select{
+                                        display: inline-block;
+                                        height: 22px;
+                                        border: 0;
+                                        padding: 1px 2px;
+                                        font-size: 10px;
+                                        box-shadow: none;
+                                        line-height: 14px;
+                                        color: $modal-title-text;
+                                        border-bottom: 1px solid $rightsidebar;
+                                        background-color: transparent !important;
+                                        @include border-radius(0);
+                                        font-family: $roboto_regular;
+                                        width: 45%;
+                                        float: left;
+                                        margin: 0 4px;
+                                        > option{
+                                            background-color: $screen_bg;
+                                        }
+                                    }
+                                    input{
+                                        display: block;
+                                        height: 30px;
+                                        border: 0;
+                                        padding: 1px 2px;
+                                        font-size: 10px;
+                                        box-shadow: none;
+                                        line-height: 14px;
+                                        color: $modal-title-text;
+                                        border-bottom: 1px solid $rightsidebar;
+                                        background-color: transparent !important;
+                                        @include border-radius(0);
+                                        font-family: $roboto_regular;
+                                        text-align: center;
+                                        width: 45%;
+                                        margin: 0 4px;
+                                        > option{
+                                            background-color: $screen_bg;
+                                        }
+                                    }
+                                    &.musikar-dual{
+                                        a{
+                                            width: 33.333%;
+                                            float: left;
+                                            text-align: center;
+                                        }
+                                        select{
+                                            width: 30%;
+                                            margin: 0 4px;
+                                            float: left;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-footer{
+                                padding: 10px 0 0;
+                                a{
+                                    color: $modal-title-text;
+                                    font-family: $roboto_regular;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.nirvana-wrapper{
+                    .deep-rule{
+                        margin-top: 30px;
+                        border: 1px solid $grey_6;
+                        box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+                        background-color: $rightsidebar;
+                        padding: 12px;
+                        > div{
+                            .deep-rule-header{
+                                position: relative;
+                                > h5{
+                                    font-size: 12px;
+                                    margin: 0;
+                                    > span{
+                                        font-size: 9px;
+                                    }
+                                }
+                                > ul{
+                                    position: absolute;
+                                    margin: 0;
+                                    right: 0;
+                                    top: 0;
+                                    > li{
+                                        padding: 0;
+                                        > a{
+                                            i{
+                                                color: $grey_text;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-body{
+                                margin-top: 10px;
+                                background-color: $blue_7;
+                                padding: 6px;
+                                min-height: 90px;
+                                .deep-rule-body-header{
+                                    position: relative;
+                                    > h6{
+                                        padding: 4px 0;
+                                        margin: 0;
+                                        color: $black;
+                                        font-family: $roboto_regular;
+                                        > span{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                    > ul{
+                                        margin: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        > li{ 
+                                            padding: 0;
+                                            > a{
+                                                display: block;
+                                                i{
+                                                    color: #fff;
+                                                    font-size: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .deep-rule-body-content{
+                                    a{
+                                        display: inline-block;
+                                        border-radius: 0;
+                                        border: none;
+                                        color: $modal-title-text;
+                                        background-color: $navbar-icons;
+                                        font-size: 10px;
+                                        padding: 4px 12px;
+                                        font-family: $roboto_regular;
+                                        width: 45%;
+                                        float: left;
+                                        margin-right: 10px;
+                                    }
+                                    select{
+                                        display: inline-block;
+                                        height: 22px;
+                                        border: 0;
+                                        padding: 1px 2px;
+                                        font-size: 10px;
+                                        box-shadow: none;
+                                        line-height: 14px;
+                                        color: $modal-title-text;
+                                        border-bottom: 1px solid $rightsidebar;
+                                        background-color: transparent !important;
+                                        @include border-radius(0);
+                                        font-family: $roboto_regular;
+                                        width: 50%;
+                                        float: left;
+                                        > option{
+                                            background-color: $screen_bg;
+                                        }
+                                    }
+                                    input{
+                                        display: block;
+                                        height: 30px;
+                                        border: 0;
+                                        padding: 1px 2px;
+                                        font-size: 10px;
+                                        box-shadow: none;
+                                        line-height: 14px;
+                                        color: $modal-title-text;
+                                        border-bottom: 1px solid $rightsidebar;
+                                        background-color: transparent !important;
+                                        @include border-radius(0);
+                                        font-family: $roboto_regular;
+                                        text-align: center;
+                                        width: 100%;
+                                        > option{
+                                            background-color: $screen_bg;
+                                        }
+                                    }
+                                }
+                            }
+                            .deep-rule-footer{
+                                padding: 10px 0 0;
+                                a{
+                                    color: $modal-title-text;
+                                    font-family: $roboto_regular;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

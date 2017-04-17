@@ -13,4 +13,12 @@ $(document).ready(function () {
     $('.rightsidebar .sidebar-header').on('click', '.toggle-right', function(){
         $('.rightsidebar').toggleClass('rightsidebar-open');
     });
+    
+    
+    $('.deep-rule-sidebar .toolbar-icons').on('mouseover', function(){
+        $(this).children('.rule-list-wrapper').toggleClass('rule-list-wrapper-open');
+    });
+    $('.deep-rule-sidebar .toolbar-icons').on('mouseout', function(){
+        $(this).children('.rule-list-wrapper').toggleClass('rule-list-wrapper-open');
+    });
 });

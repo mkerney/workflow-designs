@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Work Flow | Deep Rule</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="custom-modal-drop">
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-chevron-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-chevron-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="subheader-wrapper">
+            <div class="container-fluid clearfix">
+                <h4>Management Hub</h4>
+                <h6 class="deep-rule-text">Deep Rules</h6>
+            </div>
+            <h3 class="">Rule Name Here</h3>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper">
+            <!--  Content Wrapper Starts  -->
+            <div class="content-wrapper">
+                <div class="deep-rule-sidebar">
+                    <div class="toolbar-icons">
+                        <ul class="list-unstyled toolbar-icons-list">
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-refresh"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-upload"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-question-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-print"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-font"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="rule-list-wrapper">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-uppercase" href="javascript:void(0);">
+                                        <span class="run-query">Run Query</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="javascript:void(0);">
+                                        <span class="reset-workspace">reset workspace</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="javascript:void(0);">
+                                        <span class="help">Load JASON</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="javascript:void(0);">
+                                        <span class="print-preview">Help</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="javascript:void(0);">
+                                        <span class="run-query">Print Preview</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="english-lang" href="javascript:void(0);">
+                                        <span class="text-uppercase">English</span>
+                                    </a>
+                                    <a class="french-lang" href="javascript:void(0);">
+                                        <span class="text-uppercase">French</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="deep-rule-content">
+                    <div class="container">
+                        <h4 class="text-uppercase clearfix">
+                            List All 
+                            <span class="pull-right"><i class="fa fa-plug"></i></span>
+                        </h4>
+                        <div class="custom-row-wrapper clearfix">
+                            <div class="band-wrapper ">
+                                <div class="deep-rule">
+                                    <div class="">
+                                        <div class="deep-rule-header">
+                                            <h5 class="text-uppercase">
+                                                BAND 
+                                                <i class="fa fa-pencil-square-o"></i>
+                                                <span>(MO:MUSIC GROUP)</span>
+                                            </h5>
+                                            <ul class="list-inline">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-eye-slash"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-plug"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="deep-rule-body">
+                                            <div class="deep-rule-body-header">
+                                                <h6 class="text-uppercase">
+                                                    Mitglied
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span>(mo:member)</span>
+                                                </h6>
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="">
+                                                            <i class="fa fa-ellipsis-h"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="deep-rule-body-content">
+                                                <a class="text-uppercase" href="javascript:void(0);">A LINK TO</a>
+                                                <select >
+                                                    <option class="text-uppercaset">MUSIKER</option>
+                                                    <option class="text-uppercaset">NIRVANA</option>
+                                                </select>
+                                                <a class="text-uppercase" href="javascript:void(0);">EXISTS</a>
+                                            </div>
+                                        </div>
+                                        <div class="deep-rule-footer clearfix">
+                                            <a class="pull-right" href="javascript:void(0);">
+                                                <i class="fa fa-plus"></i>
+                                                <span class="text-uppercase">Property</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-offset-wrapper">
+                                <span></span>
+                            </div>
+                            <div class="musikar-wrapper">
+                                <div class=" deep-rule">
+                                    <div class="">
+                                        <div class="deep-rule-header">
+                                            <h5 class="text-uppercase">
+                                                musikar 
+                                                <i class="fa fa-pencil-square-o"></i>
+                                                <span>(MO:MUSIC artist)</span>
+                                            </h5>
+                                            <ul class="list-inline">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-eye-slash"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-plug"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="deep-rule-body">
+                                            <div class="deep-rule-body-header">
+                                                <h6 class="text-uppercase">
+                                                    Name
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span>(mo:member)</span>
+                                                </h6>
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="custom-eye-slash">
+                                                            <i class="fa fa-eye-slash fa-inverse"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="">
+                                                            <i class="fa fa-ellipsis-h"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="deep-rule-body-content clearfix">
+                                                <a class="text-uppercase text-center" href="javascript:void(0);">COMPARISION</a>
+                                                <select >
+                                                    <option class="text-uppercaset">EQUALS NOT</option>
+                                                    <option class="text-uppercaset">EQUALS NOT</option>
+                                                </select>
+                                            </div>
+                                            <div class="deep-rule-body-content clearfix">
+                                               <input class="text-uppercase pull-right" placeholder="" value="KURT COBAIN">
+                                            </div>
+                                            <div class="deep-rule-body-content clearfix">
+                                                <a class="text-uppercase text-center" href="javascript:void(0);">Language</a>
+                                                <select >
+                                                    <option class="text-uppercaset">English</option>
+                                                    <option class="text-uppercaset">French</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="deep-rule-body">
+                                            <div class="deep-rule-body-header">
+                                                <h6 class="text-uppercase">
+                                                    Mitglied
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span>(mo:member)</span>
+                                                </h6>
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="custom-eye-slash">
+                                                            <i class="fa fa-eye-slash"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="">
+                                                            <i class="fa fa-ellipsis-h"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="deep-rule-body-content musikar-dual">
+                                                <a class="text-uppercase" href="javascript:void(0);">A LINK TO</a>
+                                                <select >
+                                                    <option class="text-uppercaset">MUSIKER</option>
+                                                    <option class="text-uppercaset">NIRVANA</option>
+                                                </select>
+                                                <a class="text-uppercase" href="javascript:void(0);">EXISTS</a>
+                                            </div>
+                                        </div>
+                                        <div class="deep-rule-footer clearfix">
+                                            <a class="pull-right" href="javascript:void(0);">
+                                                <i class="fa fa-plus"></i>
+                                                <span class="text-uppercase">Property</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-offset-wrapper">
+                                <span></span>
+                            </div>
+                            <div class="nirvana-wrapper ">
+                                <div class="deep-rule">
+                                    <div class="">
+                                        <div class="deep-rule-header">
+                                            <h5 class="text-uppercase">
+                                                nirvana 
+                                                <i class="fa fa-pencil-square-o"></i>
+                                                <span>(MO:MUSIC GROUP)</span>
+                                            </h5>
+                                            <ul class="list-inline">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-eye-slash"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-plug"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="">
+                                                        <i class="fa fa-trash"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="deep-rule-body">
+                                            <div class="deep-rule-body-header">
+                                                <h6 class="text-uppercase">
+                                                    url
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span>(mo:member)</span>
+                                                </h6>
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <a href="javascript:void(0);" class="">
+                                                            <i class="fa fa-ellipsis-h"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="deep-rule-body-content">
+                                                <a class="text-uppercase text-center" href="javascript:void(0);">Comparission</a>
+                                                <select >
+                                                    <option class="text-uppercaset">EQUALS</option>
+                                                    <option class="text-uppercaset">EQUALS</option>
+                                                </select>
+                                                <input class="text-uppercase" placeholder="" value="HTTPS://WWW.GOOGLE.COM">
+                                            </div>
+                                        </div>
+                                        <div class="deep-rule-footer clearfix">
+                                            <a class="pull-right" href="javascript:void(0);">
+                                                <i class="fa fa-plus"></i>
+                                                <span class="text-uppercase">Property</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Content Wrapper Ends  -->
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- Details Modal Wrapper Starts  -->
+        <div id="addUser" class="modal fade adduser-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <form id="addNewUser">
+                    <div class="modal-content">
+                        <div class="modal-header clearfix">
+                            <div class="add-user-submit">
+                                <button type="button" class="cancel" data-dismiss="modal" aria-label="Close">
+                                    <span class="text-uppercase">cancel</span>
+                                </button>
+                                <button type="submit" class="custom-submit" >
+                                    <span class="text-uppercase">save</span>
+                                </button>
+                            </div>
+                            <div class="modal-title">
+                                <span><i class="fa fa-plus"></i></span>
+                                <p class="text-uppercase">add user</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="adduser-stages">
+                                <ul class="list-inline clearfix">
+                                    <li class="active">
+                                        <a class="text-uppercase list-arrow personal" href="javascript:void(0);">
+                                            Personal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase list-arrow organisational" href="javascript:void(0);">
+                                            Organisational
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase list-arrow social" href="javascript:void(0);">
+                                            Social
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix form-stages">
+                                <div class="col-sm-7">
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-2 text-uppercase" for="title">TITLE</label>
+                                        <div class="col-sm-4">
+                                            <select  class="form-control text-uppercase" id="title">
+                                                <option class="text-uppercase"></option>
+                                                <option class="text-uppercase">Associate</option>
+                                                <option class="text-uppercase">CEO</option>
+                                                <option class="text-uppercase">Senior Manager</option>
+                                            </select>
+                                        </div>
+                                        <label class="control-label col-sm-2 text-uppercase" for="suffix">Suffix</label>
+                                        <div class="col-sm-4">
+                                            <select  class="form-control text-uppercase" id="suffix">
+                                                <option class="text-uppercase"></option>
+                                                <option class="text-uppercase">Mr</option>
+                                                <option class="text-uppercase">Mrs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="firstName">First Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="middleName">Middle Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="middleName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="lastName">last Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="email">Email</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="profession">profession</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="profession" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="image-upload-wrapper text-center">
+                                        <div class="upload-image">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="upload-buttons">
+                                            <a class="custom-file-upload" href="javascript:void(0);">
+                                                <input type="file" name="fileupload" id="fileupload">
+                                                <label for="fileupload" class="file-inline">
+                                                    <span class="text-uppercase">Browse</span>
+                                                </label>
+                                            </a>
+                                            <a class="text-uppercase" href="javascript:void(0);">
+                                                Upload
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Details Modal Wrapper Ends  -->
+
+        <!-- jQuery Js --><script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-3.1.1.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/common.js" type="text/javascript"></script>
+    </body>
+</html>

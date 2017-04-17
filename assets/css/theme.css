@@ -8108,6 +8108,8 @@ button.close {
 /*TABPILL COLORS*/
 /*TABLE ACCESORIES COLORS*/
 /*MODAL ACCESORIES COLORS*/
+/*ACTIVITI SUBHEADER COLORS*/
+/*ACTIVITI SUPERSUBHEADER  COLORS*/
 /*--  Color Variables  --*/
 /*--  Transition  --*/
 /*--  Border Radius  --*/
@@ -8503,6 +8505,11 @@ body {
     font-size: 14px;
     color: #52d1c2;
     line-height: 16px; }
+    .subheader-wrapper h6.deep-rule-text {
+      color: #ffffff;
+      line-height: 14px;
+      font-size: 13px;
+      font-family: "Roboto Regular"; }
   .subheader-wrapper a {
     color: #ffffff;
     font-size: 11px;
@@ -9502,6 +9509,518 @@ body {
       text-decoration: none; }
 
 /*--  Media Styles  --*/
+.subheader-wrapper {
+  position: relative; }
+  .subheader-wrapper > h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 18px;
+    line-height: 14px;
+    font-family: "Roboto Regular"; }
+
+.content-wrapper {
+  /*position: relative;*/
+  min-height: 100vh; }
+  .content-wrapper > .deep-rule-sidebar {
+    position: absolute;
+    left: 0;
+    top: 20%; }
+    .content-wrapper > .deep-rule-sidebar .toolbar-icons {
+      background-color: #121D21;
+      position: relative; }
+      .content-wrapper > .deep-rule-sidebar .toolbar-icons > .toolbar-icons-list {
+        margin-bottom: 0; }
+        .content-wrapper > .deep-rule-sidebar .toolbar-icons > .toolbar-icons-list > li {
+          position: relative; }
+          .content-wrapper > .deep-rule-sidebar .toolbar-icons > .toolbar-icons-list > li:not(:last-of-type) {
+            border-bottom: 1px solid #212E34; }
+          .content-wrapper > .deep-rule-sidebar .toolbar-icons > .toolbar-icons-list > li > a {
+            display: block;
+            padding: 12px 15px; }
+            .content-wrapper > .deep-rule-sidebar .toolbar-icons > .toolbar-icons-list > li > a > i {
+              font-size: 30px;
+              color: #325d80; }
+      .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper {
+        position: absolute;
+        background-color: #121D21;
+        display: inline-block;
+        width: 200px;
+        height: 100%;
+        left: -200px;
+        top: 0;
+        border-left: 1px solid #325d80;
+        z-index: 1050;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+        .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper.rule-list-wrapper-open {
+          left: 58px; }
+        .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul {
+          margin: 0 0 0 10px; }
+          .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li > a {
+            display: block;
+            padding: 21px 15px;
+            color: #8e999e;
+            font-size: 14px;
+            font-family: "Roboto Regular"; }
+            .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li > a:hover, .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li > a:focus {
+              color: #8e999e;
+              text-decoration: none; }
+          .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li:last-child {
+            margin: 8px 12px; }
+            .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li:last-child a {
+              display: inline-block;
+              padding: 5px 10px;
+              font-size: 12px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              border-radius: 10px; }
+              .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li:last-child a.english-lang {
+                background-color: #325c80;
+                color: #ffffff; }
+              .content-wrapper > .deep-rule-sidebar .toolbar-icons > .rule-list-wrapper > ul > li:last-child a.french-lang {
+                background-color: #283C46; }
+  .content-wrapper > .deep-rule-content {
+    padding-top: 25px; }
+    .content-wrapper > .deep-rule-content h4 {
+      width: 300px;
+      color: #98a2a7;
+      border-bottom: 1px solid #315b80; }
+      .content-wrapper > .deep-rule-content h4 span {
+        height: 30px;
+        width: 30px;
+        background-color: #445b69;
+        position: relative;
+        top: -6px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+        .content-wrapper > .deep-rule-content h4 span i {
+          position: absolute;
+          font-size: 20px;
+          top: 5px;
+          left: 4px;
+          color: #98a2a7; }
+    .content-wrapper > .deep-rule-content .custom-row-wrapper > div {
+      display: block; }
+      .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper, .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper, .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper {
+        width: 28%;
+        float: left;
+        height: 100%; }
+      .content-wrapper > .deep-rule-content .custom-row-wrapper > div.custom-offset-wrapper {
+        width: 8%;
+        float: left;
+        height: 112px;
+        background-color: transparent;
+        position: relative; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.custom-offset-wrapper > span {
+          top: 100%;
+          position: absolute;
+          background-color: #315b80;
+          height: 1px;
+          width: 100%; }
+      .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule {
+        margin-top: 30px;
+        border: 1px solid #576c78;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        background-color: #334d59;
+        padding: 12px; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header {
+          position: relative; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header > h5 {
+            font-size: 12px;
+            margin: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header > h5 > span {
+              font-size: 9px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header > ul {
+            position: absolute;
+            margin: 0;
+            right: 0;
+            top: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header > ul > li {
+              padding: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-header > ul > li > a i {
+                color: #8b9fa8; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body {
+          margin-top: 10px;
+          background-color: #6D9DC8;
+          padding: 6px;
+          min-height: 90px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header {
+            position: relative; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 {
+              padding: 4px 0;
+              margin: 0;
+              color: #000000;
+              font-family: "Roboto Regular"; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 > span {
+                font-size: 9px; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul {
+              margin: 0;
+              position: absolute;
+              top: 0;
+              right: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li {
+                padding: 0; }
+                .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a {
+                  display: block; }
+                  .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a i {
+                    color: #fff;
+                    font-size: 22px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content a {
+            display: inline-block;
+            border-radius: 0;
+            border: none;
+            color: #efeaea;
+            background-color: #325c80;
+            font-size: 10px;
+            padding: 4px 12px;
+            font-family: "Roboto Regular";
+            width: 33.333%;
+            float: left;
+            text-align: center; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select {
+            display: inline-block;
+            height: 22px;
+            border: 0;
+            padding: 1px 2px;
+            font-size: 10px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #efeaea;
+            border-bottom: 1px solid #334d59;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            font-family: "Roboto Regular";
+            width: 30%;
+            margin: 0 4px;
+            float: left; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select > option {
+              background-color: #283C46; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-footer {
+          padding: 10px 0 0; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.band-wrapper .deep-rule > div .deep-rule-footer a {
+            color: #efeaea;
+            font-family: "Roboto Regular";
+            font-size: 12px; }
+      .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule {
+        margin-top: 30px;
+        border: 1px solid #576c78;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        background-color: #334d59;
+        padding: 12px; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header {
+          position: relative; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header > h5 {
+            font-size: 12px;
+            margin: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header > h5 > span {
+              font-size: 9px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header > ul {
+            position: absolute;
+            margin: 0;
+            right: 0;
+            top: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header > ul > li {
+              padding: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-header > ul > li > a i {
+                color: #8b9fa8; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body {
+          margin-top: 10px;
+          background-color: #6D9DC8;
+          padding: 6px;
+          min-height: 90px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header {
+            position: relative; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 {
+              padding: 4px 0;
+              margin: 0;
+              color: #000000;
+              font-family: "Roboto Regular"; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 > span {
+                font-size: 9px; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul {
+              margin: 0;
+              position: absolute;
+              top: 0;
+              right: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li {
+                padding: 0; }
+                .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a {
+                  display: block; }
+                  .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a i {
+                    color: #fff;
+                    font-size: 16px; }
+                  .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a.custom-eye-slash i {
+                    color: #000000;
+                    font-size: 16px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content a {
+            display: inline-block;
+            border-radius: 0;
+            border: none;
+            color: #efeaea;
+            background-color: #325c80;
+            font-size: 10px;
+            padding: 4px 12px;
+            font-family: "Roboto Regular";
+            width: 50%;
+            float: left; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select {
+            display: inline-block;
+            height: 22px;
+            border: 0;
+            padding: 1px 2px;
+            font-size: 10px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #efeaea;
+            border-bottom: 1px solid #334d59;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            font-family: "Roboto Regular";
+            width: 45%;
+            float: left;
+            margin: 0 4px; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select > option {
+              background-color: #283C46; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content input {
+            display: block;
+            height: 30px;
+            border: 0;
+            padding: 1px 2px;
+            font-size: 10px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #efeaea;
+            border-bottom: 1px solid #334d59;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            font-family: "Roboto Regular";
+            text-align: center;
+            width: 45%;
+            margin: 0 4px; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content input > option {
+              background-color: #283C46; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content.musikar-dual a {
+            width: 33.333%;
+            float: left;
+            text-align: center; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content.musikar-dual select {
+            width: 30%;
+            margin: 0 4px;
+            float: left;
+            text-align: center; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-footer {
+          padding: 10px 0 0; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.musikar-wrapper .deep-rule > div .deep-rule-footer a {
+            color: #efeaea;
+            font-family: "Roboto Regular";
+            font-size: 12px; }
+      .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule {
+        margin-top: 30px;
+        border: 1px solid #576c78;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        background-color: #334d59;
+        padding: 12px; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header {
+          position: relative; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header > h5 {
+            font-size: 12px;
+            margin: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header > h5 > span {
+              font-size: 9px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header > ul {
+            position: absolute;
+            margin: 0;
+            right: 0;
+            top: 0; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header > ul > li {
+              padding: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-header > ul > li > a i {
+                color: #8b9fa8; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body {
+          margin-top: 10px;
+          background-color: #6D9DC8;
+          padding: 6px;
+          min-height: 90px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header {
+            position: relative; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 {
+              padding: 4px 0;
+              margin: 0;
+              color: #000000;
+              font-family: "Roboto Regular"; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > h6 > span {
+                font-size: 9px; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul {
+              margin: 0;
+              position: absolute;
+              top: 0;
+              right: 0; }
+              .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li {
+                padding: 0; }
+                .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a {
+                  display: block; }
+                  .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-header > ul > li > a i {
+                    color: #fff;
+                    font-size: 22px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content a {
+            display: inline-block;
+            border-radius: 0;
+            border: none;
+            color: #efeaea;
+            background-color: #325c80;
+            font-size: 10px;
+            padding: 4px 12px;
+            font-family: "Roboto Regular";
+            width: 45%;
+            float: left;
+            margin-right: 10px; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select {
+            display: inline-block;
+            height: 22px;
+            border: 0;
+            padding: 1px 2px;
+            font-size: 10px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #efeaea;
+            border-bottom: 1px solid #334d59;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            font-family: "Roboto Regular";
+            width: 50%;
+            float: left; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content select > option {
+              background-color: #283C46; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content input {
+            display: block;
+            height: 30px;
+            border: 0;
+            padding: 1px 2px;
+            font-size: 10px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #efeaea;
+            border-bottom: 1px solid #334d59;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0;
+            font-family: "Roboto Regular";
+            text-align: center;
+            width: 100%; }
+            .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-body .deep-rule-body-content input > option {
+              background-color: #283C46; }
+        .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-footer {
+          padding: 10px 0 0; }
+          .content-wrapper > .deep-rule-content .custom-row-wrapper > div.nirvana-wrapper .deep-rule > div .deep-rule-footer a {
+            color: #efeaea;
+            font-family: "Roboto Regular";
+            font-size: 12px; }
+
+.activiti-subheader-wrapper {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #158679; }
+  .activiti-subheader-wrapper .container-fluid > * {
+    display: inline-block;
+    float: left; }
+    .activiti-subheader-wrapper .container-fluid > *.task-subheader {
+      padding: 15px 0;
+      border-right: 1px solid #229b8c;
+      padding-right: 30px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader h4 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 20px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader h6 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: "Roboto Regular"; }
+    .activiti-subheader-wrapper .container-fluid > *.task-subheader-content {
+      margin-left: 30px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul {
+        margin: 0; }
+        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li.active a:after {
+          opacity: 1; }
+        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a {
+          position: relative;
+          padding: 25px 30px 25px 38px;
+          font-family: "Roboto Regular";
+          display: block;
+          font-size: 14px; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > i {
+            position: absolute;
+            left: 0;
+            top: 18px;
+            font-size: 26px;
+            color: #e6f2f0; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > span {
+            color: #e6f2f0; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a:after {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: -11px;
+            content: "\f0d8";
+            color: #325d80;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 32px;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+
+.activiti-supersubheader-wrapper {
+  background-color: #325d80; }
+  .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul {
+    margin: 0; }
+    .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li {
+      padding: 0; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li.active a > span {
+        color: #ffffff; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li:first-child a {
+        padding-left: 0; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a {
+        padding: 12px 45px;
+        display: block;
+        font-size: 12px;
+        font-family: "Roboto Regular"; }
+        .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a span {
+          color: #7f9bb3; }
+
 /*--  Sidebar Styles  --*/
 .right-sidebar {
   padding: 25px 20px;

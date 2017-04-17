@@ -145,6 +145,12 @@
         font-size: 14px;
         color: $subheader-h6;
         line-height: 16px;
+        &.deep-rule-text{
+            color: $white;
+            line-height: 14px;
+            font-size: 13px;
+            font-family: $roboto_regular;
+        }
     }
     a{
         color: $white;
