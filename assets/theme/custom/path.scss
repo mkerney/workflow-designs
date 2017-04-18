@@ -1,6 +1,6 @@
 /*--  Include Boostrap  --*/
-@import "../bootstrap-scss/_bootstrap.scss";
-@import "../fontawesome/font-awesome.scss";
+@import "../bootstrap-scss/bootstrap/_variables.scss";
+@import "../bootstrap-scss/bootstrap/_mixins.scss";
 
 /*--  Include Custom Styles  --*/
 @import "_variables.scss";

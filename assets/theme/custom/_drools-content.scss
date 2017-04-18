@@ -88,7 +88,10 @@
                             right: 0; 
                             font-size: 20px;
                             color: $slate_3;
-                            @include rotate(90deg);
+                            transform: rotate(90deg);
+                            -o-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -webkit-transform: rotate(90deg);
                         }
                         &.fa-angle-down{ 
                             right: 0;
