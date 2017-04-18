@@ -145,7 +145,21 @@
                                 > h5{
                                     font-size: 12px;
                                     margin: 0;
+                                    display: inline-block;
+                                    position: relative;
+                                    > a{
+                                        position: absolute;
+                                        right: -20px;
+                                        top: -2px;
+                                        i{
+                                            color: $grey_text;
+                                            font-size: 15px;
+                                        }
+                                    }
                                     > span{
+                                        position: absolute;
+                                        right: -115px;
+                                        top: 1px;
                                         font-size: 9px;
                                     }
                                 }
@@ -174,23 +188,37 @@
                                     > h6{
                                         padding: 4px 0;
                                         margin: 0;
-                                        color: $black;
+                                        color: #2e4c67;
                                         font-family: $roboto_regular;
+                                        position: relative;
+                                        display: inline-block;
+                                        > a{
+                                            position: absolute;
+                                            right: -20px;
+                                            top: 2px;
+                                            i{
+                                                color: #2e4c67;
+                                                font-size: 15px;
+                                            }
+                                        }
                                         > span{
+                                            position: absolute;
+                                            right: -90px;
+                                            top: 4px;
                                             font-size: 9px;
                                         }
                                     }
                                     > ul{
                                         margin: 0;
                                         position: absolute;
-                                        top: 0;
+                                        top: -2px;
                                         right: 0;
                                         > li{ 
                                             padding: 0;
                                             > a{
                                                 display: block;
                                                 i{
-                                                    color: #fff;
+                                                    color: #a9d0ee;
                                                     font-size: 22px;
                                                 }
                                             }
@@ -198,37 +226,46 @@
                                     }
                                 }
                                 .deep-rule-body-content{
-                                    a{
-                                        display: inline-block;
-                                        border-radius: 0;
-                                        border: none;
-                                        color: $modal-title-text;
-                                        background-color: $navbar-icons;
-                                        font-size: 10px;
-                                        padding: 4px 12px;
-                                        font-family: $roboto_regular;
+                                    .btn-deep{
                                         width: 33.333%;
                                         float: left;
                                         text-align: center;
-                                    }
-                                    select{
-                                        display: inline-block;
-                                        height: 22px;
-                                        border: 0;
-                                        padding: 1px 2px;
-                                        font-size: 10px;
-                                        box-shadow: none;
-                                        line-height: 14px;
-                                        color: $modal-title-text;
-                                        border-bottom: 1px solid $rightsidebar;
-                                        background-color: transparent !important;
-                                        @include border-radius(0);
-                                        font-family: $roboto_regular;
-                                        width: 30%;
-                                        margin: 0 4px;
-                                        float: left;
-                                        > option{
-                                            background-color: $screen_bg;
+                                        a{
+                                            display: inline-block;
+                                            border-radius: 0;
+                                            border: none;
+                                            color: $modal-title-text;
+                                            background-color: $navbar-icons;
+                                            font-size: 10px;
+                                            padding: 4px 0px;
+                                            font-family: $roboto_regular;
+                                            text-align: center;
+                                            width: 100%;
+                                            text-overflow: ellipsis;
+                                            overflow:hidden;
+                                            white-space: nowrap;
+                                        }
+                                        select{
+                                            display: inline-block;
+                                            height: 22px;
+                                            border: 0;
+                                            padding: 1px 2px;
+                                            font-size: 10px;
+                                            box-shadow: none;
+                                            line-height: 14px;
+                                            color: $modal-title-text;
+                                            border-bottom: 1px solid $rightsidebar;
+                                            background-color: transparent !important;
+                                            @include border-radius(0);
+                                            font-family: $roboto_regular;
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            text-overflow: ellipsis;
+                                            overflow:hidden;
+                                            white-space: nowrap;
+                                            > option{
+                                                background-color: $screen_bg;
+                                            }
                                         }
                                     }
                                 }
@@ -257,7 +294,21 @@
                                 > h5{
                                     font-size: 12px;
                                     margin: 0;
+                                    display: inline-block;
+                                    position: relative;
+                                    > a{
+                                        position: absolute;
+                                        right: -20px;
+                                        top: -2px;
+                                        i{
+                                            color: $grey_text;
+                                            font-size: 15px;
+                                        }
+                                    }
                                     > span{
+                                        position: absolute;
+                                        right: -115px;
+                                        top: 1px;
                                         font-size: 9px;
                                     }
                                 }
@@ -286,28 +337,44 @@
                                     > h6{
                                         padding: 4px 0;
                                         margin: 0;
-                                        color: $black;
+                                        color: #2e4c67;
                                         font-family: $roboto_regular;
+                                        position: relative;
+                                        display: inline-block;
+                                        > a{
+                                            position: absolute;
+                                            right: -20px;
+                                            top: 2px;
+                                            i{
+                                                color: #2e4c67;
+                                                font-size: 15px;
+                                            }
+                                        }
                                         > span{
+                                            position: absolute;
+                                            right: -90px;
+                                            top: 4px;
                                             font-size: 9px;
                                         }
                                     }
                                     > ul{
                                         margin: 0;
                                         position: absolute;
-                                        top: 0;
+                                        top: -2px;
                                         right: 0;
                                         > li{ 
                                             padding: 0;
                                             > a{
                                                 display: block;
                                                 i{
-                                                    color: #fff;
-                                                    font-size: 16px;
+                                                    color: #a9d0ee;
+                                                    font-size: 22px;
                                                 }
                                                 &.custom-eye-slash{
+                                                    position: relative;
+                                                    top: -6px;
                                                     i{
-                                                        color: $black;
+                                                        color: #2e4c67;
                                                         font-size: 16px;
                                                     }
                                                 }
@@ -369,16 +436,46 @@
                                         }
                                     }
                                     &.musikar-dual{
-                                        a{
+                                        .btn-deep{
                                             width: 33.333%;
                                             float: left;
                                             text-align: center;
-                                        }
-                                        select{
-                                            width: 30%;
-                                            margin: 0 4px;
-                                            float: left;
-                                            text-align: center;
+                                            a{
+                                                display: inline-block;
+                                                border-radius: 0;
+                                                border: none;
+                                                color: $modal-title-text;
+                                                background-color: $navbar-icons;
+                                                font-size: 10px;
+                                                padding: 4px 0px;
+                                                font-family: $roboto_regular;
+                                                text-align: center;
+                                                width: 100%;
+                                                text-overflow: ellipsis;
+                                                overflow:hidden;
+                                                white-space: nowrap;
+                                            }
+                                            select{
+                                                display: inline-block;
+                                                height: 22px;
+                                                border: 0;
+                                                padding: 1px 2px;
+                                                font-size: 10px;
+                                                box-shadow: none;
+                                                line-height: 14px;
+                                                color: $modal-title-text;
+                                                border-bottom: 1px solid $rightsidebar;
+                                                background-color: transparent !important;
+                                                @include border-radius(0);
+                                                font-family: $roboto_regular;
+                                                width: 90%;
+                                                text-overflow: ellipsis;
+                                                overflow:hidden;
+                                                white-space: nowrap;
+                                                > option{
+                                                    background-color: $screen_bg;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -407,7 +504,21 @@
                                 > h5{
                                     font-size: 12px;
                                     margin: 0;
+                                    display: inline-block;
+                                    position: relative;
+                                    > a{
+                                        position: absolute;
+                                        right: -20px;
+                                        top: -2px;
+                                        i{
+                                            color: $grey_text;
+                                            font-size: 15px;
+                                        }
+                                    }
                                     > span{
+                                        position: absolute;
+                                        right: -115px;
+                                        top: 1px;
                                         font-size: 9px;
                                     }
                                 }
@@ -436,23 +547,37 @@
                                     > h6{
                                         padding: 4px 0;
                                         margin: 0;
-                                        color: $black;
+                                        color: #2e4c67;
                                         font-family: $roboto_regular;
+                                        position: relative;
+                                        display: inline-block;
+                                        > a{
+                                            position: absolute;
+                                            right: -20px;
+                                            top: 2px;
+                                            i{
+                                                color: #2e4c67;
+                                                font-size: 15px;
+                                            }
+                                        }
                                         > span{
+                                            position: absolute;
+                                            right: -90px;
+                                            top: 4px;
                                             font-size: 9px;
                                         }
                                     }
                                     > ul{
                                         margin: 0;
                                         position: absolute;
-                                        top: 0;
+                                        top: -2px;
                                         right: 0;
                                         > li{ 
                                             padding: 0;
                                             > a{
                                                 display: block;
                                                 i{
-                                                    color: #fff;
+                                                    color: #a9d0ee;
                                                     font-size: 22px;
                                                 }
                                             }
