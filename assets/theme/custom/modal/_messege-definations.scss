@@ -1,0 +1,98 @@
+.messageDefination-modal-wrapper{
+    .modal-dialog{
+        width: 700px;
+        margin: 50px auto;
+        .modal-content{
+            @include border-radius(0);
+            background-color: $rightsidebar;
+            box-shadow: none;
+            .modal-header{
+                padding: 30px 30px 20px;
+                border-bottom: 1px solid $grey_6;
+                position: relative;
+                .add-user-submit{
+                    display: inline-block;
+                    float: right;
+                    .cancel{
+                        color: $modal-title-text;
+                        opacity: 1;
+                        text-shadow: none;
+                        padding: 8px 12px;
+                        background-color: $modal-cancel-bg;
+                        border: 0;
+                        font-size: 12px;
+                        &:hover,&:focus{
+                            outline: none;
+                        }
+                    }
+                    .custom-submit{
+                        color: $modal-title-text;
+                        opacity: 1;
+                        text-shadow: none;
+                        padding: 8px 16px;
+                        background-color: $blue_5;
+                        border: 0;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        @include border-radius(0);
+                        &:hover,&:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .modal-title{
+                    display: inline-block;
+                    position: relative;
+                    p{
+                        margin: 0;
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: $modal-title-text;
+                        font-family: $roboto_regular;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 20px;
+                .form-stages{
+                    .textarea-wrapper{
+                        > textarea{
+                            border-color:  #327593;
+                            box-shadow: none;
+                            background-color: transparent;
+                            resize: none;
+                            color: #88949a;
+                            height: 200px;
+                            @include border-radius(2px);
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                    .custom-add-remove-btn{
+                        padding-top: 10px;
+                        > ul{
+                            margin: 0;
+                            > li{
+                                padding: 0;
+                                a{
+                                    display: block;
+                                    i{
+                                        font-size: 26px;
+                                        &.fa-plus-circle{
+                                            color: #327593;
+                                        }
+                                        &.fa-minus-circle{
+                                            color: #3f5863;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

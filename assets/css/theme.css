@@ -3772,3 +3772,85 @@ body > .world_map_tooltip {
             -moz-border-radius: 0;
             -ms-border-radius: 0;
             border-radius: 0; }
+
+.messageDefination-modal-wrapper .modal-dialog {
+  width: 700px;
+  margin: 50px auto; }
+  .messageDefination-modal-wrapper .modal-dialog .modal-content {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    background-color: #334d59;
+    box-shadow: none; }
+    .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header {
+      padding: 30px 30px 20px;
+      border-bottom: 1px solid #576c78;
+      position: relative; }
+      .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit {
+        display: inline-block;
+        float: right; }
+        .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .cancel {
+          color: #efeaea;
+          opacity: 1;
+          text-shadow: none;
+          padding: 8px 12px;
+          background-color: #566c76;
+          border: 0;
+          font-size: 12px; }
+          .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .cancel:hover, .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .cancel:focus {
+            outline: none; }
+        .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .custom-submit {
+          color: #efeaea;
+          opacity: 1;
+          text-shadow: none;
+          padding: 8px 16px;
+          background-color: #4676a0;
+          border: 0;
+          font-size: 12px;
+          margin-right: 10px;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          border-radius: 0; }
+          .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .custom-submit:hover, .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .add-user-submit .custom-submit:focus {
+            outline: none; }
+      .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .modal-title {
+        display: inline-block;
+        position: relative; }
+        .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-header .modal-title p {
+          margin: 0;
+          display: inline-block;
+          font-size: 18px;
+          line-height: 30px;
+          color: #efeaea;
+          font-family: "Roboto Regular"; }
+    .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body {
+      padding: 20px; }
+      .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .textarea-wrapper > textarea {
+        border-color: #327593;
+        box-shadow: none;
+        background-color: transparent;
+        resize: none;
+        color: #88949a;
+        height: 200px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px; }
+        .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .textarea-wrapper > textarea:focus {
+          box-shadow: none; }
+      .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn {
+        padding-top: 10px; }
+        .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul {
+          margin: 0; }
+          .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li {
+            padding: 0; }
+            .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li a {
+              display: block; }
+              .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li a i {
+                font-size: 26px; }
+                .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li a i.fa-plus-circle {
+                  color: #327593; }
+                .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li a i.fa-minus-circle {
+                  color: #3f5863; }
