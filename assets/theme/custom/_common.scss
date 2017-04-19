@@ -214,6 +214,141 @@ body{
     }
 }
 
+
+/*   activiti sub header   */
+.activiti-subheader-wrapper{
+    color: $white;
+    font-weight: 600;
+    background-color: $subhead-bg;
+    .container-fluid{
+        > *{
+            display: inline-block;
+            float: left;
+            &.task-subheader{
+                padding: 15px 0;
+                border-right: 1px solid $subheader-border;
+                padding-right: 30px;
+                h4{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 20px;
+                }
+                h6{
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-family: $roboto_regular;
+                }
+            }
+            &.task-subheader-content{
+                margin-left: 30px;
+                > ul{
+                    margin: 0;
+                    > li {
+                        &.active{
+                            a{
+                                &:after{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        > a{
+                            position: relative;
+                            padding: 25px 30px 25px 38px;
+                            font-family: $roboto_regular;
+                            display: block;
+                            font-size: 14px;
+                            > i{
+                                position: absolute;
+                                left: 0;
+                                top: 18px;
+                                font-size: 26px;
+                                color: $activiti-task-list;
+                            }
+                            > span{
+                                color: $activiti-task-list;
+                            }
+                            &:after{
+                                position: absolute;
+                                left: 50%;
+                                transform: translate(-50%);
+                                bottom: -11px;
+                                content: "\f0d8";
+                                color: $activiti-sub-list;
+                                display: inline-block;
+                                font: normal normal normal 14px/1 FontAwesome;
+                                font-size: inherit;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                font-size: 32px;
+                                z-index: 1;
+                                opacity: 0;
+                                @include transition(all 0.3s ease-in-out);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*   activiti super sub header   */
+.activiti-supersubheader-wrapper{
+    background-color: $activiti-sub-list;
+    .container-fluid{
+        .activiti-supersubheader-content{
+            ul{
+                margin: 0;
+                > li{
+                    padding: 0;
+                    &.active{
+                        a{
+                            > span{
+                                color: $white;
+                            }
+                            > small{
+                                background-color: #ca608e;
+                                color: #e5bcce;
+                            }
+                        }
+                    }
+                    &:first-child{
+                        a{
+                            padding-left: 0;
+                        }
+                    }
+                    a{
+                        padding: 12px 45px;
+                        display: block;
+                        font-size: 12px;
+                        font-family: $roboto-regular;
+                        position: relative;
+                        span{
+                            color : $activiti-supersubheader;
+                        }
+                        small{
+                            position: absolute;
+                            right: 14px;
+                            top: 7px;
+                            background-color: #4d7a9e;
+                            height: 25px;
+                            color: #8eb3cf;
+                            width: 25px;
+                            line-height: 25px;
+                            text-align: center;
+                            @include border-radius(50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*--  Media Styles  --*/
 @media(max-width: 500px){
     .hidden-500{

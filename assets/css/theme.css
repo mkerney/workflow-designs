@@ -272,6 +272,108 @@ body {
         .management-header .content-wrapper-pills > li a > i {
           display: inline-block; }
 
+/*   activiti sub header   */
+.activiti-subheader-wrapper {
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #158679; }
+  .activiti-subheader-wrapper .container-fluid > * {
+    display: inline-block;
+    float: left; }
+    .activiti-subheader-wrapper .container-fluid > *.task-subheader {
+      padding: 15px 0;
+      border-right: 1px solid #229b8c;
+      padding-right: 30px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader h4 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 20px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader h6 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: "Roboto Regular"; }
+    .activiti-subheader-wrapper .container-fluid > *.task-subheader-content {
+      margin-left: 30px; }
+      .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul {
+        margin: 0; }
+        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li.active a:after {
+          opacity: 1; }
+        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a {
+          position: relative;
+          padding: 25px 30px 25px 38px;
+          font-family: "Roboto Regular";
+          display: block;
+          font-size: 14px; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > i {
+            position: absolute;
+            left: 0;
+            top: 18px;
+            font-size: 26px;
+            color: #e6f2f0; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > span {
+            color: #e6f2f0; }
+          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a:after {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: -11px;
+            content: "\f0d8";
+            color: #325d80;
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 32px;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+
+/*   activiti super sub header   */
+.activiti-supersubheader-wrapper {
+  background-color: #325d80; }
+  .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul {
+    margin: 0; }
+    .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li {
+      padding: 0; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li.active a > span {
+        color: #ffffff; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li.active a > small {
+        background-color: #ca608e;
+        color: #e5bcce; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li:first-child a {
+        padding-left: 0; }
+      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a {
+        padding: 12px 45px;
+        display: block;
+        font-size: 12px;
+        font-family: "Roboto Regular";
+        position: relative; }
+        .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a span {
+          color: #7f9bb3; }
+        .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a small {
+          position: absolute;
+          right: 14px;
+          top: 7px;
+          background-color: #4d7a9e;
+          height: 25px;
+          color: #8eb3cf;
+          width: 25px;
+          line-height: 25px;
+          text-align: center;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%; }
+
 /*--  Media Styles  --*/
 @media (max-width: 500px) {
   .hidden-500 {
@@ -1947,88 +2049,6 @@ body {
             font-family: "Roboto Regular";
             font-size: 12px; }
 
-.activiti-subheader-wrapper {
-  color: #ffffff;
-  font-weight: 600;
-  background-color: #158679; }
-  .activiti-subheader-wrapper .container-fluid > * {
-    display: inline-block;
-    float: left; }
-    .activiti-subheader-wrapper .container-fluid > *.task-subheader {
-      padding: 15px 0;
-      border-right: 1px solid #229b8c;
-      padding-right: 30px; }
-      .activiti-subheader-wrapper .container-fluid > *.task-subheader h4 {
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 18px;
-        letter-spacing: 1px;
-        line-height: 20px; }
-      .activiti-subheader-wrapper .container-fluid > *.task-subheader h6 {
-        text-transform: uppercase;
-        margin: 0;
-        font-size: 14px;
-        line-height: 14px;
-        font-family: "Roboto Regular"; }
-    .activiti-subheader-wrapper .container-fluid > *.task-subheader-content {
-      margin-left: 30px; }
-      .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul {
-        margin: 0; }
-        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li.active a:after {
-          opacity: 1; }
-        .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a {
-          position: relative;
-          padding: 25px 30px 25px 38px;
-          font-family: "Roboto Regular";
-          display: block;
-          font-size: 14px; }
-          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > i {
-            position: absolute;
-            left: 0;
-            top: 18px;
-            font-size: 26px;
-            color: #e6f2f0; }
-          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a > span {
-            color: #e6f2f0; }
-          .activiti-subheader-wrapper .container-fluid > *.task-subheader-content > ul > li > a:after {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            bottom: -11px;
-            content: "\f0d8";
-            color: #325d80;
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-size: 32px;
-            z-index: 1;
-            opacity: 0;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out; }
-
-.activiti-supersubheader-wrapper {
-  background-color: #325d80; }
-  .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul {
-    margin: 0; }
-    .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li {
-      padding: 0; }
-      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li.active a > span {
-        color: #ffffff; }
-      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li:first-child a {
-        padding-left: 0; }
-      .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a {
-        padding: 12px 45px;
-        display: block;
-        font-size: 12px;
-        font-family: "Roboto Regular"; }
-        .activiti-supersubheader-wrapper .container-fluid .activiti-supersubheader-content ul > li a span {
-          color: #7f9bb3; }
-
 /*--  Sidebar Styles  --*/
 .right-sidebar {
   padding: 25px 20px;
@@ -3067,3 +3087,688 @@ body > .world_map_tooltip {
 @media (min-width: 300px) and (max-width: 480px) {
   .details-modal-wrapper .modal-header .modal-title .name {
     width: 150px; } }
+
+/*==============================================================================
+********************    Activity Page Styles For The Site   ********************
+==============================================================================*/
+.activiti-task-wrapper {
+  padding: 15px 0; }
+
+.activiti-task-wrapper .form-group .form-control {
+  background-color: transparent;
+  font-family: "Roboto Medium";
+  font-size: 13px;
+  color: #465B65;
+  border: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #168678;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.activiti-task-wrapper .form-group .form-control::-moz-placeholder {
+  color: #465B65; }
+
+.activiti-task-wrapper .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.activiti-task-wrapper .aside-wrapper .form-group .form-control-feedback {
+  color: #465B65;
+  font-size: 18px; }
+
+.activiti-task-wrapper .aside-wrapper .form-group .glyphicon-search.form-control-feedback {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.activiti-task-wrapper .create-new-task-wrapper .form-group .form-control-feedback {
+  color: #476F92; }
+
+.activiti-task-wrapper .aside-wrapper-right .form-group .form-control-feedback {
+  color: #168678; }
+
+.activiti-task-wrapper .create-new-task-wrapper h2 {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #475C65;
+  margin: 0 0 50px;
+  padding: 3px 15px 10px 30px;
+  border-bottom: 1px solid #168678;
+  position: relative;
+  text-transform: uppercase; }
+
+.activiti-task-wrapper .create-new-task-wrapper h2 a {
+  color: #456F90;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0; }
+
+.activiti-task-wrapper .aside-wrapper h3 {
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  line-height: 21px;
+  color: #6D787A;
+  margin: 0 0 15px; }
+
+.activiti-task-wrapper .aside-wrapper .dropdown a {
+  font-family: "Roboto Medium";
+  font-size: 10px;
+  color: #51666F;
+  display: inline-block; }
+
+.activiti-task-wrapper .aside-wrapper .dropdown .dropdown-menu {
+  left: auto;
+  min-width: 75px;
+  right: 0; }
+
+.activiti-task-wrapper .aside-wrapper.aside-wrapper-right .dropdown .dropdown-menu {
+  left: auto;
+  right: 0; }
+
+.activiti-task-wrapper .aside-wrapper .dropdown .dropdown-menu li {
+  font-family: "Roboto Medium";
+  font-size: 9px;
+  color: #51666F; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel.panel-info > .panel-heading,
+.activiti-task-wrapper .aside-wrapper .custom-panel.panel-info > .panel-body {
+  background-color: #325d80;
+  border-color: #325d80; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel > .panel-heading {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-family: "Roboto Medium";
+  font-size: 11px;
+  color: #9BA5A5;
+  background-color: #364A55;
+  border-color: #364A55; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body {
+  padding-top: 0;
+  font-family: "Roboto Medium";
+  font-size: 10px;
+  color: #677D88;
+  background-color: #364A55; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body .light-red {
+  color: #BD5E87; }
+
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body .light-green {
+  color: #1B7E71; }
+
+/*--  Media Body Styles  --*/
+.activiti-task-wrapper .aside-wrapper .media {
+  background-color: #364A55;
+  margin: 0 0 15px;
+  padding: 15px; }
+
+.activiti-task-wrapper .aside-wrapper .media .media-left a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #495D66; }
+
+.activiti-task-wrapper .aside-wrapper .media .media-left a .media-object {
+  max-width: 100%;
+  height: auto; }
+
+.activiti-task-wrapper .aside-wrapper .media .media-body .media-heading {
+  font-family: "Roboto Medium";
+  font-size: 12px;
+  line-height: 15px;
+  color: #A3ADAC; }
+
+.activiti-task-wrapper .aside-wrapper .media .media-body p {
+  font-family: "Roboto Medium";
+  font-size: 10px;
+  color: #708189;
+  margin: 0; }
+
+.activiti-task-wrapper .aside-wrapper .media .media-body p span {
+  display: block;
+  font-family: "Roboto Medium";
+  font-size: 9px;
+  color: #698895; }
+
+/*--  Create New Task Wrapper Styles  --*/
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper {
+  border: 1px solid #3E5662;
+  text-transform: uppercase; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid #3E5662;
+  background-color: transparent;
+  position: relative; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel:last-of-type {
+  border: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-heading,
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: transparent; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-body {
+  padding-top: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-heading .add-link {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 15px;
+  color: #5586AE;
+  font-size: 25px; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-body .media .media-body {
+  position: relative; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-body .media .media-body .close-link {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  color: #A2405D;
+  font-size: 15px; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading {
+  padding: 15px 15px 15px 80px; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading .server-link {
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  right: auto;
+  color: #52666F;
+  font-size: 50px;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading h3 {
+  margin: 0 0 10px;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  line-height: 21px;
+  color: #A3ABAA; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .panel-heading {
+  margin: 0 0 10px;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  line-height: 21px;
+  color: #A3ABAA; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading ul {
+  margin: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading ul li {
+  color: #5c6d75;
+  font-family: "Roboto Regular";
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  line-height: 15px;
+  margin: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading ul li i {
+  margin: 0 5px 0 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #497498; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-body {
+  text-transform: none;
+  font-family: "Roboto Regular";
+  font-size: 12px;
+  line-height: 18px;
+  color: #5A6E79; }
+
+/*--  Create Task Media Styles  --*/
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .row:first-of-type .media {
+  margin: 0 0 15px; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media {
+  background-color: transparent; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a {
+  display: inline-block; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left,
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body {
+  vertical-align: middle; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.associated-people-panel .media .media-left a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #495D66; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a .media-object {
+  max-width: 100%;
+  height: auto; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a i {
+  font-size: 35px;
+  color: #526670; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a i.fa-server {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body .media-heading {
+  font-family: "Roboto Regular";
+  font-size: 12px;
+  color: #A3ADAC; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body p {
+  font-family: "Roboto Regular";
+  font-size: 10px;
+  color: #708189;
+  margin: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body p span {
+  display: block;
+  font-family: "Roboto Medium";
+  font-size: 9px;
+  color: #698895; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .btn-light-blue {
+  display: inline-block;
+  font-family: "Roboto Medium";
+  font-size: 11px;
+  margin: 0 0 0 5px;
+  padding: 3px 8px;
+  color: #BFC7CB;
+  background-color: #41698C;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .btn-light-blue {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 12px;
+  padding: 5px 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .btn-light-blue i {
+  margin: 0 0 0 10px; }
+
+/*==============================================================================
+***********************    Meadia Styles For The Site   ************************
+==============================================================================*/
+@media (min-width: 1200px) {
+  .activiti-task-wrapper .side-col {
+    width: 20%; }
+  .activiti-task-wrapper .center-col {
+    width: 60%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .activiti-task-wrapper .aside-wrapper h3 {
+    font-size: 14px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading ul li {
+    font-size: 12px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .activiti-task-wrapper .aside-wrapper h3 {
+    font-size: 12px; }
+  .activiti-task-wrapper .aside-wrapper .media .media-left a {
+    width: 45px;
+    height: 45px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media {
+    min-height: 70px; }
+  /*--  Notification Panel Styles  --*/
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading {
+    padding: 15px 15px 15px 50px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading h3 {
+    font-size: 12px;
+    line-height: 12px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading .server-link {
+    font-size: 25px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .btn-light-blue {
+    font-size: 10px;
+    padding: 5px 8px; }
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .panel-heading ul li {
+    width: 100%;
+    font-size: 10px; }
+  /*--  Associated People Styles  --*/
+  .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.associated-people-panel .media .media-left a {
+    width: 45px;
+    height: 45px; } }
+
+.activiti-modeller-header {
+  background-color: #243036;
+  border-bottom: 1px solid #344a55; }
+  .activiti-modeller-header .activiti-modeller-header-content {
+    position: relative; }
+    .activiti-modeller-header .activiti-modeller-header-content h5 {
+      padding: 15px 35px;
+      position: relative;
+      margin: 0;
+      color: #3f7a94;
+      display: inline-block; }
+      .activiti-modeller-header .activiti-modeller-header-content h5 > i {
+        left: 0;
+        top: 10px;
+        position: absolute;
+        font-size: 26px;
+        color: #3b78a9; }
+    .activiti-modeller-header .activiti-modeller-header-content > div {
+      display: inline-block; }
+      .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons {
+        position: absolute;
+        left: 250px;
+        top: 9px; }
+        .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul {
+          display: inline-block;
+          margin: 0; }
+          .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul:not(:last-child) > li:last-child {
+            padding-right: 10px;
+            border-right: 1px solid #3e4e57; }
+          .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li {
+            padding: 0; }
+            .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li:first-child {
+              padding-left: 10px; }
+            .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li a {
+              display: block;
+              padding: 0 3px; }
+              .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li a > i {
+                color: #4676a0;
+                font-size: 19px;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                display: block; }
+                .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li a > i img {
+                  position: absolute;
+                  top: 5px; }
+              .activiti-modeller-header .activiti-modeller-header-content > div.custom-modeller-icons > ul > li a.grey i {
+                color: #4b636e; }
+      .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons {
+        position: absolute;
+        right: 0;
+        top: 8px; }
+        .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul {
+          margin: 0; }
+          .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a {
+            display: block; }
+            .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.custom-submit {
+              color: #efeaea;
+              opacity: 1;
+              text-shadow: none;
+              padding: 8px 16px;
+              background-color: #4676a0;
+              border: 0;
+              font-size: 12px;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              -ms-border-radius: 0;
+              border-radius: 0; }
+              .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.custom-submit:hover, .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.custom-submit:focus {
+                outline: none; }
+            .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.cancel {
+              color: #efeaea;
+              opacity: 1;
+              text-shadow: none;
+              padding: 8px 12px;
+              background-color: #566c76;
+              border: 0;
+              font-size: 12px; }
+              .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.cancel:hover, .activiti-modeller-header .activiti-modeller-header-content > div.modeller-buttons > ul li a.cancel:focus {
+                outline: none; }
+
+.modeller-process-wrapper {
+  padding: 15px;
+  position: relative;
+  overflow: hidden; }
+  .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu {
+    margin: 0; }
+    .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li {
+      margin-bottom: 10px;
+      padding: 0; }
+      .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li.active > a {
+        color: #90b1cc;
+        border: 1px solid #325d80;
+        padding: 15px 50px 15px 40px;
+        background-color: #325d80; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li.active > a:hover {
+          text-decoration: none;
+          color: #90b1cc; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li.active > a > .left-icon {
+          color: #5e88aa;
+          top: 6px; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li.active > a > small {
+          color: #5889b0;
+          top: 7px; }
+      .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li > a {
+        display: block;
+        background-color: #364a55;
+        position: relative;
+        padding: 25px 50px 25px 40px;
+        border: 1px solid #435661;
+        font-size: 13px;
+        color: #9aa6ac;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li > a:hover {
+          text-decoration: none;
+          color: #9aa6ac; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li > a > .left-icon {
+          position: absolute;
+          left: 10px;
+          top: 16px;
+          font-size: 30px;
+          color: #4c626e;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li > a > small {
+          position: absolute;
+          right: 10px;
+          top: 17px;
+          font-size: 30px;
+          line-height: 30px;
+          color: #6a7d88;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li .treeview-menu {
+        margin: 0;
+        display: none;
+        border-top: 1px solid #4c7596;
+        background-color: #325d80;
+        padding: 10px 0; }
+        .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li .treeview-menu > li {
+          padding: 0; }
+          .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li .treeview-menu > li > a {
+            color: #90b1cc;
+            padding: 10px 0 10px  70px;
+            position: relative;
+            display: block;
+            font-size: 11px; }
+            .modeller-process-wrapper .processes-sidebar-wrapper .sidebar-menu > li .treeview-menu > li > a i {
+              color: #5e88aa;
+              font-size: 18px;
+              position: absolute;
+              left: 40px;
+              top: 7px; }
+  .modeller-process-wrapper .processes-main-wrapper > h4 {
+    color: #88949a;
+    margin-top: 0;
+    font-size: 14px; }
+  .modeller-process-wrapper .processes-main-wrapper .process-leave-textarea > textarea {
+    border-color: #495b64;
+    box-shadow: none;
+    background-color: transparent;
+    resize: none;
+    color: #88949a;
+    height: 600px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px; }
+    .modeller-process-wrapper .processes-main-wrapper .process-leave-textarea > textarea:focus {
+      box-shadow: none; }
+  .modeller-process-wrapper .process-right-sidebar {
+    top: 5px;
+    right: -400px;
+    width: 400px;
+    position: absolute;
+    background-color: #243036;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .modeller-process-wrapper .process-right-sidebar.process-right-sidebar-open {
+      right: 0; }
+      .modeller-process-wrapper .process-right-sidebar.process-right-sidebar-open .process-right-sidebar-content a {
+        left: 0; }
+        .modeller-process-wrapper .process-right-sidebar.process-right-sidebar-open .process-right-sidebar-content a i {
+          transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg); }
+    .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content {
+      position: relative; }
+      .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content a {
+        position: absolute;
+        left: -29px;
+        top: 0;
+        display: inline-block;
+        padding: 7px 9px;
+        background-color: #325d80;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content a > i {
+          color: #9fb5bf;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
+      .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content .right-sidebar-form {
+        height: 100%;
+        width: 100%; }
+        .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content .right-sidebar-form > h5 {
+          padding: 8px 15px 8px 40px;
+          font-size: 14px;
+          margin: 0;
+          color: #477295; }
+        .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content .right-sidebar-form > form {
+          padding: 15px; }
+          .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content .right-sidebar-form > form label {
+            text-align: left;
+            font-weight: normal;
+            font-family: "Roboto Regular";
+            font-size: 12px;
+            text-transform: uppercase; }
+          .modeller-process-wrapper .process-right-sidebar .process-right-sidebar-content .right-sidebar-form > form input {
+            height: 22px;
+            text-transform: uppercase;
+            border: 0;
+            text-align: center;
+            padding: 1px 2px;
+            font-size: 12px;
+            box-shadow: none;
+            line-height: 14px;
+            color: #8b9fa8;
+            border-bottom: 1px solid #257870;
+            font-family: "Roboto Regular";
+            font-weight: normal;
+            background-color: transparent !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            border-radius: 0; }

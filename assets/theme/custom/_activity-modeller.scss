@@ -1,0 +1,301 @@
+.activiti-modeller-header{
+    background-color: #243036;
+    border-bottom: 1px solid #344a55;
+    .activiti-modeller-header-content{
+        position: relative;
+        h5{
+            padding: 15px 35px;
+            position: relative;
+            margin: 0;
+            color: #3f7a94;
+            display: inline-block;
+            > i{
+                left: 0;
+                top: 10px;
+                position: absolute;
+                font-size: 26px;
+                color: #3b78a9;
+            }
+        }
+        > div{
+            display: inline-block;
+            &.custom-modeller-icons{
+                position: absolute;
+                left: 250px;
+                top: 9px;
+                > ul{
+                    display: inline-block;
+                    margin: 0;
+                    &:not(:last-child){
+                        > li{
+                            &:last-child{
+                                padding-right: 10px;
+                                border-right: 1px solid #3e4e57;
+                            }
+                        }
+                    }
+                    > li{
+                        &:first-child{
+                            padding-left: 10px;
+                        }
+                        padding: 0;
+                        a{
+                            display: block;
+                            padding: 0 3px;
+                            > i{
+                                color: #4676a0;
+                                font-size: 19px;
+                                position: relative;
+                                width: 20px;
+                                height: 20px;
+                                display: block;
+                                img{
+                                    position: absolute;
+                                    top: 5px;
+                                }
+                            }
+                            &.grey{
+                                i{
+                                    color: #4b636e;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.modeller-buttons{
+                position: absolute;
+                right: 0;
+                top: 8px;
+                > ul{
+                    margin: 0;
+                    li{
+                        a{
+                            display: block;
+                            &.custom-submit{
+                                color: $modal-title-text;
+                                opacity: 1;
+                                text-shadow: none;
+                                padding: 8px 16px;
+                                background-color: $blue_5;
+                                border: 0;
+                                font-size: 12px;
+                                @include border-radius(0);
+                                &:hover,&:focus{
+                                    outline: none;
+                                }
+                            }
+                            &.cancel{
+                                color: $modal-title-text;
+                                opacity: 1;
+                                text-shadow: none;
+                                padding: 8px 12px;
+                                background-color: $modal-cancel-bg;
+                                border: 0;
+                                font-size: 12px;
+                                &:hover,&:focus{
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modeller-process-wrapper{
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    .processes-sidebar-wrapper{
+        .sidebar-menu{
+            margin: 0;
+            > li{
+                margin-bottom: 10px;
+                &.active{
+                    > a{
+                        color: #90b1cc;
+                        border: 1px solid #325d80;
+                        padding: 15px 50px 15px 40px;
+                        background-color: #325d80;
+                        &:hover{
+                            text-decoration: none;
+                            color: #90b1cc;
+                        }
+                        > .left-icon{
+                            color: #5e88aa;
+                            top: 6px;
+                        }
+                        > small{
+                            color: #5889b0;
+                            top: 7px;
+                        }
+                    }
+                }
+                padding: 0;
+                > a{
+                    display: block;
+                    background-color: #364a55;
+                    position: relative;
+                    padding: 25px 50px 25px 40px;
+                    border: 1px solid #435661;
+                    font-size: 13px;
+                    color: #9aa6ac;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    @include transition(all 0.3s ease-in-out);
+                    &:hover{
+                        text-decoration: none;
+                        color: #9aa6ac;
+                    }
+                    > .left-icon{
+                        position: absolute;
+                        left: 10px;
+                        top: 16px;
+                        font-size: 30px; 
+                        color: #4c626e;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                    > small{
+                        position: absolute;
+                        right: 10px;
+                        top: 17px;
+                        font-size: 30px;
+                        line-height: 30px; 
+                        color: #6a7d88;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+                .treeview-menu{
+                    margin: 0;
+                    display: none;
+                    border-top: 1px solid #4c7596;
+                    background-color: #325d80;
+                    padding: 10px 0;
+                    > li{
+                        padding: 0;
+                        > a{
+                            color: #90b1cc;
+                            padding: 10px 0 10px  70px;
+                            position: relative;
+                            display: block;
+                            font-size: 11px;
+                            i{
+                                color: #5e88aa;
+                                font-size: 18px;
+                                position: absolute;
+                                left: 40px;
+                                top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .processes-main-wrapper{
+        > h4{
+            color: #88949a;
+            margin-top: 0;
+            font-size: 14px;
+        }
+        .process-leave-textarea{
+            > textarea{
+                border-color:  #495b64;
+                box-shadow: none;
+                background-color: transparent;
+                resize: none;
+                color: #88949a;
+                height: 600px;
+                @include border-radius(2px);
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .process-right-sidebar{
+        top: 5px;
+        right: -400px;
+        width: 400px;
+        position: absolute;
+        background-color: #243036;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &.process-right-sidebar-open{
+            right: 0;
+            .process-right-sidebar-content{
+                a{
+                    left: 0;
+                    i{
+                        transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        .process-right-sidebar-content{
+            position: relative;
+            a{
+                position: absolute;
+                left: -29px;
+                top: 0;
+                display: inline-block;
+                padding: 7px 9px;
+                background-color: #325d80;
+                @include transition(all 0.3s ease);
+                > i{
+                    color: #9fb5bf;
+                    @include transition(all 0.3s ease);
+                }
+            }
+            .right-sidebar-form{
+                height: 100%;
+                width: 100%;
+                > h5{
+                    padding: 8px 15px 8px 40px;
+                    font-size: 14px;
+                    margin: 0;
+                    color: #477295;
+                }
+                > form{
+                    padding: 15px;
+                    label{
+                        text-align: left;
+                        font-weight: normal;
+                        font-family: $roboto_regular;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+                    input{
+                        height: 22px;
+                        text-transform: uppercase;
+                        border: 0;
+                        text-align: center;
+                        padding: 1px 2px;
+                        font-size: 12px;
+                        box-shadow: none;
+                        line-height: 14px;
+                        color: #8b9fa8;
+                        border-bottom: 1px solid #257870;
+                        font-family: $roboto_regular;
+                        font-weight: normal;
+                        background-color: transparent !important;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        -ms-border-radius: 0;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

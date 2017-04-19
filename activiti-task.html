@@ -8,9 +8,11 @@
         <title>Work Flow | Activiti Task</title>
 
         <!-- Custom Styles -->
-        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+        <link href="assets/css/theme.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -106,7 +108,7 @@
             </div>
         </div>
         <!--  Sub Header Wrapper Ends  -->
-        
+
         <!--  super Sub Header Wrapper Starts  -->
         <div class="activiti-supersubheader-wrapper">
             <div class="container-fluid">
@@ -115,26 +117,31 @@
                         <li class="active">
                             <a class="text-uppercase" href="javascript:void(0);">
                                 <span class="text-uppercase">inbox</span>
+                                <small>12</small>
                             </a>
                         </li>
                         <li>
                             <a class="text-uppercase" href="javascript:void(0);">
                                 <span class="text-uppercase">My tasks</span>
+                                <small>09</small>
                             </a>
                         </li>
                         <li>
                             <a class="text-uppercase" href="javascript:void(0);">
                                 <span class="text-uppercase">queued</span>
+                                <small>09</small>
                             </a>
                         </li>
                         <li>
                             <a class="text-uppercase" href="javascript:void(0);">
                                 <span class="text-uppercase">involved</span>
+                                <small>12</small>
                             </a>
                         </li>
                         <li>
                             <a class="text-uppercase" href="javascript:void(0);">
                                 <span class="text-uppercase">archived</span>
+                                <small>12</small>
                             </a>
                         </li>
                     </ul>
@@ -148,7 +155,476 @@
             <!--  Content Wrapper Starts  -->
             <div class="content-wrapper">
                 <div class="activiti-task-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-3 side-col">
 
+                                <!--  Aside Wrapper Starts  -->
+                                <aside class="aside-wrapper text-uppercase">
+
+                                    <div class="form-group has-success has-feedback">
+                                        <input type="text" class="form-control" placeholder="Search Task" />
+                                        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-7"><h3>Recent Tasks</h3></div>
+                                        <div class="col-sm-5">  
+                                            <div class="dropdown clearfix">
+                                                <a href="javascript:void(0);" class="pull-right" id="dLabel" data-toggle="dropdown">
+                                                    By Date<span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel custom-panel panel-info">
+                                        <div class="panel-heading">Leave Notifications</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">Database Configure</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">Usability Evaluation</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">Backend Process</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">UX Bootcamp</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">Product Manager Meetup</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel custom-panel">
+                                        <div class="panel-heading">Data Visualisation</div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">On 12/09/2016</div>
+                                                <div class="col-md-6 light-red">Priroty : High</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">Due : 30days</div>
+                                                <div class="col-md-6 light-green">People : 08</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                                <!--  Aside Wrapper Ends  -->
+
+                            </div>
+                            <div class="col-sm-6 center-col">
+
+                                <!--  Create New Task Wrapper Starts  -->
+                                <div class="create-new-task-wrapper">
+                                    <h2>Create a new task<a class="glyphicon glyphicon-plus-sign" href="javascript:void(0);"></a></h2>
+
+                                    <div class="create-new-task-inner-wrapper">
+                                        <!--  Notification Panel Starts  -->
+                                        <div class="panel custom-panel notification-panel">
+                                            <div class="panel-heading">
+                                                <div class="notification-header">
+                                                    <a href="javascript:void(0);" class="fa fa-server server-link"></a>
+                                                    <h3>Leave Notification</h3>
+                                                    <ul class="list-inline">
+                                                        <li><i class="fa fa-history"></i>Created on 12/09/2016</li>
+                                                        <li><i class="fa fa-calendar"></i>Due Date : 30/12/2016</li>
+                                                        <li><i class="fa fa-cubes"></i>Priority : High</li>
+                                                    </ul>
+                                                </div>
+                                                <a class="btn btn-light-blue" href="javascript:void(0);">Mark as Done<i class="fa fa-check"></i></a>
+                                            </div>
+                                            <div class="panel-body">
+                                                OrangeHRM Leave Notificatin add-on, notifies the leave to be
+                                                taken by colleagues. This is useful to know who will be on leave on
+                                                which date. For example the meetings and other priorities can be
+                                                arranged on a convenient date.
+                                                OrangeHRM Leave Notificatin add-on, notifies the leave to be
+                                                taken by colleagues. This is useful to know who will be on leave on
+                                                which date. For example the meetings and other priorities can be
+                                                arranged on a convenient date.
+                                                  OrangeHRM Leave Notificatin add-on, notifies the leave to be
+                                                taken by colleagues. This is useful to know who will be on leave on
+                                                which date. For example the meetings and other priorities can be
+                                                arranged on a convenient date.
+                                            </div>
+                                        </div>
+                                        <!--  Notification Panel Ends  -->
+
+                                        <!--  Associated People Panel Starts  -->
+                                        <div class="panel custom-panel associated-people-panel">
+                                            <div class="panel-heading">Associated People<a href="javascript:void(0);" class="fa fa-plus add-link"></a></div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);">
+                                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Victor Leyland</h4>
+                                                                <p>
+                                                                    Owner
+                                                                    <a href="javascript:void(0);" class="btn btn-light-blue">Transfer</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);">
+                                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">James Sheelan</h4>
+                                                                <p>
+                                                                    Assignee
+                                                                    <a href="javascript:void(0);" class="btn btn-light-blue">Re-Assign</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);">
+                                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Amanda Elliot</h4>
+                                                                <p>
+                                                                    Contributor
+                                                                    <a href="javascript:void(0);" class="btn btn-light-blue">Re-Assign</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-6 visible-md visible-sm visible-xs">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);">
+                                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Natally Armstrong</h4>
+                                                                <p>
+                                                                    Implementor
+                                                                    <a href="javascript:void(0);" class="btn btn-light-blue">Re-Assign</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row hidden-md hidden-sm hidden-xs">                                            
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);">
+                                                                    <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Natally Armstrong</h4>
+                                                                <p>
+                                                                    Implementor
+                                                                    <a href="javascript:void(0);" class="btn btn-light-blue">Re-Assign</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  Associated People Panel Ends  -->
+
+                                        <!--  Sub Task Panel Starts  -->
+                                        <div class="panel custom-panel sub-task-panel">
+                                            <div class="panel-heading">
+                                                Sub Task<a href="javascript:void(0);" class="fa fa-plus add-link"></a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-server"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Developer Meetup<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-server"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Database Configure<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">                                            
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-server"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Usability Evaluation<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  Sub Task Panel Ends  -->
+
+                                        <!--  Related Content Panel Starts  -->
+                                        <div class="panel custom-panel related-content-panel">
+                                            <div class="panel-heading">
+                                                Related Content<a href="javascript:void(0);" class="fa fa-plus add-link"></a>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-globe"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Leave Management<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-file-word-o"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Enterprise Mobility<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">                                            
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="javascript:void(0);"><i class="fa fa-file-pdf-o"></i></a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h4 class="media-heading">Oracle Leave Systems<a href="javascript:void(0);" class="fa fa-times close-link"></a></h4>
+                                                                <p>Created By : James Sheelan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  Related Content Panel Ends  -->
+
+                                </div>
+                                <!--  Create New Task Wrapper Ends  -->
+
+                            </div>
+                            <div class="col-sm-3 side-col">
+
+                                <!--  Aside Wrapper Starts  -->
+                                <aside class="aside-wrapper text-uppercase aside-wrapper-right">
+                                    <div class="form-group has-success has-feedback">
+                                        <input type="text" class="form-control" placeholder="SAY SOMETHING">
+                                        <span class="glyphicon glyphicon-plus form-control-feedback" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <h3>Recent Events</h3>  
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="dropdown clearfix">
+                                                <a class="pull-right" href="javascript:void(0);" id="dLabel" data-toggle="dropdown">
+                                                    By Date<span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                    <li><a href="javascript:void(0);">By Date</a></li>
+                                                </ul>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">James Sheelan</h4>
+                                            <p>
+                                                Attached leave management system as sub task
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">James Sheelan</h4>
+                                            <p>
+                                                Attached leave management system as sub task
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Jamanda Elliot</h4>
+                                            <p>
+                                                Attached oracle leave system as sub task
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Victor Leyland Said</h4>
+                                            <p>
+                                                Please upload lms hosted prototype 
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">James Sheelan Said</h4>
+                                            <p>
+                                                Yes, will be doing in an hour
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="javascript:void(0);">
+                                                <img class="media-object" src="assets/images/joe-fraser.png" alt="joe-fraser">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">James Sheelan Said</h4>
+                                            <p>
+                                                ITE been done. Will be sharing the link
+                                                <span>12 Hours Ago</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </aside>
+                                <!--  Aside Wrapper Ends  -->
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--  Content Wrapper Ends  -->

@@ -1,0 +1,466 @@
+/*==============================================================================
+********************    Activity Page Styles For The Site   ********************
+==============================================================================*/
+.activiti-task-wrapper{
+    padding: 15px 0;
+}
+.activiti-task-wrapper .form-group .form-control{
+    background-color: transparent;
+    font-family: "Roboto Medium";
+    font-size: 13px;
+    color: #465B65;
+    border: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #168678;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.activiti-task-wrapper .form-group .form-control::-moz-placeholder{
+    color: #465B65; 
+}
+.activiti-task-wrapper .form-group .form-control:focus{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.activiti-task-wrapper .aside-wrapper .form-group .form-control-feedback{
+    color: #465B65;
+    font-size: 18px;
+}
+.activiti-task-wrapper .aside-wrapper .form-group .glyphicon-search.form-control-feedback{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.activiti-task-wrapper .create-new-task-wrapper .form-group .form-control-feedback{
+    color: #476F92;
+}
+.activiti-task-wrapper .aside-wrapper-right .form-group .form-control-feedback{
+    color: #168678;
+}
+.activiti-task-wrapper .create-new-task-wrapper h2{
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: #475C65;
+    margin: 0 0 50px;
+    padding: 3px 15px 10px 30px;
+    border-bottom: 1px solid #168678;
+    position: relative;
+    text-transform: uppercase;
+}
+.activiti-task-wrapper .create-new-task-wrapper h2 a{
+    color: #456F90;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+}
+.activiti-task-wrapper .aside-wrapper h3{
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    line-height: 21px;
+    color: #6D787A;
+    margin: 0 0 15px;
+}
+.activiti-task-wrapper .aside-wrapper .dropdown a{
+    font-family: "Roboto Medium";
+    font-size: 10px;
+    color: #51666F;
+    display: inline-block;
+}
+.activiti-task-wrapper .aside-wrapper .dropdown .dropdown-menu{
+    left: auto;
+    min-width: 75px;
+    right: 0;
+}
+.activiti-task-wrapper .aside-wrapper.aside-wrapper-right .dropdown .dropdown-menu{
+    left: auto;
+    right: 0;
+}
+.activiti-task-wrapper .aside-wrapper .dropdown .dropdown-menu li{
+    font-family: "Roboto Medium";
+    font-size: 9px;
+    color: #51666F;
+}
+
+.activiti-task-wrapper .aside-wrapper .custom-panel{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.activiti-task-wrapper .aside-wrapper .custom-panel.panel-info > .panel-heading,
+.activiti-task-wrapper .aside-wrapper .custom-panel.panel-info > .panel-body{
+    background-color: #325d80;
+    border-color: #325d80;
+}
+.activiti-task-wrapper .aside-wrapper .custom-panel > .panel-heading{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-family: "Roboto Medium";
+    font-size: 11px;
+    color: #9BA5A5;
+    background-color: #364A55;
+    border-color: #364A55;
+}
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body{
+    padding-top: 0;
+    font-family: "Roboto Medium";
+    font-size: 10px;
+    color: #677D88;
+    background-color: #364A55;
+}
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body .light-red{
+    color: #BD5E87;
+}
+.activiti-task-wrapper .aside-wrapper .custom-panel .panel-body .light-green{
+    color: #1B7E71;
+}
+
+/*--  Media Body Styles  --*/
+.activiti-task-wrapper .aside-wrapper .media{
+    background-color: #364A55;
+    margin: 0 0 15px;
+    padding: 15px;
+}
+.activiti-task-wrapper .aside-wrapper .media .media-left a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    border: 4px solid #495D66;
+}
+.activiti-task-wrapper .aside-wrapper .media .media-left a .media-object{
+    max-width: 100%;
+    height: auto;
+}
+.activiti-task-wrapper .aside-wrapper .media .media-body .media-heading{
+    font-family: "Roboto Medium";
+    font-size: 12px;
+    line-height: 15px;
+    color:#A3ADAC;
+}
+.activiti-task-wrapper .aside-wrapper .media .media-body p{ 
+    font-family: "Roboto Medium";
+    font-size: 10px;
+    color: #708189;
+    margin: 0;
+}
+.activiti-task-wrapper .aside-wrapper .media .media-body p span{
+    display: block;
+    font-family: "Roboto Medium";
+    font-size: 9px;
+    color: #698895;
+}
+
+/*--  Create New Task Wrapper Styles  --*/
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper{  
+    border: 1px solid #3E5662;
+    text-transform: uppercase;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #3E5662;
+    background-color: transparent;
+    position: relative;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel:last-of-type{
+    border: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel  .panel-heading,
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel  .panel-body{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel  .panel-body{
+    padding-top: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel  .panel-heading .add-link{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 15px;  
+    color: #5586AE;
+    font-size: 25px; 
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel  .panel-body .media .media-body{
+    position: relative;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel  .panel-body .media .media-body .close-link{
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;  
+    color: #A2405D;
+    font-size: 15px; 
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel  .panel-heading{
+    padding: 15px 15px 15px 80px;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel  .panel-heading .server-link{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    right: auto;  
+    color: #52666F;
+    font-size: 50px;   
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel.notification-panel  .panel-heading h3{
+    margin: 0 0 10px;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    line-height: 21px;
+    color:#A3ABAA;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel  .panel-heading{
+      margin: 0 0 10px;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+    line-height: 21px;
+    color:#A3ABAA;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel.notification-panel  .panel-heading ul{
+    margin: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel.notification-panel  .panel-heading ul li{
+    color: #5c6d75;
+    font-family: "Roboto Regular";
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    line-height: 15px;
+    margin: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel.notification-panel  .panel-heading ul li i{
+    margin: 0 5px 0 0;
+    font-size: 18px;
+    line-height: 21px;
+    color:#497498;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel  .panel-body{
+    text-transform: none;
+    font-family: "Roboto Regular";
+    font-size: 12px;
+    line-height: 18px;
+    color: #5A6E79;
+}
+
+
+/*--  Create Task Media Styles  --*/
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .row:first-of-type .media{
+    margin: 0 0 15px;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .media{
+    background-color: transparent;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a{
+    display: inline-block;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left,
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body{
+    vertical-align: middle;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.associated-people-panel .media .media-left a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    border: 4px solid #495D66;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-left a .media-object{
+    max-width: 100%;
+    height: auto;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .media .media-left a i{
+    font-size: 35px;
+    color: #526670;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .media .media-left a i.fa-server{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .media .media-body .media-heading{
+    font-family: "Roboto Regular";
+    font-size: 12px;
+    color:#A3ADAC;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .media .media-body p{ 
+    font-family: "Roboto Regular";
+    font-size: 10px;
+    color: #708189;
+    margin: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel .media .media-body p span{
+    display: block;
+    font-family: "Roboto Medium";
+    font-size: 9px;
+    color: #698895;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel .btn-light-blue{
+    display: inline-block;
+    font-family: "Roboto Medium";
+    font-size: 11px;
+    margin: 0 0 0 5px;
+    padding: 3px 8px;
+    color: #BFC7CB;
+    background-color: #41698C;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel.notification-panel .btn-light-blue{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    padding: 5px 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel.notification-panel .btn-light-blue i{
+    margin:  0 0 0 10px;
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel{
+
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+.custom-panel{
+
+}
+.activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+.custom-panel{
+
+}
+
+/*==============================================================================
+***********************    Meadia Styles For The Site   ************************
+==============================================================================*/
+
+@media (min-width: 1200px){
+    .activiti-task-wrapper .side-col{
+        width: 20%;
+    }
+    .activiti-task-wrapper .center-col{
+        width: 60%;
+    }
+}
+@media (min-width: 992px) and (max-width:1199px){
+    .activiti-task-wrapper .aside-wrapper h3{
+        font-size: 14px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+    .custom-panel.notification-panel .panel-heading ul li{
+        font-size: 12px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .activiti-task-wrapper .aside-wrapper h3{
+        font-size: 12px;
+    }
+    .activiti-task-wrapper .aside-wrapper .media .media-left a{
+        width: 45px;
+        height: 45px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+    .custom-panel .media{
+        min-height: 70px;
+    }
+    /*--  Notification Panel Styles  --*/
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+    .custom-panel.notification-panel .panel-heading{
+        padding: 15px 15px 15px 50px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+    .custom-panel.notification-panel .panel-heading h3{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+    .custom-panel.notification-panel .panel-heading .server-link{
+        font-size: 25px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+    .custom-panel.notification-panel .btn-light-blue{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper 
+    .custom-panel.notification-panel .panel-heading ul li{
+        width: 100%;
+        font-size: 10px;
+    }
+
+    /*--  Associated People Styles  --*/
+    .activiti-task-wrapper .create-new-task-wrapper .create-new-task-inner-wrapper
+    .custom-panel.associated-people-panel .media .media-left a{
+        width: 45px;
+        height: 45px;
+    }
+}
+@media (min-width: 320px) and (max-width:767px){
+
+}
+@media (min-width: 320px) and (max-width:480px){
+
+}

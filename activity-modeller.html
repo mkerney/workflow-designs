@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Work Flow | Activiti Modeller</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="custom-modal-drop">
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-chevron-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-chevron-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="activiti-subheader-wrapper">
+            <div class="container-fluid clearfix">
+                <div class="task-subheader">
+                    <h4>Management Hub</h4>
+                    <h6>Business Process Workflow</h6>
+                </div>
+                <div class="task-subheader-content">
+                    <ul class="list-inline">
+                        <li>
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <i class="fa fa-server"></i>
+                                <span class="text-uppercase">TASKS</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <i class="fa fa-cogs"></i>
+                                <span class="text-uppercase">Processes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <i class="fa fa-file-text"></i>
+                                <span class="text-uppercase">Reports</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <i class="fa fa-sliders"></i>
+                                <span class="text-uppercase">Manage</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  super Sub Header Wrapper Starts  -->
+        <div class="activiti-supersubheader-wrapper">
+            <div class="container-fluid">
+                <div class="activiti-supersubheader-content">
+                    <ul class="list-inline">
+                        <li>
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <span class="text-uppercase">My Instances</span>
+                                <small>09</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <span class="text-uppercase">Deployed Process Definations</span>
+                                <small>12</small>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="text-uppercase" href="javascript:void(0);">
+                                <span class="text-uppercase">Model Workspace</span>
+                                <small>12</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  activiti Sub Header Wrapper Starts  -->
+        <div class="activiti-modeller-header">
+            <div class="container-fluid">
+                <div class="activiti-modeller-header-content">
+                    <h5 class="text-uppercase">
+                        <i class="fa fa-spinner"></i>
+                        <span>Activity Modeler</span>
+                    </h5>
+                    <div class="custom-modeller-icons">
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-floppy-o"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-scissors"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-files-o"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/file-pad.png" alt="file-pad"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase grey" href="javascript:void(0);">
+                                    <i class="fa fa-undo"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase grey" href="javascript:void(0);">
+                                    <i class="fa fa-repeat"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/vertical-align.png" alt="vertical-align"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/horizontal-align.png" alt="horizontal-align"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase grey" href="javascript:void(0);">
+                                    <i class="fa fa-chain">
+
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase grey" href="javascript:void(0);">
+                                    <i class="fa fa-chain-broken"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-search-minus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/search-one.png" alt="search-one"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="fa fa-expand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/horse.png" alt="horse"/>
+                                    </i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase" href="javascript:void(0);">
+                                    <i class="">
+                                        <img src="assets/images/horse_underscore.png" alt="horse_"/>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modeller-buttons">
+                        <ul class="list-inline">
+                            <li>
+                                <a class="text-uppercase custom-submit" href="javascript:void(0);">
+                                    Save
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-uppercase cancel" href="javascript:void(0);">
+                                    cancel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  activiti Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper">
+            <!--  Content Wrapper Starts  -->
+            <div class="content-wrapper">
+                <div class="modeller-process-wrapper">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="processes-sidebar-wrapper">
+                                <ul class="sidebar-menu list-unstyled">
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Start Events
+                                            <small>05</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Activities
+                                            <small>09</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Structural
+                                            <small>03</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Gateways
+                                            <small>05</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Boundary Events
+                                            <small>07</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            intermediate Catching Events
+                                            <small>03</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            intermediate throwing Events
+                                            <small>02</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            End Events
+                                            <small>04</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Swin Lanes
+                                            <small>02</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="toggle text-uppercase" href="javascript:void(0)">
+                                            <span class="left-icon"><i class="fa fa-angle-down"></i></span>
+                                            Artifacts
+                                            <small>01</small>
+                                        </a>
+                                        <ul class="treeview-menu list-unstyled">
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-circle"></i>
+                                                    Sub process
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-clock-o"></i>
+                                                    Start Timer Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-dot-circle-o"></i>
+                                                    Start Signal Event
+                                                </a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-envelope-o"></i>
+                                                    Start Message Event
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" class="text-uppercase">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Starts Error event
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="processes-main-wrapper">
+                                <h4 class="text-uppercase">
+                                    New Leave Application
+                                </h4>
+                                <div class="process-leave-textarea">
+                                    <textarea class="form-control" id="leaveApplication">
+                                        
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-right-sidebar">
+                        <div class="process-right-sidebar-content">
+                            <a class="processSidebarToggle" href="javascript:void(0);">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <div class="right-sidebar-form">
+                                <h5 class="text-uppercase">New Leave Application</h5>
+                                <form class="form-horizontal" id="newLeaveApplication" name="newLeaveApplication">
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="newLeaveApp">New Leave Application</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="newLeaveApp" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="documentation">documentation</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="documentation" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="processVerification">Process Verification String(Document Only)</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="processVerification" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="eventListeners">Event Listeners</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="eventListeners" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="messageDefinations">Message Definations</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="messageDefinations" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="name">Name</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="name" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="processAuthor">Process Author</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="processAuthor" value="no value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="targetNamespace">Target Namespace</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="targetNamespace" value="www.activie.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="executiveListeners">Executive Listeners</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="executiveListeners" value="www.activie.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-xs-6" for="signalDefinations">Signal Definations</label>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" id="signalDefinations" value="www.activie.com">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Content Wrapper Ends  -->
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- Details Modal Wrapper Starts  -->
+        <div id="addUser" class="modal fade adduser-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <form id="addNewUser">
+                    <div class="modal-content">
+                        <div class="modal-header clearfix">
+                            <div class="add-user-submit">
+                                <button type="button" class="cancel" data-dismiss="modal" aria-label="Close">
+                                    <span class="text-uppercase">cancel</span>
+                                </button>
+                                <button type="submit" class="custom-submit" >
+                                    <span class="text-uppercase">save</span>
+                                </button>
+                            </div>
+                            <div class="modal-title">
+                                <span><i class="fa fa-plus"></i></span>
+                                <p class="text-uppercase">add user</p>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="adduser-stages">
+                                <ul class="list-inline clearfix">
+                                    <li class="active">
+                                        <a class="text-uppercase list-arrow personal" href="javascript:void(0);">
+                                            Personal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase list-arrow organisational" href="javascript:void(0);">
+                                            Organisational
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text-uppercase list-arrow social" href="javascript:void(0);">
+                                            Social
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix form-stages">
+                                <div class="col-sm-7">
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-2 text-uppercase" for="title">TITLE</label>
+                                        <div class="col-sm-4">
+                                            <select  class="form-control text-uppercase" id="title">
+                                                <option class="text-uppercase"></option>
+                                                <option class="text-uppercase">Associate</option>
+                                                <option class="text-uppercase">CEO</option>
+                                                <option class="text-uppercase">Senior Manager</option>
+                                            </select>
+                                        </div>
+                                        <label class="control-label col-sm-2 text-uppercase" for="suffix">Suffix</label>
+                                        <div class="col-sm-4">
+                                            <select  class="form-control text-uppercase" id="suffix">
+                                                <option class="text-uppercase"></option>
+                                                <option class="text-uppercase">Mr</option>
+                                                <option class="text-uppercase">Mrs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="firstName">First Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="firstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="middleName">Middle Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="middleName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="lastName">last Name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="email">Email</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group clearfix">
+                                        <label class="control-label col-sm-4 text-uppercase" for="profession">profession</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="profession" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="image-upload-wrapper text-center">
+                                        <div class="upload-image">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <div class="upload-buttons">
+                                            <a class="custom-file-upload" href="javascript:void(0);">
+                                                <input type="file" name="fileupload" id="fileupload">
+                                                <label for="fileupload" class="file-inline">
+                                                    <span class="text-uppercase">Browse</span>
+                                                </label>
+                                            </a>
+                                            <a class="text-uppercase" href="javascript:void(0);">
+                                                Upload
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Details Modal Wrapper Ends  -->
+
+        <!-- jQuery Js --><script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-3.1.1.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/common.js" type="text/javascript"></script>
+    </body>
+</html>

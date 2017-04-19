@@ -10,15 +10,21 @@ $(document).ready(function () {
         }
     });
     
+    /*PROJECT AUTHORING SIDEBAR TOGGLE*/
     $('.rightsidebar .sidebar-header').on('click', '.toggle-right', function(){
         $('.rightsidebar').toggleClass('rightsidebar-open');
     });
     
-    
+    /*DEEP RULE TOGGLE*/
     $('.deep-rule-sidebar .toolbar-icons').on('mouseover', function(){
         $(this).children('.rule-list-wrapper').toggleClass('rule-list-wrapper-open');
     });
     $('.deep-rule-sidebar .toolbar-icons').on('mouseout', function(){
         $(this).children('.rule-list-wrapper').toggleClass('rule-list-wrapper-open');
+    });
+    
+    /*PROCESS SIDEBAR TOGGLE*/
+    $('.process-right-sidebar .process-right-sidebar-content').on('click', '.processSidebarToggle', function(){
+        $(this).parents('.process-right-sidebar').toggleClass('process-right-sidebar-open');
     });
 });
