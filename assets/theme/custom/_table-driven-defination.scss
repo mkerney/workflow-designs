@@ -1,0 +1,32 @@
+.activiti-modeller-header{
+    &.table-driven-modeller-header{
+        .activiti-modeller-header-content{
+            position: relative;
+            .custom-table-icons{
+                display: inline-block;
+                > ul{
+                    > li{
+                        a{
+                            padding: 2px 10px;
+                            &.editor{
+                                background-color: #323f46;
+                                color: #84949c;
+                                font-size: 10px;
+                                @include border-radius(10px);
+                            }
+                            &.preview{
+                                background-color: #243036;
+                                color: #52656f;
+                                font-size: 11px;
+                                @include border-radius(10px);
+                            }
+                        }
+                    }
+                }
+            }
+            .modeller-buttons{
+                top: 7px;
+            }
+        }
+    }
+}

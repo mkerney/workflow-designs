@@ -3854,3 +3854,28 @@ body > .world_map_tooltip {
                   color: #327593; }
                 .messageDefination-modal-wrapper .modal-dialog .modal-content .modal-body .form-stages .custom-add-remove-btn > ul > li a i.fa-minus-circle {
                   color: #3f5863; }
+
+.activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content {
+  position: relative; }
+  .activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content .custom-table-icons {
+    display: inline-block; }
+    .activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content .custom-table-icons > ul > li a {
+      padding: 2px 10px; }
+      .activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content .custom-table-icons > ul > li a.editor {
+        background-color: #323f46;
+        color: #84949c;
+        font-size: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px; }
+      .activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content .custom-table-icons > ul > li a.preview {
+        background-color: #243036;
+        color: #52656f;
+        font-size: 11px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px; }
+  .activiti-modeller-header.table-driven-modeller-header .activiti-modeller-header-content .modeller-buttons {
+    top: 7px; }

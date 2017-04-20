@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "name": "All referred patients",
+      "id": 0
+    },
+    {
+      "name": "First consult outpatient clinic",
+      "id": 1
+    },
+    {
+      "name": "No OR-receipt",
+      "id": 2
+    },
+    {
+      "name": "OR-receipt",
+      "id": 3
+    },
+    {
+      "name": "No surgery",
+      "id": 4
+    },
+    {
+      "name": "Start surgery",
+      "id": 5
+    },
+    {
+      "name": "Emergency",
+      "id": 6
+    },
+    {
+      "name": "No emergency",
+      "id": 7
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+        "target": 2,
+        "value": 25,
+      "label": 1
+    },
+    {
+      "source": 1,
+        "target": 2,
+        "value": 5,
+      "label": 0.64
+    },    
+    {
+     "source": 1,
+        "target": 3,
+        "value": 20,
+      "label": 0.36
+    },
+    {
+"source": 2,
+        "target": 4,
+        "value": 29,
+      "label": 0.33
+    },
+    {
+      "source": 2,
+        "target": 5,
+        "value": 1,
+      "label": 0.67
+    },
+    {
+     "source": 3,
+        "target": 5,
+        "value": 2,
+      "label": 0.16
+    },
+    {
+      "source": 3,
+        "target": 6,
+        "value": 8,
+      "label": 0.84
+    },
+    {
+        "source": 4,
+        "target": 7,
+        "value": 39,
+         "label": 0.94
+    },
+     {
+         "source": 5,
+        "target": 7,
+        "value": 3,
+         "label": 0.14
+    },
+     {
+         "source": 6,
+        "target": 7,
+        "value": 8,
+         "label": 0.64
+    }
+  ]
+}

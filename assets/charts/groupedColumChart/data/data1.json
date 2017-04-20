@@ -1,0 +1,33 @@
+[{
+ "model": "Audi",
+ "India": 789,
+ "Australia": 567,
+ "US": 1000
+ 
+}, {
+ "model": "BMW",
+ "India": 1009,
+ "Australia": 980,
+ "US": 880
+ 
+}, {
+ "model": "Mercedes-Benz",
+ "India": 1100,
+ "Australia": 1400,
+ "US": 1000
+}, {
+ "model": "Aston Martin",
+ "India": 290,
+ "Australia": 2031,
+ "US": 2789
+}, {
+ "model": "Rolls-Royce",
+ "India": 59,
+ "Australia": 285,
+ "US": 897
+}, {
+ "model": "Jaguar",
+ "India": 674,
+ "Australia": 875,
+ "US": 397
+}]
